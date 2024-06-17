@@ -1,0 +1,40 @@
+.modal-data {
+  --margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+  p {
+    width: max-content;
+    text-align: left !important;
+  }
+  ul {
+    list-style-type: disc;
+    & ul {
+      list-style-type: circle;
+      margin-left: (var(--margin));
+      & ul {
+        list-style-type: square;
+        margin-left: calc(var(--margin) * 2);
+        & ul {
+          list-style-type: square;
+          margin-left: calc(var(--margin) * 3);
+        }
+      }
+    }
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ol ol {
+    list-style-type: upper-alpha;
+    margin-left: (var(--margin));
+  }
+  ol ol ol {
+    list-style-type: lower-roman;
+    margin-left: calc(var(--margin) * 2);
+  }
+  ol ol ol {
+    list-style-type: lower-alpha;
+    margin-left: calc(var(--margin) * 3);
+  }
+}

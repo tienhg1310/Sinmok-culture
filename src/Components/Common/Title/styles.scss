@@ -1,0 +1,32 @@
+.titleComponent {
+    --fsTit: 40px;
+    --fsDetail: 18px;
+    --ptDetail: 25px;
+
+    .title {
+        font-size: var(--fsTit);
+        font-family: Pretendard-SemiBold;
+        white-space: pre-line;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .detail {
+        padding-top: var(--ptDetail);
+        font-size: var(--fsDetail);
+        white-space: pre-line;
+        text-align: center;
+        line-height: 0.8;
+
+        @media screen and (max-width: 767px) {
+            white-space: normal;
+            line-height: 1.6;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        --fsTit: 24px;
+        --fsDetail: 15.5px;
+        --ptDetail: 15px;
+    }
+}

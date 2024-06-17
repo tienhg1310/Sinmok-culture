@@ -1,0 +1,20 @@
+@import "../../../Assets/styles/_variables.scss";
+
+.button-component {
+    cursor: pointer;
+    padding: 20px 39px;
+    border-radius: 28px;
+    display: inline-flex;
+    align-items: center;
+    
+    span {
+        color: #fff;
+        font-family: $pretendardSemiBold;
+    }
+    @media screen and (max-width: 767px) {
+        padding:12px 25px;
+        span {
+            font-size: 14px;
+        }
+    }
+}
