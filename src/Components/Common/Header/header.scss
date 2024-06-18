@@ -5,12 +5,14 @@
 }
 
 .header {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: $white;
   width: 100%;
   margin: 0 auto;
   border-bottom: 1px solid #e0dfdf;
   height: 81px;
-  position: relative;
-
   @include respond-beetwen(xs) {
     height: 65px;
   }
@@ -40,6 +42,14 @@
     }
     @include respond-beetwen(xl) {
       max-width: 1240px;
+    }
+
+    .logo {
+      img {
+        @include respond-beetwen(xs) {
+          max-width: 80%;
+        }
+      }
     }
 
     .header-menu {
@@ -151,10 +161,13 @@
 }
 
 .header-space {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  position: fixed;
+  background: white;
   height: 300px;
   width: 100vw;
   padding: 0px 50px;
-  background: url("../../../Assets/images/menu_deco.gif") no-repeat;
   background-position-x: 5vw;
   background-position-y: center;
   border-bottom: 1px solid #e0dfdf;

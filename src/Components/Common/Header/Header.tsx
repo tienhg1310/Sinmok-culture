@@ -4,7 +4,8 @@ import logo from "../../../Assets/images/logo.png";
 import sitemapBtn from "../../../Assets/images/sitemap_btn.png";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
-import "./Header.scss";
+import "./header.scss";
+import MenuDecoGif from "../../../Assets/images/menu_deco.gif";
 
 //code here
 const Header: React.FC = () => {
@@ -61,7 +62,7 @@ const Header: React.FC = () => {
       </div>
       {isShowSubMenu && (
         <div className="header-space">
-          <img src="" alt="" />
+          <img src={MenuDecoGif} className="header-img" />
         </div>
       )}
     </>
