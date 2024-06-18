@@ -1,2 +1,161 @@
 @import "../../../Assets/styles/index.scss";
 
+.active {
+  display: block !important;
+}
+
+.header {
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0dfdf;
+  height: 81px;
+  position: relative;
+
+  @include respond-beetwen(xs) {
+    height: 65px;
+  }
+
+  .layout {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+
+    @include respond-beetwen(xs) {
+      width: 90%;
+    }
+    @include respond-beetwen(sm) {
+      width: 90%;
+    }
+    @include respond-beetwen(md) {
+      max-width: 1024px;
+      margin: 0 20px;
+    }
+    @include respond-beetwen(lg) {
+      max-width: 1240px;
+      margin: 0 20px;
+    }
+    @include respond-beetwen(xl) {
+      max-width: 1240px;
+    }
+
+    .header-menu {
+      width: 60%;
+      height: 100%;
+      @include respond-beetwen(xs) {
+        display: none;
+      }
+      @include respond-beetwen(sm) {
+        display: none;
+      }
+      @include respond-beetwen(md) {
+        display: none;
+      }
+    }
+
+    .header-action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .etc-action {
+        display: flex;
+        justify-content: space-between;
+
+        @include respond-beetwen(xs) {
+          display: none;
+        }
+        @include respond-beetwen(sm) {
+          display: none;
+        }
+
+        @include respond-beetwen(md) {
+          display: none;
+        }
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          padding: 0 10px;
+          border-right: 1px solid #e0dfdf;
+          div {
+            word-wrap: normal;
+            font-size: 12px;
+          }
+          .login {
+            border-bottom: 1px solid #e0dfdf;
+          }
+        }
+      }
+      .etc-btn {
+        width: 30px;
+        height: 30px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        .btn-menu {
+          width: 30px;
+          height: 23px;
+        }
+      }
+    }
+  }
+  .menu-content {
+    display: none;
+    background-color: map-get($color, b-op);
+    width: 100vw;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transition: all 0.1s ease-in-out;
+
+    @include respond-beetwen(lg) {
+      top: 81px;
+    }
+    @include respond-beetwen(xl) {
+      top: 81px;
+    }
+    .wrap-menu {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: flex-end;
+
+      @include respond-beetwen(xs) {
+        height: 100vh;
+      }
+      @include respond-beetwen(sm) {
+        height: 100vh;
+      }
+      @include respond-beetwen(lg) {
+        justify-content: center;
+        top: 81px;
+        height: unset;
+        flex-direction: row-reverse;
+        background: white;
+      }
+      @include respond-beetwen(xl) {
+        justify-content: center;
+        top: 81px;
+        height: unset;
+        flex-direction: row-reverse;
+        background: white;
+      }
+    }
+  }
+}
+
+.header-space {
+  height: 300px;
+  width: 100vw;
+  padding: 0px 50px;
+  background: url("../../../Assets/images/menu_deco.gif") no-repeat;
+  background-position-x: 5vw;
+  background-position-y: center;
+  border-bottom: 1px solid #e0dfdf;
+}
