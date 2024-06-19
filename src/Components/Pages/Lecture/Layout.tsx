@@ -11,19 +11,25 @@ type Props = {
 
 const Layout: FC<Props> = ({ children }) => {
   const route = useLocation();
-  const findItemWithPath = useFindItemWithPath(route);
+  const { breadsrcumb, childrens } = useFindItemWithPath(route);
   const breadscrumbs = [
-    findItemWithPath?.name || "",
-    findItemWithPath?.child?.name || "",
+    breadsrcumb?.name || "",
+    breadsrcumb?.child?.name || "",
   ];
+  const childrenActive = childrens?.find(
+    (children) => breadsrcumb?.child?.name === children.name
+  );
 
   return (
     <div className="wrapper">
       <SectionHeader
-        title={findItemWithPath?.child?.name || ""}
+        title={breadsrcumb?.child?.name || ""}
         breadscrumbs={breadscrumbs}
       />
-      <SectionNavigation />
+      <SectionNavigation
+        childrens={childrens}
+        childrenActive={childrenActive}
+      />
       {children}
     </div>
   );

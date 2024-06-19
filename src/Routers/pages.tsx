@@ -1,8 +1,10 @@
-import path from "path";
 import { RoutesString } from "../Components/Modules/routesString";
 import PageErr from "../Components/Pages/404/PageErr";
 import Home from "../Components/Pages/Home";
-import LectureSearch from "../Components/Pages/Lecture";
+import LectureSearch from "../Components/Pages/Lecture/LectureSearch";
+import LectureCustom from "../Components/Pages/Lecture/LectureCustom";
+import LectureInfo from "../Components/Pages/Lecture/LectureInfo";
+import LectureSchedule from "../Components/Pages/Lecture/LectureShedule";
 
 const pages = [
   {
@@ -28,21 +30,21 @@ const pages = [
     component: LectureSearch,
     exact: true,
   },
-  // {
-  //   path: RoutesString.LectureInfo,
-  //   component: Lecture,
-  //   exact: true,
-  // },
-  // {
-  //   path: RoutesString.LectureSchedule,
-  //   component: Lecture,
-  //   exact: true,
-  // },
-  // {
-  //   path: RoutesString.LectureCustom,
-  //   component: Lecture,
-  //   exact: true,
-  // },
+  {
+    path: RoutesString.LectureInfo,
+    component: LectureInfo,
+    exact: true,
+  },
+  {
+    path: RoutesString.LectureSchedule,
+    component: LectureSchedule,
+    exact: true,
+  },
+  {
+    path: RoutesString.LectureCustom,
+    component: LectureCustom,
+    exact: true,
+  },
 ];
 
 export default pages;
