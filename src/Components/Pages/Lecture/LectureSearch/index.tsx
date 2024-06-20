@@ -1,9 +1,10 @@
-import { useEffect, useRef, useState } from "react";
-
+import { useEffect, useState } from "react";
+import { IoIosSearch } from "react-icons/io";
 import Layout from "../Layout";
+import LectureList from "./LectureList";
 import SelectInput from "./SelectInput";
 import "./index.scss";
-import { IoIosSearch } from "react-icons/io";
+import lectureService from "../../../../Modules/API/Lecture.service";
 
 const LectureSearch = () => {
   const options1 = [
@@ -37,6 +38,18 @@ const LectureSearch = () => {
   const [selectedOption2, setSelectedOption2] = useState(options2[0]);
   const [selectedOption3, setSelectedOption3] = useState(options3[0]);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const params = {
+        _page: 1,
+        _per_page: 10,
+      };
+      const headers = {};
+      const response = await lectureService.getLectures(params, headers);
+      console.log(response);
+    };
+    fetchData();
+  }, []);
   return (
     <Layout>
       <div className="body_container">
@@ -74,6 +87,9 @@ const LectureSearch = () => {
               <IoIosSearch size={28} />
             </button>
           </div>
+        </div>
+        <div>
+          <LectureList />
         </div>
       </div>
     </Layout>

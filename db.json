@@ -1,0 +1,224 @@
+{
+  "Lectures": [
+    {
+      "title": "+8주 (월) 1:5 기구필라테스…(11:30~12:20)",
+      "registration_status": "온라인 접수마감",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "88,000원",
+      "date_range": "2024.07.01~2024.08.19",
+      "time": "11:30~12:20 (월)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image1.png"
+    },
+    {
+      "title": "+8주 (화) 근력UP 야쉬탕가 빈야사 (19:00~20:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "40,000원",
+      "date_range": "2024.07.02~2024.08.20",
+      "time": "19:00~20:50 (화)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image2.png"
+    },
+    {
+      "title": "+8주 (수) 힐링요가…(20:00~20:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "60,000원",
+      "date_range": "2024.07.03~2024.08.21",
+      "time": "20:00~20:50 (수)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image3.png"
+    },
+    {
+      "title": "+8주 (목) 기초 필라테스…(10:00~10:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "45,000원",
+      "date_range": "2024.07.04~2024.08.22",
+      "time": "10:00~10:50 (목)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image4.png"
+    },
+    {
+      "title": "+8주 (금) 스피닝…(18:00~18:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "50,000원",
+      "date_range": "2024.07.05~2024.08.23",
+      "time": "18:00~18:50 (금)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image5.png"
+    },
+    {
+      "title": "+8주 (월) 근력운동…(06:00~06:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "70,000원",
+      "date_range": "2024.07.01~2024.08.19",
+      "time": "06:00~06:50 (월)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image6.png"
+    },
+    {
+      "title": "+8주 (화) 힐링 요가…(20:00~20:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "60,000원",
+      "date_range": "2024.07.02~2024.08.20",
+      "time": "20:00~20:50 (화)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image7.png"
+    },
+    {
+      "title": "+8주 (목) 필라테스…(07:00~07:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "45,000원",
+      "date_range": "2024.07.04~2024.08.22",
+      "time": "07:00~07:50 (목)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image8.png"
+    },
+    {
+      "title": "+8주 (금) 기구 필라테스…(12:00~12:50)",
+      "registration_status": "온라인 접수마감",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "50,000원",
+      "date_range": "2024.07.05~2024.08.23",
+      "time": "12:00~12:50 (금)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image9.png"
+    },
+    {
+      "title": "+8주 (수) 요가…(18:00~18:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "60,000원",
+      "date_range": "2024.07.03~2024.08.21",
+      "time": "18:00~18:50 (수)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image10.png"
+    },
+    {
+      "title": "+8주 (목) 플로우 필라테스…(19:00~19:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "45,000원",
+      "date_range": "2024.07.04~2024.08.22",
+      "time": "19:00~19:50 (목)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image11.png"
+    },
+    {
+      "title": "+8주 (월) 고강도 인터벌 트레이닝…(17:00~17:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "70,000원",
+      "date_range": "2024.07.01~2024.08.19",
+      "time": "17:00~17:50 (월)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image12.png"
+    },
+    {
+      "title": "+8주 (화) 아쉬탕가 요가…(18:00~18:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "40,000원",
+      "date_range": "2024.07.02~2024.08.20",
+      "time": "18:00~18:50 (화)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image13.png"
+    },
+    {
+      "title": "+8주 (목) 근력운동…(20:00~20:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "45,000원",
+      "date_range": "2024.07.04~2024.08.22",
+      "time": "20:00~20:50 (목)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image14.png"
+    },
+    {
+      "title": "+8주 (금) 기구 필라테스…(07:00~07:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "50,000원",
+      "date_range": "2024.07.05~2024.08.23",
+      "time": "07:00~07:50 (금)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image15.png"
+    },
+    {
+      "title": "+8주 (월) 필라테스…(12:00~12:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "88,000원",
+      "date_range": "2024.07.01~2024.08.19",
+      "time": "12:00~12:50 (월)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image16.png"
+    },
+    {
+      "title": "+8주 (수) 근력운동…(19:00~19:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "60,000원",
+      "date_range": "2024.07.03~2024.08.21",
+      "time": "19:00~19:50 (수)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image17.png"
+    },
+    {
+      "title": "+8주 (금) 아침 요가…(06:00~06:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "50,000원",
+      "date_range": "2024.07.05~2024.08.23",
+      "time": "06:00~06:50 (금)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image18.png"
+    },
+    {
+      "title": "+8주 (목) 기초 요가…(08:00~08:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "45,000원",
+      "date_range": "2024.07.04~2024.08.22",
+      "time": "08:00~08:50 (목)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image19.png"
+    },
+    {
+      "title": "+8주 (월) 기초 필라테스…(09:00~09:50)",
+      "registration_status": "접수중",
+      "category": "성인강좌",
+      "semester": "여름학기",
+      "fee": "88,000원",
+      "date_range": "2024.07.01~2024.08.19",
+      "time": "09:00~09:50 (월)",
+      "details": "자세히보기",
+      "image_url": "https://example.com/image20.png"
+    }
+  ]
+}
