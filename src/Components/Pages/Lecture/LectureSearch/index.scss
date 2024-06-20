@@ -1,0 +1,35 @@
+@import "../../../../Assets/styles/index.scss";
+
+.body_container {
+  width: 90%;
+  .section_search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(238, 238, 238);
+    width: 100%;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+
+    .search_input {
+      position: relative;
+      input {
+        border: none;
+        width: 100%;
+        padding: 0 20px;
+        line-height: 57px;
+        font-size: 14px;
+      }
+
+      button {
+        position: absolute;
+        background: $white;
+        border: none;
+        padding-right: 10px;
+        right: 0px;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

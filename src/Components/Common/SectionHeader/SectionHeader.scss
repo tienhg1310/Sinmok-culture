@@ -1,0 +1,111 @@
+@import "../../../Assets//styles/index.scss";
+
+@keyframes top-to-bottom {
+  0% {
+    transform: translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.section_header-content {
+  padding-top: 5vh;
+  padding-bottom: 4vh;
+
+  @include respond-beetwen(lg) {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  @include respond-beetwen(xl) {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .section_header-title {
+    animation: top-to-bottom 1s;
+    @include respond-beetwen(xs) {
+      font-size: 32px;
+      color: $black;
+      text-align: center;
+    }
+    @include respond-beetwen(sm) {
+      font-size: 32px;
+      color: $black;
+      text-align: center;
+    }
+    @include respond-beetwen(md) {
+      font-size: 36px;
+      color: $black;
+      text-align: center;
+    }
+    @include respond-beetwen(xl) {
+      font-size: 45px;
+      color: $black;
+      text-align: center;
+    }
+    @include respond-beetwen(lg) {
+      font-size: 45px;
+      color: $black;
+      text-align: center;
+    }
+  }
+  .section_header-breadcrumb {
+    padding: 10px 0;
+
+    @include respond-beetwen(xs) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include respond-beetwen(sm) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include respond-beetwen(md) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @include respond-beetwen(lg) {
+      position: absolute;
+      right: 0;
+      display: flex;
+      bottom: calc(4vh + 10px);
+    }
+    @include respond-beetwen(xl) {
+      position: absolute;
+      right: 0;
+      display: flex;
+      bottom: calc(4vh + 10px);
+    }
+    .breadcrumb-item {
+      color: #828282;
+      margin: 0 10px;
+      position: relative;
+      font-size: 14px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 10px;
+        right: -10px;
+        top: calc(50% - 5px);
+        background: #e5e5e5;
+        vertical-align: top;
+      }
+      &:last-child::before {
+        content: none;
+      }
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
