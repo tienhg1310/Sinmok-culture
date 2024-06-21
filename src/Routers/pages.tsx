@@ -5,6 +5,7 @@ import LectureSearch from "../Components/Pages/Lecture/LectureSearch";
 import LectureCustom from "../Components/Pages/Lecture/LectureCustom";
 import LectureInfo from "../Components/Pages/Lecture/LectureInfo";
 import LectureSchedule from "../Components/Pages/Lecture/LectureShedule";
+import Board from "../Components/Pages/board";
 
 const pages = [
   {
@@ -43,6 +44,11 @@ const pages = [
   {
     path: RoutesString.LectureCustom,
     component: LectureCustom,
+    exact: true,
+  },
+  {
+    path: RoutesString.Board,
+    component: Board,
     exact: true,
   },
 ];
