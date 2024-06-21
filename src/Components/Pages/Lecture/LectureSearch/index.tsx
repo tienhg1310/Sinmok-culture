@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react";
 import { IoIosSearch } from "react-icons/io";
-import Layout from "../Layout";
-import LectureList from "./LectureList";
-import SelectInput from "./SelectInput";
-import "./index.scss";
 import lectureService from "../../../../Modules/API/Lecture.service";
+import LectureList from "../../../Lecture/LectureSearch/LectureList";
+import SelectInput from "../../../Lecture/LectureSearch/SelectInput";
+import Layout from "../Layout";
+import "./index.scss";
+import icon0 from "../../../../Assets/images/icons/select_icn0.png";
+import icon1 from "../../../../Assets/images/icons/select_icn01.png";
+import icon2 from "../../../../Assets/images/icons/select_icn02.png";
+import { useGetLectureList } from "../../../../Modules/hooks/getLectureList";
+import Panigation from "../../../Common/Panigation/Panigation";
 
 const LectureSearch = () => {
   const options1 = [
@@ -37,19 +42,19 @@ const LectureSearch = () => {
   const [selectedOption1, setSelectedOption1] = useState(options1[0]);
   const [selectedOption2, setSelectedOption2] = useState(options2[0]);
   const [selectedOption3, setSelectedOption3] = useState(options3[0]);
+  const {
+    lectureList,
+    loading,
+    page,
+    setPage,
+    perPage,
+    setPerPage,
+    totalPage,
+    totalItem,
+  } = useGetLectureList();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const params = {
-        _page: 1,
-        _per_page: 10,
-      };
-      const headers = {};
-      const response = await lectureService.getLectures(params, headers);
-      console.log(response);
-    };
-    fetchData();
-  }, []);
+
+  console.log(page, perPage, totalPage, totalItem)
   return (
     <Layout>
       <div className="body_container">
@@ -61,6 +66,7 @@ const LectureSearch = () => {
             options={options1}
             selectedOption={selectedOption1}
             setSelectedOption={setSelectedOption1}
+            icon={icon1}
           />
           <SelectInput
             dropdownId="2"
@@ -69,6 +75,7 @@ const LectureSearch = () => {
             options={options2}
             selectedOption={selectedOption2}
             setSelectedOption={setSelectedOption2}
+            icon={icon2}
           />
           <SelectInput
             dropdownId="3"
@@ -77,6 +84,7 @@ const LectureSearch = () => {
             options={options3}
             selectedOption={selectedOption3}
             setSelectedOption={setSelectedOption3}
+            icon={icon0}
           />
           <div className="search_input">
             <input
@@ -88,9 +96,21 @@ const LectureSearch = () => {
             </button>
           </div>
         </div>
-        <div>
-          <LectureList />
+        <div style={{ width: "100%" }}>
+          {!loading ? (
+            <LectureList lectureList={lectureList} />
+          ) : (
+            <div>loading</div>
+          )}
         </div>
+        <Panigation
+          totalPage={+totalPage}
+          page={page}
+          setPage={setPage}
+          perPage={perPage}
+          setPerPage={setPerPage}
+          totalItem={totalItem}
+        />
       </div>
     </Layout>
   );

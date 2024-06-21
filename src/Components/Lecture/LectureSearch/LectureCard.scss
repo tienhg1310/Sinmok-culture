@@ -1,0 +1,305 @@
+@import "../../../Assets/styles/index.scss";
+.card {
+  background-color: white;
+  overflow: hidden;
+  border: 1px solid #c6c6c6;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 24px;
+  height: 432px;
+  width: 100%;
+
+  .card-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+
+    .card-image {
+      height: 80%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      img {
+        width: 100%; /* Hình ảnh sẽ fit theo chiều rộng của div */
+        height: auto; /* Chiều cao tự động tính toán để giữ tỷ lệ */
+        object-fit: cover; /* Hình ảnh sẽ không bị vỡ */
+        transition: ease-in-out 0.5s;
+        @include respond-beetwen(xs) {
+          height: 100%;
+          width: auto;
+        }
+        @include respond-beetwen(sm) {
+          height: 100%;
+          width: auto;
+        }
+      }
+    }
+
+    .card-info-content {
+      position: relative;
+      height: 60%;
+      flex-grow: 1;
+      transition: ease-in-out 0.5s;
+      .status-wrapper {
+        margin-bottom: 10px;
+        position: absolute;
+        display: flex;
+        font-weight: 700;
+        text-align: center;
+
+        @include respond-beetwen(xs) {
+          flex-direction: column;
+          top: -48px;
+        }
+
+        @include respond-beetwen(sm) {
+          flex-direction: column;
+          top: -48px;
+        }
+
+        @include respond-beetwen(md) {
+          flex-direction: column;
+          top: -48px;
+        }
+
+        @include respond-beetwen(lg) {
+          flex-direction: row;
+          top: -12px;
+          left: 20px;
+        }
+        @include respond-beetwen(xl) {
+          flex-direction: row;
+          top: -12px;
+          left: 20px;
+        }
+
+        .status {
+          display: inline-block;
+          padding: 0 14px;
+          font-size: 13px;
+          line-height: 24px;
+        }
+
+        .orange {
+          background-color: #ff6600;
+          color: white;
+        }
+        .black {
+          background-color: #000;
+          color: white;
+        }
+      }
+      .text-content {
+        padding: 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+          margin: 10px 0px;
+          @include respond-beetwen(xs) {
+            font-size: 15px;
+            line-height: 17px;
+            height: 30px;
+          }
+          @include respond-beetwen(sm) {
+            font-size: 15px;
+            height: 30px;
+          }
+          @include respond-beetwen(md) {
+            font-size: 15px;
+            height: 30px;
+          }
+          @include respond-beetwen(lg) {
+            font-size: 19px;
+            line-height: 23px;
+            height: 38px;
+          }
+          @include respond-beetwen(xl) {
+            font-size: 19px;
+            line-height: 23px;
+            height: 38px;
+          }
+        }
+        p {
+          font-size: 13px;
+          color: #666;
+        }
+        .card-info-button {
+          width: 100%;
+          @include respond-beetwen(xs) {
+            display: flex;
+            flex-direction: column;
+          }
+          @include respond-beetwen(sm) {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+          }
+          @include respond-beetwen(md) {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+          }
+          @include respond-beetwen(lg) {
+            transition: ease-in-out 0.5s;
+            transform: translateY(100px);
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+            transition: ease-in-out 0.5s;
+          }
+          @include respond-beetwen(xl) {
+            transition: ease-in-out 0.5s;
+            transform: translateY(100px);
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+            transition: ease-in-out 0.5s;
+          }
+
+          button {
+            margin-bottom: 5px;
+            background: none;
+            font-size: 14px;
+            padding: 13px 0px;
+            border: 1px solid #b9bdbd;
+            color: #424242;
+            transition: ease-in-out 0.2s;
+
+            @include respond-beetwen(xs) {
+              width: 100%;
+              span {
+                display: block;
+              }
+              .icon {
+                display: none;
+              }
+            }
+            @include respond-beetwen(sm) {
+              width: 100%;
+              span {
+                display: block;
+              }
+              .icon {
+                display: none;
+              }
+            }
+            @include respond-beetwen(md) {
+              width: 50%;
+              span {
+                display: block;
+              }
+              .icon {
+                display: none;
+              }
+            }
+            @include respond-beetwen(lg) {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              span {
+                display: none;
+              }
+              .icon {
+                display: inline-block;
+              }
+            }
+            @include respond-beetwen(xl) {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              span {
+                display: none;
+              }
+              .icon {
+                display: inline-block;
+              }
+            }
+
+            .icon {
+              color: #666666;
+              width: 70%;
+              height: 70%;
+            }
+
+            &:hover {
+              color: #0273d2;
+              border: 1px solid #0273d2;
+              .icon {
+                color: #0273d2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.1) !important;
+    .card-content {
+      .card-image {
+        @include respond-beetwen(xs) {
+          img {
+            vertical-align: middle;
+            transform: scale(1.3) translateY(-20px);
+          }
+        }
+        @include respond-beetwen(sm) {
+          img {
+            vertical-align: middle;
+            transform: scale(1.3) translateY(-20px);
+          }
+        }
+        @include respond-beetwen(md) {
+          img {
+            vertical-align: middle;
+            transform: scale(1.3) translateY(-20px);
+          }
+        }
+        @include respond-beetwen(lg) {
+          & {
+            height: 50%;
+          }
+          img {
+            vertical-align: middle;
+            transform: scale(1.3) translateY(-20px);
+          }
+        }
+        @include respond-beetwen(xl) {
+          & {
+            height: 50%;
+          }
+          img {
+            vertical-align: middle;
+            transform: scale(1.3) translateY(-20px);
+          }
+        }
+      }
+      .card-info-content {
+        .text-content {
+          .card-info-button {
+            @include respond-beetwen(lg) {
+              display: flex;
+              transform: translateY(0);
+            }
+            @include respond-beetwen(xl) {
+              display: flex;
+              transform: translateY(0);
+            }
+          }
+        }
+      }
+    }
+  }
+}

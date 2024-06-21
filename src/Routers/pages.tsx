@@ -1,50 +1,55 @@
+import { Suspense, lazy } from "react";
 import { RoutesString } from "../Components/Modules/routesString";
-import PageErr from "../Components/Pages/404/PageErr";
-import Home from "../Components/Pages/Home";
-import LectureSearch from "../Components/Pages/Lecture/LectureSearch";
-import LectureCustom from "../Components/Pages/Lecture/LectureCustom";
-import LectureInfo from "../Components/Pages/Lecture/LectureInfo";
-import LectureSchedule from "../Components/Pages/Lecture/LectureShedule";
+const PageErr = () => import("../Components/Pages/404/PageErr");
+const Home = () => import("../Components/Pages/Home");
+const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
+const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
+const LectureInfo = () => import("../Components/Pages/Lecture/LectureInfo");
+const LectureSchedule = () =>
+  import("../Components/Pages/Lecture/LectureShedule");
+
+const lazyLoad = (importFunc: any) => {
+  const Component = lazy(importFunc);
+  return (props: any) => (
+    <Suspense>
+      <Component {...props} />
+    </Suspense>
+  );
+};
+
 import Board from "../Components/Pages/board";
 
 const pages = [
   {
     path: RoutesString.PageNotFound,
-    component: PageErr,
-    exact: true,
+    component: lazyLoad(PageErr),
   },
 
   /* Home */
   {
     path: RoutesString.Home,
-    component: Home,
-    exact: true,
+    component: lazyLoad(Home),
   },
   // lecture pages
   {
     path: RoutesString.Lecture,
-    component: LectureSearch,
-    exact: true,
+    component: lazyLoad(LectureSearch),
   },
   {
     path: RoutesString.LectureSearch,
-    component: LectureSearch,
-    exact: true,
+    component: lazyLoad(LectureSearch),
   },
   {
     path: RoutesString.LectureInfo,
-    component: LectureInfo,
-    exact: true,
+    component: lazyLoad(LectureInfo),
   },
   {
     path: RoutesString.LectureSchedule,
-    component: LectureSchedule,
-    exact: true,
+    component: lazyLoad(LectureSchedule),
   },
   {
     path: RoutesString.LectureCustom,
-    component: LectureCustom,
-    exact: true,
+    component: lazyLoad(LectureCustom),
   },
   {
     path: RoutesString.Board,
