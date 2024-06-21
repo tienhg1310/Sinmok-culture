@@ -2,7 +2,7 @@ import { MenuItem } from "../../Constants/MenuItem";
 
 export const useFindItemWithPath = (route: any) => {
   const breadsrcumb = MenuItem.map((item) => {
-    console.log(item)
+
     if (item.childrens) {
       const chilIndex = item.childrens.findIndex(
         (child) => child.path === route.pathname

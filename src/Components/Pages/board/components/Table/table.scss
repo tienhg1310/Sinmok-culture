@@ -1,0 +1,67 @@
+@import "../../../../../Assets/styles//index.scss";
+.table-header{
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-top: 2px solid #226fba;
+    background-color: 'lightgray !important';
+}
+
+//   table {
+//  width: 100%;
+// //   overflow-x: auto;
+//     border-collapse: collapse;
+//     font-size: 14px;
+
+//     thead {
+//       background-color: #f5f5f5;
+
+//       th {
+//         padding: 12px 16px;
+//         text-align: left;
+//         font-weight: bold;
+//         white-space: nowrap;
+//       }
+//     }
+
+//     tbody {
+//       tr {
+//         border-bottom: 1px solid #e6e6e6;
+
+//         &:last-child {
+//           border-bottom: none;
+//         }
+
+//         td {
+//           padding: 12px 16px;
+//           white-space: nowrap;
+//         }
+//       }
+//     }
+
+//     @media (max-width: 768px) {
+//       font-size: 12px;
+
+//       thead th,
+//       tbody td {
+//         padding: 8px 12px;
+//       }
+//     }
+//   }
+
+.table_hide {
+    // display: none;
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+
+  
+}
+
+.table-cell {
+  @media screen and (max-width: 768px) {
+    font-size: 14px !important;
+    width: 10% !important;
+    }
+}

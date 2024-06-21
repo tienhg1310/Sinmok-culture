@@ -1,34 +1,277 @@
 @import "../../../../Assets/styles/index.scss";
 
-
-
-.container {
-    position: relative;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0;
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1240px;
-    background: #fff;
+    margin: 0 auto;
 
+    .board_content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond-beetwen(xs) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include respond-beetwen(sm) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include respond-beetwen(md) {
+            width: 97%;
+            justify-content: end;
+        }
+
+        @include respond-beetwen(lg) {
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .board_content_title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            @include respond-beetwen(xs) {
+                overflow: hidden;
+                opacity: 0;
+            }
+
+            @include respond-beetwen(sm) {
+                display: none;
+            }
+
+            @include respond-beetwen(md) {
+                display: none;
+            }
+
+            @include respond-beetwen(lg) {
+                display: block;
+                margin-left: 10px;
+            }
+        }
+
+        .board_content_options {
+            display: flex;
+
+            @include respond-beetwen(xs) {
+                display: flex;
+                flex-direction: column !important;
+                align-items: center;
+                justify-content: center;
+                width: 100% !important;
+            }
+
+            @include respond-beetwen(sm) {
+                display: flex;
+                flex-direction: column !important;
+                align-items: center;
+                justify-content: center;
+                width: 100% !important;
+            }
+
+            @include respond-beetwen(md) {
+                display: flex;
+            }
+
+            .board_content_select {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 150px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                box-sizing: border-box;
+
+                .dropdown .dropdown-button p {
+                    padding-left: 0 !important;
+                }
+
+                @include respond-beetwen(xs) {
+                    width: 95% !important;
+                    margin-left: 5px;
+                    margin-bottom: 10px;
+
+                    .dropdown {
+                        width: 100% !important;
+                    }
+
+                    .dropdown .dropdown-button {
+                        background-color: #fff;
+                        color: #313131;
+                        border-bottom: none;
+                    }
+                }
+
+                @include respond-beetwen(sm) {
+                    width: 95% !important;
+                    margin-left: 5px;
+                    margin-bottom: 10px;
+
+                    .dropdown {
+                        width: 100% !important;
+                    }
+
+                    .dropdown .dropdown-button {
+                        background-color: #fff;
+                        color: #313131;
+                        border-bottom: none;
+                    }
+                }
+
+                @include respond-beetwen(md) {
+                    width: 150px ;
+
+                    .dropdown {
+                        width: 100% !important;
+                    }
+
+                    .dropdown .dropdown-button {
+                        background-color: #fff;
+                        color: #313131;
+                        border-bottom: none;
+                    }
+
+                }
+            }
+
+            .board_content_input {
+                width: 353px;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                box-sizing: border-box;
+                margin-left: 5px;
+                padding-left: 5px;
+
+                @include respond-beetwen(xs) {
+                    width: 95% !important;
+                    height: 50px;
+                    margin-bottom: 10px;
+                }
+
+                @include respond-beetwen(sm) {
+                    width: 95% !important;
+                    height: 50px;
+                    margin-bottom: 10px;
+                }
+
+                @include respond-beetwen(md) {
+                    width: 310px;
+                }
+
+                @include respond-beetwen(lg) {
+                    width: 353px;
+                }
+            }
+
+            .board_content_submit {
+                width: 109px;
+                font-family: "Noto Sans KR";
+                font-weight: 400;
+                font-size: 16px;
+                color: #fff;
+                background-color: #313131;
+                border: 1px solid #313131;
+                margin-left: 5px;
+
+                @include respond-beetwen(xs) {
+                    width: 95% !important;
+                    height: 50px;
+                }
+
+                @include respond-beetwen(sm) {
+                    // margin-right: 5px;
+                    width: 95% !important;
+                    height: 50px;
+                }
+
+                @include respond-beetwen(md) {
+                    margin-right: 2px;
+                    width: 109px;
+                }
+
+                @include respond-beetwen(lg) {
+                    margin-right: 10px;
+                }
+
+                @include respond-beetwen(xl) {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    .board_content_children {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 25px;
+        margin-right: 25px;
+        width: 100%;
+
+        //  overflow-x: auto;
+        @include respond-beetwen(xs) {
+            width: 95%;
+        }
+
+        @include respond-beetwen(sm) {
+            width: 95%;
+        }
+
+        @include respond-beetwen(md) {
+            width: 97%;
+        }
+
+        @include respond-beetwen(lg) {
+            width: 98%;
+        }
+    }
+}
+
+.section_navigation-item {
+ 
     @include respond-beetwen(xs) {
-        width: 90%;
+        width: 95%;
     }
-
     @include respond-beetwen(sm) {
-        width: 90%;
+        width: 95%;
+        #section_navigation-item-2{
+            margin-left: 10px !important;
+        }
     }
-
     @include respond-beetwen(md) {
-        max-width: 1240px;
-        padding: 0 20px;
+        width: 95%!important;
+        margin-left: 20px !important;
     }
-
     @include respond-beetwen(lg) {
-        max-width: 1240px;
-        padding: 0 20px;
+        width: 330px!important;
+            margin-left: 5px !important;
     }
-
     @include respond-beetwen(xl) {
-        max-width: 1240px;
+      width: 410px;
+            margin-left: 0px !important;
+    }
+    @media screen and (min-width: 1070px) and (max-width: 1180px) {
+        width: 345px!important;
+    }
+     @media screen and (min-width: 1181px) and (max-width: 1200px) {
+        width: 375px!important;
+    }
+       @media screen and (min-width: 1201px) and (max-width: 1250px) {
+        width: 375px!important;
+    }
+         @media screen and (min-width: 1251px) and (max-width: 1300px) {
+        width: 380px!important;
+    }
+           @media screen and (min-width: 1301px) and (max-width: 1400px) {
+        width: 400px!important;
     }
 }

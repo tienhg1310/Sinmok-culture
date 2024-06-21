@@ -7,5 +7,8 @@ export const RoutesString = {
   LectureInfo: `/lecture/info`,
   LectureSchedule: `/lecture/schedule`,
   LectureCustom: `/lecture/custom`,
-  Board: `/board/kr/1/list`,
+  // board pages
+  BoardNotifi: `/board/notifi`,
+  BoardCourse: `/board/course`,
+  BoardExhibition: `/board/exhibition`,
 };

@@ -18,9 +18,9 @@ const SectionNavigation: FC<Props> = ({ childrens, childrenActive }) => {
         childrens.map((item, index) => (
           <div
             key={index}
-            className={`section_navigation-item ${
-              childrenActive?.path === item.path ? "active" : ""
-            }`}
+            id={`section_navigation-item-${index}`}
+            className={`section_navigation-item ${childrenActive?.path === item.path ? "active" : ""
+              }`}
             onClick={() => navigation(item.path)}
           >
             <div className="section_navigation-text">

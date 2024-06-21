@@ -5,6 +5,9 @@ const Home = () => import("../Components/Pages/Home");
 const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
 const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
 const LectureInfo = () => import("../Components/Pages/Lecture/LectureInfo");
+const Board = () => import("../Components/Pages/board/components/BoardNotif");
+const BoardCourse = () => import("../Components/Pages/board/components/BoardCourse");
+const BoardExhibition = () => import("../Components/Pages/board/components/BoardExhibition");
 const LectureSchedule = () =>
   import("../Components/Pages/Lecture/LectureShedule");
 
@@ -17,7 +20,7 @@ const lazyLoad = (importFunc: any) => {
   );
 };
 
-import Board from "../Components/Pages/board";
+
 
 const pages = [
   {
@@ -51,10 +54,19 @@ const pages = [
     path: RoutesString.LectureCustom,
     component: lazyLoad(LectureCustom),
   },
+
+  //board
   {
-    path: RoutesString.Board,
-    component: Board,
-    exact: true,
+    path: RoutesString.BoardNotifi,
+    component: lazyLoad(Board),
+  },
+  {
+    path: RoutesString.BoardCourse,
+    component: lazyLoad(BoardCourse),
+  },
+  {
+    path: RoutesString.BoardExhibition,
+    component: lazyLoad(BoardExhibition),
   },
 ];
 
