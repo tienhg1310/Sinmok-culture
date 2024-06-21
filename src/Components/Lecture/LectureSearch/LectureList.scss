@@ -1,0 +1,27 @@
+@import "../../../Assets/styles/index.scss";
+
+.lecture-list-container {
+  display: grid;
+  width: 100%;
+  @include respond-beetwen(xs) {
+    grid-template-columns: auto auto;
+    gap: 3.5px;
+  }
+  @include respond-beetwen(sm) {
+    grid-template-columns: auto auto;
+    gap: 3.5px;
+  }
+  @include respond-beetwen(md) {
+    grid-template-columns: auto auto;
+    gap: 3.5px;
+  }
+  @include respond-beetwen(lg) {
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+  }
+  @include respond-beetwen(xl) {
+    grid-template-columns: auto auto auto auto;
+    gap: 15px;
+  }
+  grid-template-columns: auto auto;
+}
