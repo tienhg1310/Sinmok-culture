@@ -2,8 +2,10 @@ import React, { type FC } from "react";
 import "./LectureCard.scss";
 import { IoBagAddOutline } from "react-icons/io5";
 import { IoCheckmark } from "react-icons/io5";
+import { ILecture } from "../../../Constants/interface";
+
 type Props = {
-  lecture: any;
+  lecture: ILecture;
 };
 
 const LectureCard: FC<Props> = ({ lecture }) => {

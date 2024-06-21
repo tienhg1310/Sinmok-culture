@@ -19,7 +19,7 @@ const Panigation: FC<Props> = ({
   setPerPage,
   totalItem,
 }) => {
-  const handleClick = (page: any) => {
+  const handleClick = (page: number) => {
     if (page >= 1 && page <= totalPage) {
       setCurrentPage(page);
     }

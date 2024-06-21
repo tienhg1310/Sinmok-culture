@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import lectureService from "../API/Lecture.service";
 import { usePanigation } from "./usePanigation";
+import type { ILecture} from "../../Constants/interface";
 
 const useGetLectureList = () => {
-  const [lectureList, setLectureList] = useState<any>([]);
+  const [lectureList, setLectureList] = useState<ILecture[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const {
     page,
