@@ -4,7 +4,9 @@ const PageErr = () => import("../Components/Pages/404/PageErr");
 const Home = () => import("../Components/Pages/Home");
 const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
 const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
-const LectureInfo = () => import("../Components/Pages/Lecture/LectureInfo");
+const LectureRegisterInfo = () =>
+  import("../Components/Pages/Lecture/LectureRegisterInfo");
+
 const LectureSchedule = () =>
   import("../Components/Pages/Lecture/LectureShedule");
 
@@ -28,7 +30,7 @@ const pages = [
     path: RoutesString.Home,
     component: lazyLoad(Home),
   },
-  // lecture pages
+  /* lecture pages */
   {
     path: RoutesString.Lecture,
     component: lazyLoad(LectureSearch),
@@ -37,9 +39,10 @@ const pages = [
     path: RoutesString.LectureSearch,
     component: lazyLoad(LectureSearch),
   },
+
   {
-    path: RoutesString.LectureInfo,
-    component: lazyLoad(LectureInfo),
+    path: RoutesString.LectureRegisterInfo,
+    component: lazyLoad(LectureRegisterInfo),
   },
   {
     path: RoutesString.LectureSchedule,

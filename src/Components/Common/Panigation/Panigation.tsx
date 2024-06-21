@@ -1,6 +1,5 @@
-import { useState, type FC } from "react";
+import { useCallback, type FC } from "react";
 import "./Panigation.scss";
-import pages from "../../../Routers/pages";
 
 type Props = {
   page: number;
@@ -24,39 +23,72 @@ const Panigation: FC<Props> = ({
       setCurrentPage(page);
     }
   };
+
+  const renderPages = useCallback(() => {
+    const pages = [];
+    if (currentPage > 3) {
+      pages.push(
+        <span key="start-dots" className="dots">
+          ...
+        </span>
+      );
+    }
+
+    // Show the two pages before the current page
+    for (let i = currentPage - 1; i <= currentPage + 1; i++) {
+      if (i >= 1 && i <= totalPage) {
+        pages.push(
+          <button
+            key={i}
+            className={`pagination__number ${
+              currentPage === i ? "active" : ""
+            }`}
+            onClick={() => handleClick(i)}
+          >
+            {i}
+          </button>
+        );
+      }
+    }
+
+    // Show dots if currentPage < totalPage - 2
+    if (currentPage < totalPage - 2) {
+      pages.push(
+        <span key="end-dots" className="dots">
+          ...
+        </span>
+      );
+    }
+    return pages;
+  }, [currentPage, totalPage, perPage]);
+
   return (
     <div className="pagination">
       <div className="panigation__number">
         <button
-          className="pagination__button"
+          className="pagination__button next"
+          disabled={currentPage === 1}
+          onClick={() => handleClick(1)}
+        >
+          {"<<"}
+        </button>
+        <button
+          className="pagination__button next"
           disabled={currentPage === 1}
           onClick={() => handleClick(currentPage - 1)}
         >
           {"<"}
         </button>
-        {[...Array(totalPage)].map((_, index) => {
-          const page = index + 1;
-          return (
-            <button
-              key={page}
-              className={`pagination__number ${
-                currentPage === page ? "active" : ""
-              }`}
-              onClick={() => handleClick(page)}
-            >
-              {page}
-            </button>
-          );
-        })}
+        {renderPages()}
         <button
-          className="pagination__button"
+          className="pagination__button next"
           disabled={currentPage === totalPage}
           onClick={() => handleClick(currentPage + 1)}
         >
           {">"}
         </button>
         <button
-          className="pagination__button"
+          className="pagination__button next"
           disabled={currentPage === totalPage}
           onClick={() => handleClick(totalPage)}
         >
@@ -73,7 +105,7 @@ const Panigation: FC<Props> = ({
             defaultValue={perPage}
             onChange={(e) => setPerPage(Number(e.target.value))}
           >
-            {[5, 10, 15, 20].map((item) => (
+            {[4, 8, 16, 32].map((item) => (
               <option key={item} value={item}>
                 {item}
               </option>
@@ -81,7 +113,8 @@ const Panigation: FC<Props> = ({
           </select>
         </div>
         <div className="panigation__total-item">
-          {currentPage} - {currentPage + perPage - 1} of {totalItem} items
+          {(currentPage - 1) * perPage + 1} -{" "}
+          {Math.min(currentPage * perPage, totalItem)} of {totalItem} items
         </div>
       </div>
     </div>

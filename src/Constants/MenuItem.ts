@@ -15,7 +15,7 @@ const MenuItem: MenuItemType[] = [
       },
       {
         name: "수강신청안내",
-        path: "/lecture/info",
+        path: "/lecture/register-info",
       },
       {
         name: "강의스케쥴",
@@ -29,9 +29,9 @@ const MenuItem: MenuItemType[] = [
   },
   {
     name: "커뮤니티",
-    path: "",
+    path: "board/notice",
     childrens: [
-      { name: "공지사항", path: "" },
+      { name: "공지사항", path: "board/notice" },
       { name: "수강후기", path: "" },
       { name: "갤러리", path: "" },
     ],

@@ -15,6 +15,7 @@
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    cursor: pointer;
 
     .card-image {
       height: 80%;
@@ -85,6 +86,10 @@
           line-height: 24px;
         }
 
+        .gray {
+          background-color: #727272;
+          color: white;
+        }
         .orange {
           background-color: #ff6600;
           color: white;
@@ -129,6 +134,13 @@
         p {
           font-size: 13px;
           color: #666;
+          @include respond-beetwen(xs) {
+            margin-top: 20px;
+          }
+          @include respond-beetwen(sm) {
+            font-size: 15px;
+            height: 30px;
+          }
         }
         .card-info-button {
           width: 100%;

@@ -1,4 +1,5 @@
 export interface ILecture {
+  id: string;
   title: string;
   registration_status: string;
   category: string;
@@ -8,4 +9,5 @@ export interface ILecture {
   time: string;
   details: string;
   image_url: string;
+  reviews: Array<any>;
 }

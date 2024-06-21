@@ -9,22 +9,12 @@ const ApiServices = axios.create({
   },
 });
 
-ApiServices.interceptors.request.use(
-  (config) => {
-    return config;
-  },
-  (error) => {
-    return console.log(error);
-  }
-);
+ApiServices.interceptors.request.use((config) => {
+  return config;
+});
 
-ApiServices.interceptors.response.use(
-  (response) => {
-    return response;
-  },
-  (error) => {
-    return console.log(error);
-  }
-);
+ApiServices.interceptors.response.use((response) => {
+  return response;
+});
 
 export default ApiServices;

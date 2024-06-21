@@ -1,16 +1,22 @@
-import React, { type FC } from "react";
-import "./LectureCard.scss";
-import { IoBagAddOutline } from "react-icons/io5";
-import { IoCheckmark } from "react-icons/io5";
+import { type FC } from "react";
+import { IoBagAddOutline, IoCheckmark } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 import { ILecture } from "../../../Constants/interface";
+import "./LectureCard.scss";
 
 type Props = {
   lecture: ILecture;
 };
 
 const LectureCard: FC<Props> = ({ lecture }) => {
+  const navigation = useNavigate();
+
+  const handleLectureDetail = () => {
+    navigation(`/lecture/find?id=${lecture.id}`);
+  };
+
   return (
-    <div className="card">
+    <div className="card" onClick={handleLectureDetail}>
       <div className="card-content">
         <div className="card-image">
           <img src={lecture.image_url} alt="Image" />
@@ -18,8 +24,14 @@ const LectureCard: FC<Props> = ({ lecture }) => {
 
         <div className="card-info-content">
           <div className="status-wrapper">
-            <span className="status orange">접수중</span>
-            <span className="status black">성인강좌</span>
+            {lecture.registration_status === "접수중" ? (
+              <span className="status orange">
+                {lecture.registration_status}
+              </span>
+            ) : (
+              <span className="status gray">{lecture.registration_status}</span>
+            )}
+            <span className="status black">{lecture.category}</span>
           </div>
 
           <div className="text-content">

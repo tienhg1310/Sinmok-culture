@@ -1,1 +1,172 @@
 @import "../../../Assets/styles/variables";
+@import "../../../Assets//styles/index.scss";
+
+footer {
+  padding: 50px 0;
+  margin-top: 120px;
+  background-color: #303030;
+
+  .footer__container {
+    max-width: 1240px;
+
+    @include respond-beetwen(xs) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+    }
+    @include respond-beetwen(sm) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+    }
+    @include respond-beetwen(md) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 20px;
+    }
+    @include respond-beetwen(lg) {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+    @include respond-beetwen(xl) {
+      display: flex;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    .footer__text {
+      .text__title {
+        color: white;
+        font-size: 14px;
+        font-weight: 800px;
+        margin-bottom: 40px;
+      }
+      .text__desc {
+        font-size: 13px;
+        color: #c2c2c1;
+      }
+    }
+    .footer__action {
+      @include respond-beetwen(xs) {
+        margin-top: 20px;
+      }
+      @include respond-beetwen(sm) {
+        margin-top: 20px;
+      }
+      @include respond-beetwen(md) {
+        margin-top: 20px;
+      }
+      .action_dropdown {
+        position: relative;
+        display: inline-block;
+        min-width: 200px;
+
+        @include respond-beetwen(lg) {
+          flex-grow: 0.5;
+        }
+        @include respond-beetwen(xl) {
+          flex-grow: 0.5;
+        }
+
+        .dropdown-image {
+          @include respond-beetwen(xs) {
+            display: none;
+          }
+          @include respond-beetwen(sm) {
+            display: none;
+          }
+          @include respond-beetwen(md) {
+            display: none;
+          }
+          @include respond-beetwen(lg) {
+            display: none;
+          }
+          @include respond-beetwen(xl) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+          }
+        }
+
+        .dropdown-button {
+          padding: 15px 10px;
+          border: none;
+          text-align: left;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          background-color: rgb(75, 75, 75);
+          color: white;
+
+          p {
+            font-weight: 900;
+            flex-grow: 1;
+            position: relative;
+
+            @include respond-beetwen(xs) {
+              text-align: center;
+            }
+            @include respond-beetwen(sm) {
+              text-align: center;
+            }
+            @include respond-beetwen(md) {
+              text-align: center;
+            }
+            @include respond-beetwen(lg) {
+              text-align: left;
+            }
+            @include respond-beetwen(xl) {
+              text-align: left;
+              padding-right: 40px;
+            }
+          }
+
+          .arrow {
+            float: right;
+            transition: ease-in-out 0.3s;
+          }
+          .arrow.down {
+            transform: rotate(-180deg);
+          }
+        }
+        .dropdown-menu {
+          display: block;
+          position: absolute;
+          top: -94px;
+          left: 0;
+          right: 0;
+          background-color: #f9f9f9;
+          width: 100%;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+          transition: ease-in-out 0.3s;
+          max-height: 300px;
+          overflow: scroll;
+          border: 1px solid #a2a2a2;
+
+          li {
+            padding: 0 10px;
+            cursor: pointer;
+            list-style: none;
+            line-height: 46px;
+            text-align: center;
+            background-color: white;
+            color: #0453ad;
+            text-align: left;
+          }
+          li:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
