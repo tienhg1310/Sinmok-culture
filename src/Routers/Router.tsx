@@ -48,7 +48,7 @@ function Router() {
             <Route
               key={item.path}
               path={item.path}
-              element={item.component()}
+              element={<item.component />}
             />
           );
         })}
