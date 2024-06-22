@@ -3,7 +3,7 @@
 /* Dropdown.css */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: block;
 
   @include respond-beetwen(lg) {
     flex-grow: 0.5;
@@ -114,7 +114,6 @@
     transition: ease-in-out 0.3s;
     max-height: 300px;
     overflow: scroll;
-
     li {
       padding: 0 10px;
       cursor: pointer;

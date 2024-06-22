@@ -35,7 +35,7 @@ const SelectInput: FC<Props> = ({
     <div className="dropdown">
       <button className="dropdown-button" onClick={toggleDropdown}>
         <img src={icon} alt="" className="dropdown-image" />
-        <p>{selectedOption}</p>
+        <p>{selectedOption || "모두 선택"}</p>
         <span
           className={`arrow ${selectedDropdown === dropdownId ? "up" : "down"}`}
         >
