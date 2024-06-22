@@ -1,0 +1,307 @@
+@import "../../../Assets/styles/index.scss";
+
+.registerInfoBenefit__container {
+  width: 100%;
+  margin-bottom: 30px;
+  .registerInfo__benefit-text {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    @include respond-beetwen(lg) {
+      flex-wrap: unset;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    @include respond-beetwen(xl) {
+      flex-wrap: unset;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .benefit-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      @include respond-beetwen(lg) {
+        font-size: 25px;
+      }
+      @include respond-beetwen(xl) {
+        font-size: 25px;
+      }
+    }
+    .benefit-desc {
+      width: 100%;
+      color: #656565;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @include respond-beetwen(lg) {
+        width: unset;
+        font-size: 16px;
+      }
+      @include respond-beetwen(xl) {
+        width: unset;
+        font-size: 16px;
+      }
+
+      .icon {
+        width: 30px;
+      }
+    }
+  }
+  .regiterInfo__benefit-area {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 50px 0;
+    .border {
+      border-right: 1px solid #ddd;
+    }
+    @include respond-beetwen(xs) {
+      padding: 19px;
+      flex-direction: column;
+      .border {
+        border-right: unset;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    @include respond-beetwen(sm) {
+      padding: 19px;
+      flex-direction: column;
+      .border {
+        border-right: unset;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+    @include respond-beetwen(md) {
+      padding: 19px;
+      .border {
+        border-right: 1px solid #ddd;
+      }
+    }
+
+    .benefit-discount {
+      min-height: 115px;
+      width: 50%;
+      padding-left: 20%;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      @include respond-beetwen(xs) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+        .border {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+      @include respond-beetwen(sm) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+        .border {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+      @include respond-beetwen(md) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+        .border {
+          border-bottom: 1px solid #ddd;
+        }
+      }
+
+      .discount-image {
+        position: absolute;
+        left: 15%;
+        top: 0;
+        bottom: 0;
+        min-height: 120px;
+
+        @include respond-beetwen(xs) {
+          position: unset;
+        }
+        @include respond-beetwen(sm) {
+          position: unset;
+        }
+        @include respond-beetwen(md) {
+          position: unset;
+        }
+      }
+      .discount-text {
+        @include respond-beetwen(xs) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        @include respond-beetwen(sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        @include respond-beetwen(md) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        .title {
+          color: #0461ca;
+          font-size: 22px;
+          font-weight: 700;
+          @include respond-beetwen(xs) {
+            font-size: 18px;
+            text-align: center;
+          }
+          @include respond-beetwen(sm) {
+            font-size: 18px;
+            text-align: center;
+          }
+          @include respond-beetwen(md) {
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+        .desc {
+          font-size: 15px;
+          color: #656565;
+          font-weight: 500;
+          @include respond-beetwen(xs) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          @include respond-beetwen(sm) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          @include respond-beetwen(md) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+        p {
+          width: 65%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .benefit-price {
+      min-height: 115px;
+      width: 50%;
+      padding-left: 20%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      @include respond-beetwen(xs) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+      }
+      @include respond-beetwen(sm) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+      }
+      @include respond-beetwen(md) {
+        width: 100%;
+        padding-left: unset;
+        padding: 40px 0;
+        position: unset;
+        flex-direction: column;
+      }
+      .price-image {
+        position: absolute;
+        left: 15%;
+        bottom: 0;
+        min-height: 120px;
+        @include respond-beetwen(xs) {
+          position: unset;
+        }
+        @include respond-beetwen(sm) {
+          position: unset;
+        }
+        @include respond-beetwen(md) {
+          position: unset;
+        }
+      }
+      .price-text {
+        @include respond-beetwen(xs) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        @include respond-beetwen(sm) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        @include respond-beetwen(md) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 20px;
+        }
+        .title {
+          color: #0461ca;
+          font-size: 22px;
+          font-weight: 700;
+          @include respond-beetwen(xs) {
+            font-size: 18px;
+            text-align: center;
+          }
+          @include respond-beetwen(sm) {
+            font-size: 18px;
+            text-align: center;
+          }
+          @include respond-beetwen(md) {
+            font-size: 18px;
+            text-align: center;
+          }
+        }
+        .desc {
+          font-size: 15px;
+          color: #656565;
+          font-weight: 500;
+          @include respond-beetwen(xs) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          @include respond-beetwen(sm) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+          @include respond-beetwen(md) {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+          }
+        }
+        p {
+          width: 65%;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

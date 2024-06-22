@@ -62,7 +62,7 @@ const LectureSearch = () => {
   return (
     <Layout>
       {!lectureId && (
-        <div className="body_container">
+        <>
           <div className="section_search">
             <SelectInput
               dropdownId="1"
@@ -122,7 +122,7 @@ const LectureSearch = () => {
           ) : (
             <DataError message={error} />
           )}
-        </div>
+        </>
       )}
       {lectureId && <LectureInfo lectureId={lectureId} />}
     </Layout>

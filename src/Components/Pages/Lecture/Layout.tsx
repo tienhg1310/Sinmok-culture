@@ -30,7 +30,9 @@ const Layout: FC<Props> = ({ children }) => {
         childrens={childrens}
         childrenActive={childrenActive}
       />
-      {children}
+      <div className="body__container">
+        {children}
+      </div>
     </div>
   );
 };
