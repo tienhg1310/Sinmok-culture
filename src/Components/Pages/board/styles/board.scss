@@ -239,17 +239,17 @@
 .section_navigation-item {
  
     @include respond-beetwen(xs) {
-        width: 95%;
+        width: 98%;
     }
     @include respond-beetwen(sm) {
-        width: 95%;
+        width: 98%;
         #section_navigation-item-2{
-            margin-left: 10px !important;
+            margin-left: 5px !important;
         }
     }
     @include respond-beetwen(md) {
-        width: 95%!important;
-        margin-left: 20px !important;
+        width: 98%!important;
+        margin-left: 3px !important;
     }
     @include respond-beetwen(lg) {
         width: 330px!important;

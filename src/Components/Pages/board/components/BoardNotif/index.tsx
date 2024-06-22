@@ -212,7 +212,6 @@ export default function BoardNotifi() {
                 ...styleColumns,
                 hide: true,
             },
-
         ]
     }, []);
 
