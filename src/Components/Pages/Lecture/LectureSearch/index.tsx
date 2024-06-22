@@ -13,6 +13,7 @@ import Panigation from "../../../Common/Panigation/Panigation";
 import { useParams, useSearchParams } from "react-router-dom";
 import LectureInfo from "../../../Lecture/LectureInfo/LectureInfo";
 import DataError from "../../../Common/DataError/DataError";
+import Loading from "../../../Common/Loading/Loading";
 
 const LectureSearch = () => {
   const options1 = [
@@ -105,19 +106,21 @@ const LectureSearch = () => {
             <>
               <div style={{ width: "100%" }}>
                 {!loading ? (
-                  <LectureList lectureList={lectureList} />
+                  <>
+                    <LectureList lectureList={lectureList} />{" "}
+                    <Panigation
+                      totalPage={+totalPage}
+                      page={page}
+                      setPage={setPage}
+                      perPage={perPage}
+                      setPerPage={handleChangePerPage}
+                      totalItem={totalItem}
+                    />
+                  </>
                 ) : (
-                  <div>loading</div>
+                  <Loading />
                 )}
               </div>
-              <Panigation
-                totalPage={+totalPage}
-                page={page}
-                setPage={setPage}
-                perPage={perPage}
-                setPerPage={handleChangePerPage}
-                totalItem={totalItem}
-              />
             </>
           ) : (
             <DataError message={error} />

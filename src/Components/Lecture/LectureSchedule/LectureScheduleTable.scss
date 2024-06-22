@@ -1,14 +1,18 @@
+@import "../../../Assets/styles/index.scss";
+
 .categories-table {
   overflow: scroll;
   border-top: 3px solid #226fba;
+  @include respond-beetwen(xl) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
   table {
     width: 100%;
     min-width: 691px;
     border-collapse: collapse;
     border: 1px solid #ddd;
-  }
-  thead {
-    
   }
 
   th {

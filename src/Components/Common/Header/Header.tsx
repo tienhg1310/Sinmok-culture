@@ -6,6 +6,7 @@ import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 import "./header.scss";
 import MenuDecoGif from "../../../Assets/images/menu_deco.gif";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
 //code here
 const Header: React.FC = () => {
@@ -46,6 +47,10 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <div>회원가입</div>
+              </li>
+              <li className="cart">
+                <HiOutlineShoppingBag size={30} />
+                <p>2</p>
               </li>
             </ul>
             <div className="etc-btn">

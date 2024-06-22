@@ -63,6 +63,9 @@
       @include respond-beetwen(md) {
         display: none;
       }
+      @include respond-beetwen(lg) {
+        max-width: 520px;
+      }
     }
 
     .header-action {
@@ -95,7 +98,26 @@
             font-size: 12px;
           }
           .login {
+            padding: 5px 0;
             border-bottom: 1px solid #e0dfdf;
+          }
+        }
+        .cart {
+          border-right: none;
+          position: relative;
+          p {
+            position: absolute;
+            z-index: 9999;
+            right: 10px;
+            bottom: 0;
+            font-size: 11px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 16px;
           }
         }
       }
