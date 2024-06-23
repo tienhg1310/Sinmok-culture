@@ -4,6 +4,7 @@ import Table from '../Table'
 import '../BoardNotif/boardNotifi.scss'
 import Panigation from '../../../../Common/Panigation/Panigation';
 import IconDowLoad from "../../../../../Assets/images/downfile.png";
+import Search from '../Search';
 export default function BoardNotifi() {
     const columnData = [
         {
@@ -215,8 +216,18 @@ export default function BoardNotifi() {
         ]
     }, []);
 
+    const options = ["전체"];
+
     return (
         <Board>
+            <Search
+                options={options}
+                title="전체 15건"
+                selectedOption="전체"
+                selectedDropdown="전체"
+                setSelectedOption={() => { }}
+                setSelectedDropdown={() => { }}
+            />
             <Table
                 columnDefs={columnDefs}
                 data={columnData}
