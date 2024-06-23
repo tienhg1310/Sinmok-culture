@@ -1,7 +1,7 @@
 @import "../../../Assets/styles/index.scss";
 
 .categories-table {
-  overflow: scroll;
+  overflow-x: scroll;
   border-top: 3px solid #226fba;
   @include respond-beetwen(xl) {
     &::-webkit-scrollbar {
