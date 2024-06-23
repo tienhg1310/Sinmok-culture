@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Navigation, Pagination, SwiperOptions, Scrollbar, A11y, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';

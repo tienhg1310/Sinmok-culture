@@ -1,22 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import SectionHeader from '../../Common/SectionHeader/SectionHeader'
-import { useLocation } from 'react-router';
-import { useFindItemWithPath } from '../../../Modules/hooks/useFindItemWithPath';
 import "./styles/board.scss"
 import SectionNavigation from '../../Common/SectionNavigation/SectionNavigation';
-import SelectInput from '../../Lecture/LectureSearch/SelectInput';
-import Slider from '../../Common/Slider';
 import useBoard from './hooks/useBoard';
 
 
 type Props = {
     children: React.ReactNode;
-    slider?: React.ReactNode
 };
 const Board: React.FC<Props> = (props) => {
     const {
         children,
-        slider,
     } = props || {};
 
     const {

@@ -1,18 +1,13 @@
-import React, { useCallback } from 'react'
+import React from 'react'
 import Board from '../..'
 import Slider from '../../../../Common/Slider'
-
-
-import { SwiperSlide } from 'swiper/react';
 import '../BoardCourse/BoardCourse.scss';
-import IconRate from '../../../../../Assets/images/icons/IconRate';
 import IconCheck from '../../../../../Assets/images/icons/IconCheck';
-import { SwiperOptions } from 'swiper';
 import Search from '../Search';
 import SliderBoardCourse from './components/SliderBoardCourse';
 import ListBoardCourse from './components/ListBoardCourse';
 import Panigation from '../../../../Common/Panigation/Panigation';
-// IconRate
+
 export default function BoardCourse() {
 
     return (
@@ -32,7 +27,7 @@ export default function BoardCourse() {
                     >
                         {SliderBoardCourse()}
                         <button className='swipper_btn'>
-                            <a href="">
+                            <a href="/2">
                                 나의 수강후기 작성
                                 <span>
                                     <IconCheck />

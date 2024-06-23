@@ -114,8 +114,9 @@
     top: 180px !important;
     color: #fff;
 
-    ::after {
-        font-size: 20px !important;
+    &::after {
+        font-size: 25px !important;
+        font-weight: 700;
     }
 }
 
@@ -127,8 +128,9 @@
     top: 180px !important;
     color: #fff;
 
-    ::after {
-        font-size: 20px !important;
+    &::after {
+        font-size: 25px !important;
+        font-weight: 700;
     }
 }
 

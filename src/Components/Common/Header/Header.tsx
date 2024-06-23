@@ -49,7 +49,7 @@ const Header: React.FC = () => {
               </li>
             </ul>
             <div className="etc-btn">
-              <img src={sitemapBtn} className="btn-menu" onClick={toggleMenu} />
+              <img src={sitemapBtn} className="btn-menu" onClick={toggleMenu} alt="sitemap" />
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
       </div>
       {isShowSubMenu && (
         <div className="header-space">
-          <img src={MenuDecoGif} className="header-img" />
+          <img src={MenuDecoGif} className="header-img" alt="menu deco" />
         </div>
       )}
     </>

@@ -15,6 +15,7 @@ export const useFindItemWithPath = (route: any) => {
         };
       }
     }
+    return null;
   }).filter(Boolean)[0];
 
   const childrens = MenuItem.find(

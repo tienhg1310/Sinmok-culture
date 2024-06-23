@@ -17,11 +17,8 @@ const Table = (options: Options) => {
         data,
         columnDefs,
         rowHeight,
-        headerHeight,
         className,
-        style,
         headerStyle,
-        cellStyle
     } = options || {};
 
     return (

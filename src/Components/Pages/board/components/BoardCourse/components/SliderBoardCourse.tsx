@@ -137,8 +137,8 @@ export default function SliderBoardCourse() {
                         </div>
                     </div>
                     <div className='swipper_content_2'>
-                        <a href="#" className='swipper_title'>{item?.title}</a>
-                        <a href="#" className='swipper_subContent'>{item?.subContent}</a>
+                        <a href="/1" className='swipper_title'>{item?.title}</a>
+                        <a href="/2" className='swipper_subContent'>{item?.subContent}</a>
                         <div className='swipper_titleContent'>
                             <span className='swipper_child_content'>{item?.titleContent}</span>
                             <span >{item?.date}</span>

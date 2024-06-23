@@ -177,7 +177,7 @@ export default function BoardNotifi() {
                 align: 'center',
                 cellStyle: 'cell-dowload',
                 renderCell: (params: any) => {
-                    const { column, row, id } = params || {};
+                    const { row } = params || {};
                     return (
                         row?.isDowload === true && <button className='btn-dowload'>
                             <img src={IconDowLoad} alt="icon dowload" />

@@ -1,6 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoIosSearch } from "react-icons/io";
-import lectureService from "../../../../Modules/API/Lecture.service";
 import LectureList from "../../../Lecture/LectureSearch/LectureList";
 import SelectInput from "../../../Lecture/LectureSearch/SelectInput";
 import Layout from "../Layout";

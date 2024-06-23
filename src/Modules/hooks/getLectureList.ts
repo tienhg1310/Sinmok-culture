@@ -39,7 +39,7 @@ const useGetLectureList = () => {
       }
     };
     fetchData();
-  }, [page, perPage]);
+  }, [page, perPage, setTotalPage, setTotalItem]);
   return {
     lectureList,
     loading,

@@ -1,6 +1,6 @@
-import { useState, type FC } from "react";
+import { type FC } from "react";
 import "./Panigation.scss";
-import pages from "../../../Routers/pages";
+// import pages from "../../../Routers/pages";
 
 type Props = {
   page: number;
@@ -39,9 +39,8 @@ const Panigation: FC<Props> = ({
           return (
             <button
               key={page}
-              className={`pagination__number ${
-                currentPage === page ? "active" : ""
-              }`}
+              className={`pagination__number ${currentPage === page ? "active" : ""
+                }`}
               onClick={() => handleClick(page)}
             >
               {page}
