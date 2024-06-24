@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { A11y, Navigation, Pagination } from "swiper/modules";
+import SwiperCore, { A11y, Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ILecture } from "../../Constants/interface";
 import LectureCard from "../Lecture/LectureSearch/LectureCard";

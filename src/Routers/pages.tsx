@@ -4,7 +4,7 @@ const PageErr = () => import("../Components/Pages/404/PageErr");
 const Home = () => import("../Components/Pages/Home");
 const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
 const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
-const LectureInfo = () => import("../Components/Pages/Lecture/LectureInfo");
+
 const InformationCredit = () => import("../Components/Pages/Information/InformationCredit")
 const InformationQA = () => import("../Components/Pages/Information/Q&A");
 const InformationMap = () => import("../Components/Pages/Information/InformationMap");
