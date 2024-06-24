@@ -1,0 +1,66 @@
+@import "../../../../Assets/styles/index.scss";
+
+.lectureShedule_categories {
+  width: 100%;
+
+  .categories-md {
+    width: 100%;
+    margin-bottom: 25px;
+    @include respond-beetwen(md) {
+      width: 40%;
+    }
+    @include respond-beetwen(lg) {
+      display: none;
+    }
+    @include respond-beetwen(xl) {
+      display: none;
+    }
+  }
+
+  .categories-lg {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    @include respond-beetwen(xs) {
+      display: none;
+    }
+    @include respond-beetwen(sm) {
+      display: none;
+    }
+    @include respond-beetwen(md) {
+      display: none;
+    }
+    .category {
+      padding: 20px 0;
+      border: 1px solid #ddd;
+      width: 130px;
+      // height: 90px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      transition: ease-in-out 0.3s;
+      .category-image {
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      .category-text {
+        color: #333;
+        font-size: 15px;
+        transition: ease-in-out 0.3s;
+      }
+
+      &:hover {
+        background: #4687d9;
+        box-shadow: 3px 3px 6px #c3c3c3;
+        border: 1px solid #4687d9;
+        .category-text {
+          color: white;
+        }
+      }
+    }
+  }
+}

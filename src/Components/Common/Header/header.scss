@@ -63,6 +63,9 @@
       @include respond-beetwen(md) {
         display: none;
       }
+      @include respond-beetwen(lg) {
+        max-width: 520px;
+      }
     }
 
     .header-action {
@@ -95,7 +98,26 @@
             font-size: 12px;
           }
           .login {
+            padding: 5px 0;
             border-bottom: 1px solid #e0dfdf;
+          }
+        }
+        .cart {
+          border-right: none;
+          position: relative;
+          p {
+            position: absolute;
+            z-index: 9999;
+            right: 10px;
+            bottom: 0;
+            font-size: 11px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 16px;
           }
         }
       }
@@ -165,10 +187,22 @@
   position: fixed;
   z-index: 99;
   background: white;
-  height: 300px;
+  height: 230px;
   width: 100vw;
   padding: 0px 50px;
   background-position-x: 5vw;
   background-position-y: center;
   border-bottom: 1px solid #e0dfdf;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

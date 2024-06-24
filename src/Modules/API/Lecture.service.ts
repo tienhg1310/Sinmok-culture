@@ -5,9 +5,12 @@ class LectureService {
     const response = await ApiServices("Lectures", { params, headers });
     return response;
   }
+  public async getLecture(id: string) {
+    const response = await ApiServices(`Lectures/${id}`);
+    return response.data;
+  }
 }
 
 const lectureService = new LectureService();
-
 
 export default lectureService;

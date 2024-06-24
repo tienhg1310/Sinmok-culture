@@ -1,16 +1,17 @@
 import { FC } from "react";
 import LectureCard from "./LectureCard";
 import "./LectureList.scss";
+import { ILecture } from "../../../Constants/interface";
 
 type Props = {
-  lectureList: any;
+  lectureList: ILecture[];
 };
 
 const LectureList: FC<Props> = ({ lectureList }) => {
   return (
     <div className="lecture-list-container">
-      {lectureList.map((lecture: any) => (
-        <LectureCard key={lecture.title} lecture={lecture}/>
+      {lectureList.map((lecture: ILecture) => (
+        <LectureCard key={lecture.title} lecture={lecture} />
       ))}
     </div>
   );

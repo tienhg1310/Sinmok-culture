@@ -9,6 +9,9 @@ const InformationCredit = () => import("../Components/Pages/Information/Informat
 const InformationQA = () => import("../Components/Pages/Information/Q&A");
 const InformationMap = () => import("../Components/Pages/Information/InformationMap");
 const Information = () => import("../Components/Pages/Information/Information");
+const LectureRegisterInfo = () =>
+  import("../Components/Pages/Lecture/LectureRegisterInfo");
+
 const LectureSchedule = () =>
   import("../Components/Pages/Lecture/LectureShedule");
 
@@ -32,7 +35,7 @@ const pages = [
     path: RoutesString.Home,
     component: lazyLoad(Home),
   },
-  // lecture pages
+  /* lecture pages */
   {
     path: RoutesString.Lecture,
     component: lazyLoad(LectureSearch),
@@ -41,9 +44,10 @@ const pages = [
     path: RoutesString.LectureSearch,
     component: lazyLoad(LectureSearch),
   },
+
   {
-    path: RoutesString.LectureInfo,
-    component: lazyLoad(LectureInfo),
+    path: RoutesString.LectureRegisterInfo,
+    component: lazyLoad(LectureRegisterInfo),
   },
   {
     path: RoutesString.LectureSchedule,

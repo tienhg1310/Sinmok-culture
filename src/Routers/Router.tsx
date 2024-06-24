@@ -39,6 +39,7 @@ function Router() {
     }
   }, [pathname]);
 
+
   return (
     <>
       {RenderHeader(isHistoryCheck)}

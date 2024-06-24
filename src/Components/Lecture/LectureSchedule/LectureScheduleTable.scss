@@ -1,0 +1,40 @@
+@import "../../../Assets/styles/index.scss";
+
+.categories-table {
+  overflow-x: scroll;
+  border-top: 3px solid #226fba;
+  @include respond-beetwen(xl) {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  table {
+    width: 100%;
+    min-width: 691px;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+  }
+
+  th {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 27px 0;
+  }
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  td {
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .day {
+    background-color: #eee;
+    font-weight: bold;
+    text-align: center;
+  }
+}
