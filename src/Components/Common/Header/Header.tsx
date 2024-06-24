@@ -59,7 +59,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         {/* Modal etc */}
-        <div className={`${isShowMenu && "active"} menu-content`}>
+        <div className={`${isShowMenu && "active"} menu-content`} onClick={toggleMenu}>
           <div className={`wrap-menu`}>
             <MobileMenu toggleMenu={toggleMenu} />
           </div>

@@ -1,12 +1,13 @@
 import axios from "axios";
 
-const baseURL = "http://localhost:4000/";
+const baseURL = "http://192.168.1.132:4000/";
 
 const ApiServices = axios.create({
   baseURL,
   headers: {
     "Content-Type": "application/json",
   },
+  timeout: 5000
 });
 
 ApiServices.interceptors.request.use((config) => {

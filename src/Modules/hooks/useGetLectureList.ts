@@ -3,7 +3,7 @@ import lectureService from "../API/Lecture.service";
 import { usePanigation } from "./usePanigation";
 import type { ILecture } from "../../Constants/interface";
 
-const useGetLectureList = () => {
+const useGetLectureList = (getAll: boolean) => {
   const [lectureList, setLectureList] = useState<ILecture[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
@@ -22,10 +22,13 @@ const useGetLectureList = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const params = {
-          _page: page,
-          _per_page: perPage,
-        };
+        const params: any = {};
+        if (page) {
+          params["_page"] = page;
+        }
+        if (perPage && getAll) {
+          params["_perPage"] = perPage;
+        }
         const headers = {};
         const response = await lectureService.getLectures(params, headers);
         // setdata

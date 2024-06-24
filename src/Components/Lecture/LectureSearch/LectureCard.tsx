@@ -36,13 +36,11 @@ const LectureCard: FC<Props> = ({ lecture }) => {
 
           <div className="text-content">
             <h2>{lecture.title}</h2>
-            <p>
-              {lecture.semester} | {lecture.fee}
-              <br />
-              {lecture.date_range}
-              <br />
-              {lecture.time}
-            </p>
+            <div>
+              <p>{lecture.semester} | {lecture.fee}</p>
+              <p>{lecture.date_range}</p>
+              <p>{lecture.time}</p>
+            </div>
             <div className="card-info-button">
               <button>
                 <IoBagAddOutline className="icon" />

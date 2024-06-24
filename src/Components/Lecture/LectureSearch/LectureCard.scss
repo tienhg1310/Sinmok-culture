@@ -31,12 +31,19 @@
         object-fit: cover; /* Hình ảnh sẽ không bị vỡ */
         transition: ease-in-out 0.5s;
         @include respond-beetwen(xs) {
-          height: 100%;
-          width: auto;
+          width: auto; /* Hình ảnh sẽ fit theo chiều rộng của div */
+          height: 100%; /* Chiều cao tự động tính toán để giữ tỷ lệ */
         }
         @include respond-beetwen(sm) {
-          height: 100%;
-          width: auto;
+          width: auto; /* Hình ảnh sẽ fit theo chiều rộng của div */
+          height: 100%; /* Chiều cao tự động tính toán để giữ tỷ lệ */
+        }
+        @include respond-beetwen(md) {
+          width: auto; /* Hình ảnh sẽ fit theo chiều rộng của div */
+          height: 100%; /* Chiều cao tự động tính toán để giữ tỷ lệ */
+        }
+        @include respond-beetwen(lg) {
+          scale: 1.1;
         }
       }
     }
@@ -108,6 +115,7 @@
         h2 {
           margin: 10px 0px;
           @include respond-beetwen(xs) {
+            margin-top: 20px;
             font-size: 15px;
             line-height: 17px;
             height: 30px;
@@ -135,7 +143,7 @@
           font-size: 13px;
           color: #666;
           @include respond-beetwen(xs) {
-            margin-top: 20px;
+            
           }
           @include respond-beetwen(sm) {
             font-size: 15px;
@@ -263,35 +271,31 @@
       .card-image {
         @include respond-beetwen(xs) {
           img {
-            vertical-align: middle;
             transform: scale(1.3) translateY(-20px);
           }
         }
         @include respond-beetwen(sm) {
           img {
-            vertical-align: middle;
             transform: scale(1.3) translateY(-20px);
           }
         }
         @include respond-beetwen(md) {
           img {
-            vertical-align: middle;
             transform: scale(1.3) translateY(-20px);
           }
         }
         @include respond-beetwen(lg) {
-          & {
-            height: 50%;
-          }
+          // & {
+          //   height: 50%;
+          // }
           img {
-            vertical-align: middle;
             transform: scale(1.3) translateY(-20px);
           }
         }
         @include respond-beetwen(xl) {
-          & {
-            height: 50%;
-          }
+          // & {
+          //   height: 50%;
+          // }
           img {
             vertical-align: middle;
             transform: scale(1.3) translateY(-20px);

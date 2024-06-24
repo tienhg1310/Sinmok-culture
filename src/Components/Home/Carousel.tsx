@@ -1,6 +1,5 @@
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import "./Carousel.scss";
-import { MdArrowBackIos } from "react-icons/md";
 
 type Props = {
   images: string[];

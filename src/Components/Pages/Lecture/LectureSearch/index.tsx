@@ -56,7 +56,7 @@ const LectureSearch = () => {
     totalPage,
     totalItem,
     handleChangePerPage,
-  } = useGetLectureList();
+  } = useGetLectureList(false);
   const [searchParams] = useSearchParams();
   const lectureId = searchParams.get("id");
 
@@ -103,25 +103,23 @@ const LectureSearch = () => {
             </div>
           </div>
           {!error ? (
-            <>
-              <div style={{ width: "100%" }}>
-                {!loading ? (
-                  <>
-                    <LectureList lectureList={lectureList} />{" "}
-                    <Panigation
-                      totalPage={+totalPage}
-                      page={page}
-                      setPage={setPage}
-                      perPage={perPage}
-                      setPerPage={handleChangePerPage}
-                      totalItem={totalItem}
-                    />
-                  </>
-                ) : (
-                  <Loading />
-                )}
-              </div>
-            </>
+            <div style={{ width: "100%" }}>
+              {!loading ? (
+                <>
+                  <LectureList lectureList={lectureList} />{" "}
+                  <Panigation
+                    totalPage={+totalPage}
+                    page={page}
+                    setPage={setPage}
+                    perPage={perPage}
+                    setPerPage={handleChangePerPage}
+                    totalItem={totalItem}
+                  />
+                </>
+              ) : (
+                <Loading />
+              )}
+            </div>
           ) : (
             <DataError message={error} />
           )}
