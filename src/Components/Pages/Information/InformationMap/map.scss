@@ -1,0 +1,97 @@
+@import "../../../../Assets/styles/index.scss";
+
+.container {
+    width: 100%;
+    height: auto;
+
+    .map-text {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        a {
+            border: 1px solid #636566;
+            background-color: #ffff;
+            width: 180px;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #353535;
+            font-size: 15px;
+            margin-top: 10px;
+
+        }
+
+        .text_map_title {
+            strong {
+                font-size: 34px;
+                font-weight: 400;
+                line-height: 46px;
+            }
+
+            p {
+                font-size: 17px;
+                color: #656565;
+                margin-top: 20px;
+                font-weight: 400;
+                line-height: 1.5;
+                word-wrap: break-word;
+                word-break: keep-all;
+                margin-bottom: 10px;
+            }
+        }
+
+        @include respond-beetwen(xs) {
+            flex-direction: column;
+            align-items: start;
+            margin-left: 15px;
+            .text_map_title {
+                strong {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        
+        @include respond-beetwen(sm) {
+            flex-direction: column;
+            align-items: start;
+            margin-left: 15px;
+            .text_map_title {
+                strong {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        @include respond-beetwen(md) {
+            flex-direction: column;
+            align-items: start;
+            margin-left: 15px;
+            .text_map_title {
+                strong {
+                    font-size: 30px;
+                    line-height: 30px;
+                }
+
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
