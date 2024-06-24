@@ -8,7 +8,14 @@ export const RoutesString = {
   LectureSchedule: `/lecture/schedule`,
   LectureCustom: `/lecture/custom`,
 
+
+  //Information
+  InformationCredit: `/information/credit`,
+  InformationQA: '/board/qa',
+  Information: `/information`,
+  InformationMap: `/information/map`,
+
   // board pages
 
-  
+
 };

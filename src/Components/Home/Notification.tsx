@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
+import { A11y, Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import iconNoti from "../../Assets/images/icons/actions/icon_notice.jpg";
 import "./Notification.scss";
@@ -48,9 +48,9 @@ const Notification = (props: Props) => {
           autoplay={
             !isPause
               ? {
-                  delay: 5000,
-                  pauseOnMouseEnter: true,
-                }
+                delay: 5000,
+                pauseOnMouseEnter: true,
+              }
               : false
           }
         >

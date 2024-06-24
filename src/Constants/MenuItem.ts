@@ -38,12 +38,12 @@ const MenuItem: MenuItemType[] = [
   },
   {
     name: "이용안내",
-    path: "",
+    path: "/information/credit",
     childrens: [
-      { name: "신목신협 문화센터", path: "" },
-      { name: "Q&A", path: "" },
-      { name: "강사지원", path: "" },
-      { name: "오시는길", path: "" },
+      { name: "신목신협 문화센터", path: "/information/credit" },
+      { name: "Q&A", path: "/board/qa" },
+      { name: "강사지원", path: "/information" },
+      { name: "오시는길", path: "/information/map" },
     ],
   },
   {
