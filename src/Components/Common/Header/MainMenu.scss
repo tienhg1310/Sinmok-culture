@@ -26,10 +26,35 @@
     flex-grow: 1;
     position: relative;
     height: 100%;
+    .submenu {
+      display: none;
+      background-color: $white;
+      width: 100%;
+      padding: 20px 0;
+      position: absolute;
+      top: 81px;
+      height: 229px;
+      border-left: 1px solid #e0dfdf;
+      animation: fadeIn 0.3s ease-out forwards;
+
+      & > li {
+        width: 100%;
+        padding: 10px 10px;
+      }
+      & > li > a {
+        color: #444444;
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        &:hover {
+          color: #1d73d4;
+          text-decoration: underline;
+        }
+      }
+    }
     &:hover > a {
       color: #1d73d4;
     }
-
     & > a {
       color: #191919;
       display: block;
@@ -52,39 +77,11 @@
         transition: all 0.3s;
       }
     }
-
     &:hover > a::before {
       scale: 1;
     }
     &:hover .submenu {
       background-color: #f5f6f8;
-    }
-
-    .submenu {
-    
-      background-color: $white;
-      width: 100%;
-      padding: 20px 0;
-      position: absolute;
-      top: 81px;
-      height: 299px;
-      border-left: 1px solid #e0dfdf;
-
-      & > li {
-        width: 100%;
-        padding: 10px 10px;
-        margin: 15px 0px;
-      }
-      & > li > a {
-        color: #444444;
-        display: block;
-        font-size: 15px;
-        font-weight: 500;
-        &:hover {
-          color: #1d73d4;
-          text-decoration: underline;
-        }
-      }
     }
     &:last-child {
       .submenu {
@@ -92,4 +89,8 @@
       }
     }
   }
+  &:hover .menu-item .submenu {
+    display: block;
+  }
 }
+

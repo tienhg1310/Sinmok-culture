@@ -8,7 +8,7 @@ type Props = {
   setSelectedDropdown: (dropdownId: string) => void;
   options: string[];
   selectedOption: string; // Add index signature
-  setSelectedOption: (option: any) => void;
+  setSelectedOption: (option: string) => void;
   icon?: string;
 };
 
@@ -34,8 +34,8 @@ const SelectInput: FC<Props> = ({
   return (
     <div className="dropdown">
       <button className="dropdown-button" onClick={toggleDropdown}>
-        <img src={icon} alt="" className="dropdown-image"/>
-        <p>{selectedOption}</p>
+        <img src={icon} alt="" className="dropdown-image" />
+        <p>{selectedOption || "모두 선택"}</p>
         <span
           className={`arrow ${selectedDropdown === dropdownId ? "up" : "down"}`}
         >

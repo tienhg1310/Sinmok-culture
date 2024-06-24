@@ -236,7 +236,6 @@
           }
         }
         li::before {
-          position: absolute;
           overflow: hidden;
           content: "";
           display: block;
@@ -249,11 +248,13 @@
           border-radius: 50%;
           @include respond-beetwen(lg) {
             top: 16px;
+            left: 5px;
             width: 3px;
           }
           @include respond-beetwen(xl) {
             left: 4px;
             top: 16px;
+            left: 5px;
           }
         }
       }

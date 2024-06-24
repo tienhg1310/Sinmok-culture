@@ -1,29 +1,34 @@
 import { useEffect, useState } from "react";
 import lectureService from "../API/Lecture.service";
 import { usePanigation } from "./usePanigation";
+import type { ILecture } from "../../Constants/interface";
 
-const useGetLectureList = () => {
-  const [lectureList, setLectureList] = useState<any>([]);
+const useGetLectureList = (getAll: boolean) => {
+  const [lectureList, setLectureList] = useState<ILecture[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>("");
   const {
     page,
     setPage,
     perPage,
-    setPerPage,
     totalPage,
     setTotalPage,
     totalItem,
     setTotalItem,
+    handleChangePerPage,
   } = usePanigation();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const params = {
-          _page: page,
-          _per_page: perPage,
-        };
+        const params: any = {};
+        if (page) {
+          params["_page"] = page;
+        }
+        if (perPage && getAll) {
+          params["_perPage"] = perPage;
+        }
         const headers = {};
         const response = await lectureService.getLectures(params, headers);
         // setdata
@@ -32,8 +37,8 @@ const useGetLectureList = () => {
           setTotalPage(response.data.pages);
           setTotalItem(response.data.items);
         }
-      } catch (error) {
-        console.log(error);
+      } catch (error: any) {
+        setError(error.message);
       } finally {
         setLoading(false);
       }
@@ -43,12 +48,13 @@ const useGetLectureList = () => {
   return {
     lectureList,
     loading,
+    error,
     page,
     setPage,
     perPage,
-    setPerPage,
     totalPage,
     totalItem,
+    handleChangePerPage,
   };
 };
 
