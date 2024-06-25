@@ -1,6 +1,7 @@
 {
   "Lectures": [
     {
+      "id": "1",
       "title": "+8주 (월) 1:5 기구필라테스…(11:30~12:20)",
       "registration_status": "온라인 접수마감",
       "category": "성인강좌",
@@ -9,9 +10,12 @@
       "date_range": "2024.07.01~2024.08.19",
       "time": "11:30~12:20 (월)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
+      
     },
     {
+      "id": "2",
       "title": "+8주 (화) 근력UP 야쉬탕가 빈야사 (19:00~20:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -20,9 +24,11 @@
       "date_range": "2024.07.02~2024.08.20",
       "time": "19:00~20:50 (화)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "3",
       "title": "+8주 (수) 힐링요가…(20:00~20:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -31,9 +37,11 @@
       "date_range": "2024.07.03~2024.08.21",
       "time": "20:00~20:50 (수)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "4",
       "title": "+8주 (목) 기초 필라테스…(10:00~10:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -42,9 +50,11 @@
       "date_range": "2024.07.04~2024.08.22",
       "time": "10:00~10:50 (목)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "5",
       "title": "+8주 (금) 스피닝…(18:00~18:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -53,9 +63,11 @@
       "date_range": "2024.07.05~2024.08.23",
       "time": "18:00~18:50 (금)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "6",
       "title": "+8주 (월) 근력운동…(06:00~06:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -64,9 +76,11 @@
       "date_range": "2024.07.01~2024.08.19",
       "time": "06:00~06:50 (월)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "7",
       "title": "+8주 (화) 힐링 요가…(20:00~20:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -75,9 +89,11 @@
       "date_range": "2024.07.02~2024.08.20",
       "time": "20:00~20:50 (화)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "8",
       "title": "+8주 (목) 필라테스…(07:00~07:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -86,9 +102,11 @@
       "date_range": "2024.07.04~2024.08.22",
       "time": "07:00~07:50 (목)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "9",
       "title": "+8주 (금) 기구 필라테스…(12:00~12:50)",
       "registration_status": "온라인 접수마감",
       "category": "성인강좌",
@@ -97,9 +115,11 @@
       "date_range": "2024.07.05~2024.08.23",
       "time": "12:00~12:50 (금)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "10",
       "title": "+8주 (수) 요가…(18:00~18:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -108,9 +128,11 @@
       "date_range": "2024.07.03~2024.08.21",
       "time": "18:00~18:50 (수)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "11",
       "title": "+8주 (목) 플로우 필라테스…(19:00~19:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -119,9 +141,11 @@
       "date_range": "2024.07.04~2024.08.22",
       "time": "19:00~19:50 (목)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "12",
       "title": "+8주 (월) 고강도 인터벌 트레이닝…(17:00~17:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -130,9 +154,11 @@
       "date_range": "2024.07.01~2024.08.19",
       "time": "17:00~17:50 (월)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "13",
       "title": "+8주 (화) 아쉬탕가 요가…(18:00~18:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -141,9 +167,11 @@
       "date_range": "2024.07.02~2024.08.20",
       "time": "18:00~18:50 (화)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "14",
       "title": "+8주 (목) 근력운동…(20:00~20:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -152,9 +180,11 @@
       "date_range": "2024.07.04~2024.08.22",
       "time": "20:00~20:50 (목)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "15",
       "title": "+8주 (금) 기구 필라테스…(07:00~07:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -163,9 +193,11 @@
       "date_range": "2024.07.05~2024.08.23",
       "time": "07:00~07:50 (금)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "16",
       "title": "+8주 (월) 필라테스…(12:00~12:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -174,9 +206,11 @@
       "date_range": "2024.07.01~2024.08.19",
       "time": "12:00~12:50 (월)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "17",
       "title": "+8주 (수) 근력운동…(19:00~19:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -185,9 +219,11 @@
       "date_range": "2024.07.03~2024.08.21",
       "time": "19:00~19:50 (수)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "18",
       "title": "+8주 (금) 아침 요가…(06:00~06:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -196,9 +232,11 @@
       "date_range": "2024.07.05~2024.08.23",
       "time": "06:00~06:50 (금)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "19",
       "title": "+8주 (목) 기초 요가…(08:00~08:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -207,9 +245,11 @@
       "date_range": "2024.07.04~2024.08.22",
       "time": "08:00~08:50 (목)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     },
     {
+      "id": "20",
       "title": "+8주 (월) 기초 필라테스…(09:00~09:50)",
       "registration_status": "접수중",
       "category": "성인강좌",
@@ -218,7 +258,8 @@
       "date_range": "2024.07.01~2024.08.19",
       "time": "09:00~09:50 (월)",
       "details": "자세히보기",
-      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg"
+      "image_url": "https://www.sinmok-culture.co.kr/kr/images/common/noimg.jpg",
+      "reviews": []
     }
   ]
 }

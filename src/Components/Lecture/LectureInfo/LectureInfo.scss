@@ -1,0 +1,151 @@
+@import "../../../Assets/styles/index.scss";
+
+.lectureInfo__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  @include respond-beetwen(xs) {
+    width: 90%;
+  }
+  @include respond-beetwen(sm) {
+    width: 90%;
+  }
+  @include respond-beetwen(md) {
+    width: 90%;
+  }
+  @include respond-beetwen(lg) {
+    width: 95%;
+  }
+  @include respond-beetwen(xl) {
+    width: 100%;
+  }
+  .lectureInfo__header {
+    padding-bottom: 40px;
+    border-bottom: 3px solid #000;
+    width: 100%;
+    .header-tag {
+      display: flex;
+      gap: 5px;
+      .tag {
+        padding: 5px 10px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 600;
+      }
+      .orange {
+        background-color: #ff6600;
+        color: white;
+      }
+      .black {
+        background-color: #000;
+        color: white;
+      }
+    }
+    .header-name {
+      font-weight: 800;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      @include respond-beetwen(xs) {
+        font-size: 20px;
+      }
+      @include respond-beetwen(sm) {
+        font-size: 20px;
+      }
+      @include respond-beetwen(md) {
+        font-size: 27px;
+      }
+      @include respond-beetwen(lg) {
+        font-size: 45px;
+      }
+      @include respond-beetwen(xl) {
+        font-size: 45px;
+      }
+    }
+  }
+  .lectureInfo__information {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #999999;
+    @include respond-beetwen(xs) {
+      flex-direction: column;
+    }
+    @include respond-beetwen(sm) {
+      flex-direction: column;
+    }
+    @include respond-beetwen(md) {
+      flex-direction: column;
+    }
+  }
+  .lectureInfo__action {
+    width: 100%;
+    display: flex;
+    padding: 30px 10px;
+    justify-content: space-between;
+
+    & .back-button {
+      padding: 15px 35px;
+      background-color: transparent;
+      border: 1px solid #636566;
+      font-size: 18px;
+      font-weight: 600;
+
+      @include respond-beetwen(xs) {
+      width: 20%;
+      font-size: 14px;
+      padding: 15px 10px;
+      }
+      &:hover {
+        border: 1px solid #0a66ce;
+        background: linear-gradient(to right, #2f50f6, #0a66ce);
+        color: white;
+      }
+    }
+
+    .payment-button {
+      display: flex;
+      gap: 5px;
+      .button {
+        display: flex;
+        padding: 15px 35px;
+        background-color: #0a66ce;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+
+        @include respond-beetwen(xs) {
+          font-size: 14px;
+          padding: 15px 10px;
+        }
+        @include respond-beetwen(sm) {
+          font-size: 14px;
+          padding: 15px 10px;
+        }
+        @include respond-beetwen(md) {
+          font-size: 14px;
+          padding: 15px 10px;
+        }
+        
+        .icon {
+          @include respond-beetwen(xs) {
+            display: none;
+          }
+          @include respond-beetwen(sm) {
+            display: none;
+          }
+          @include respond-beetwen(md) {
+            display: none;
+          }
+          margin-left: 10px;
+        }
+        &:hover {
+          background: linear-gradient(to right, #2f50f6, #0a66ce);
+        }
+      }
+      .black {
+        background: #252628;
+      }
+    }
+  }
+}

@@ -4,9 +4,20 @@ export const RoutesString = {
   // lecture pages
   Lecture: `/lecture/find`,
   LectureSearch: `/lecture/find`,
-  LectureInfo: `/lecture/info`,
+  LectureRegisterInfo: `/lecture/register-info`,
   LectureSchedule: `/lecture/schedule`,
   LectureCustom: `/lecture/custom`,
+
+
+  //Information
+  InformationCredit: `/information/credit`,
+  InformationQA: '/board/qa',
+  Information: `/information`,
+  InformationMap: `/information/map`,
+
+  // board pages
+
+
   // board pages
   BoardNotifi: `/board/notifi`,
   BoardCourse: `/board/course`,

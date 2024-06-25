@@ -1,0 +1,232 @@
+@import "../../../../Assets/styles/index.scss";
+
+.info {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    padding: 70px;
+    margin-bottom: 70px;
+    background: url(../../../../Assets/images/info_0303_img01.png) #f1efef right no-repeat;
+    background-size: contain;
+
+    @include respond-beetwen(xs) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: none;
+        background: #f1efef;
+        padding: 40px;
+
+    }
+
+    @include respond-beetwen(sm) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-image: none;
+        background: #f1efef;
+        padding: 40px;
+
+    }
+
+    @include respond-beetwen(md) {
+      position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+    padding: 70px;
+    margin-bottom: 70px;
+    background: url(../../../../Assets/images/info_0303_img01.png) #f1efef right no-repeat;
+    background-size: contain;
+
+    }
+}
+
+.tit {
+    width: 50%;
+
+    strong {
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 1.3;
+        letter-spacing: -0.04em;
+    }
+
+    span {
+        color: #ce665a;
+    }
+
+    @include respond-beetwen(xs) {
+        width: auto;
+
+        strong {
+            font-size: 26px;
+        }
+    }
+
+    @include respond-beetwen(sm) {
+        width: auto;
+
+        strong {
+            font-size: 26px;
+        }
+    }
+
+    @include respond-beetwen(md) {
+        width: auto;
+
+        strong {
+            font-size: 26px;
+        }
+    }
+}
+
+
+.txt1 {
+
+    p {
+        font-size: 22px;
+        line-height: 1.5;
+        letter-spacing: -0.04em;
+        color: #0d0d0d;
+        margin-top: 20px;
+        width: 30%;
+    }
+
+    .btn.black:link,
+    .btn.black:visited,
+    .btn.black:active {
+        background: #252628;
+        border: 1px solid #252628;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .btn_1 {
+        width: auto;
+        margin-top: 44px;
+        vertical-align: middle;
+        width: 180px;
+        height: 50px;
+    }
+
+    .button_down {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #353535;
+        background: #ccc;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    .black {
+        background-color: #252628;
+        color: #fff;
+        border: 1px solid #252628;
+        //    padding-top: 15px;
+    }
+
+    .btn.blue:link,
+    .btn.blue:visited,
+    .btn.blue:active {
+        background: #0a66ce;
+        border: 1px solid #0a66ce;
+    }
+
+    .btn_1.blue {
+        background-color: #0a66ce;
+        color: #fff;
+        border: 1px solid #0a66ce;
+        margin-left: 10px;
+        // padding-top: 15px;
+    }
+
+    .button_small {
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 15px;
+        color: #353535;
+        background: #ccc;
+        text-align: center;
+        line-height: 15px;
+    }
+
+    @include respond-beetwen(xs) {
+        p {
+            font-size: 16px;
+            width: auto;
+        }
+
+        .btn_1 {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .btn_1.blue {
+            margin-left: 0px;
+        }
+    }
+
+    @include respond-beetwen(sm) {
+        p {
+            font-size: 16px;
+            width: auto;
+        }
+
+        .btn_1 {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .btn_1.blue {
+            margin-left: 0px;
+        }
+    }
+
+    @include respond-beetwen(md) {
+        p {
+            font-size: 16px;
+            width: auto;
+        }
+
+        .btn_1 {
+            margin-top: 15px;
+            width: 180px;
+        }
+
+        .btn_1.blue {
+            margin-left: 10px;
+        }
+    }
+}
+
+.text_1 {
+
+    width: auto !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    margin-top: 15px !important;
+}
+
+.bnt_icn3 {
+    background-position: -70px 0px;
+}
+
+.ico_ir1 {
+    background: url(../../../../Assets/images/bnt_icn.png) no-repeat;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+}
+
+.bnt_icn2 {
+    background-position: -34px -3px;
+    margin-left: 9px;
+}

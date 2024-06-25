@@ -1,0 +1,259 @@
+@import "../../../../Assets/styles/index.scss";
+
+.information-credit-header {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    position: relative;
+    margin-bottom: 120px;
+
+    &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -60px;
+        left: 43%;
+        width: 235px;
+        height: 230px;
+        background: url(../../../../Assets/images/credit_01.png) no-repeat;
+        z-index: -1;
+    }
+
+    .credit-img {
+        width: 50%;
+
+        @include respond-beetwen(xs) {
+            width: 100%;
+        }
+
+        @include respond-beetwen(sm) {
+            width: 100%;
+
+        }
+
+        @include respond-beetwen(md) {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .credit-text {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 70px;
+        align-items: start;
+
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 50px;
+            width: 165px;
+            height: 130px;
+            background: url(../../../../Assets/images/0301_bg_02.png) no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            bottom: 160px;
+            right: -100px;
+            width: 100px;
+            height: 90px;
+            background: url(../../../../Assets/images/0301_bg_03.png) no-repeat;
+            z-index: -1;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            margin-top: 50px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        @include respond-beetwen(xs) {
+            padding: 0;
+            margin: 40px auto 0 auto;
+
+            img {
+                width: 70%;
+                min-width: 300px;
+            }
+
+            &::after {
+                right: -15px;
+                bottom: 200px;
+            }
+
+            &::before {
+                bottom: -130px;
+                right: 0;
+            }
+        }
+
+        @include respond-beetwen(sm) {
+            padding: 0;
+            margin: 40px auto 0 auto;
+
+            img {
+                width: 70%;
+                min-width: 300px;
+            }
+
+            &::after {
+                right: -15px;
+                bottom: 200px;
+            }
+
+            &::before {
+                bottom: -130px;
+                right: 0;
+            }
+        }
+
+        @include respond-beetwen(md) {
+            padding: 0;
+            margin: 40px 0px 0 -10px;
+            width: 85%;
+
+            img {
+                width: 85%;
+                min-width: 300px;
+            }
+
+            &::after {
+                right: 10px;
+                bottom: 220px;
+            }
+
+            &::before {
+                bottom: -150px;
+                right: 25px;
+            }
+        }
+
+        @include respond-beetwen(lg) {
+            padding: 0;
+            margin: 0px 0px 40px 20px;
+            width: 85%;
+
+            img {
+                width: 80%;
+                min-width: 300px;
+            }
+
+            &::after {
+                right: 20px;
+                bottom: 160px;
+            }
+
+            &::before {
+                bottom: -100px;
+                right: 50px;
+            }
+        }
+
+
+        @include respond-beetwen(xl) {
+            display: flex;
+        flex-direction: column;
+        padding: 50px 70px;
+        align-items: start;
+
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            bottom: 0;
+            right: 50px;
+            width: 165px;
+            height: 130px;
+            background: url(../../../../Assets/images/0301_bg_02.png) no-repeat;
+            z-index: -1;
+        }
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: '';
+            bottom: 160px;
+            right: -100px;
+            width: 100px;
+            height: 90px;
+            background: url(../../../../Assets/images/0301_bg_03.png) no-repeat;
+            z-index: -1;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.4;
+            margin-top: 50px;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        }
+    }
+
+    @include respond-beetwen(xs) {
+        flex-direction: column;
+        margin-bottom: 180px;
+        align-items: center;
+        width: 90%;
+
+        &::after {
+            bottom: 130px;
+            left: -20px;
+        }
+    }
+
+    @include respond-beetwen(sm) {
+        flex-direction: column;
+        margin-bottom: 180px;
+        align-items: center;
+        width: 90%;
+
+        &::after {
+            bottom: 130px;
+            left: -20px;
+        }
+    }
+
+    @include respond-beetwen(md) {
+        flex-direction: column;
+        margin-bottom: 180px;
+        align-items: center;
+        width: 100%;
+
+        &::after {
+            bottom: 130px;
+            left: -20px;
+        }
+    }
+
+    @include respond-beetwen(lg) {
+        flex-direction: row;
+        width: 100%;
+        padding-left: 5px;
+
+        &::after {
+            bottom: -60px;
+            left: 25%;
+        }
+    }
+
+    @include respond-beetwen(xl) {
+        flex-direction: row;
+    }
+
+}

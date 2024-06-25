@@ -1,0 +1,47 @@
+@import "../../../Assets/styles/index.scss";
+
+.registerInfoListMem__container {
+  padding: 20px 0 40px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  .registerInfoListMem__icon {
+    padding-top: 20px;
+    @include respond-beetwen(xs) {
+      display: none;
+    }
+    @include respond-beetwen(sm) {
+      display: none;
+    }
+    @include respond-beetwen(md) {
+      display: none;
+    }
+  }
+  .registerInfoListMem__text {
+    .registerInfoListMem__title {
+      margin: 15px 0;
+      font-size: 20px;
+      @include respond-beetwen(lg) {
+        font-size: 25px;
+      }
+      @include respond-beetwen(xl) {
+        font-size: 25px;
+      }
+    }
+    .registerInfoListMem__list {
+      .registerInfoListMem__item {
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 14px;
+        font-weight: 400;
+        @include respond-beetwen(lg) {
+          font-size: 15px;
+        }
+        @include respond-beetwen(xl) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

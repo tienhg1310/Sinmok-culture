@@ -1,0 +1,89 @@
+@import "../../../Assets/styles/index.scss";
+
+.lectureCustom__text {
+  padding: 30px;
+  margin-bottom: 50px;
+  background: #f1efef;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  min-height: 193px;
+
+  @include respond-beetwen(md) {
+    padding: 50px;
+    margin-bottom: 70px;
+  }
+  @include respond-beetwen(lg) {
+    padding: 64px;
+    margin-bottom: 70px;
+  }
+  @include respond-beetwen(xl) {
+    padding: 64px;
+    margin-bottom: 70px;
+  }
+
+  .lectureCustom__title {
+    width: 75%;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    color: black;
+    @include respond-beetwen(md) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+    @include respond-beetwen(lg) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    @include respond-beetwen(xl) {
+      font-size: 45px;
+      line-height: 55px;
+    }
+
+    p {
+      p{
+        color: #ce665a;
+      }
+    }
+  }
+  .lectureCustom__description {
+    width: 75%;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    @include respond-beetwen(md) {
+      font-size: 17px;
+    }
+    @include respond-beetwen(lg) {
+      font-size: 17px;
+    }
+    @include respond-beetwen(xl) {
+      font-size: 17px;
+    }
+
+    p {
+      width: 90%;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+  }
+  .lectureCustom__image {
+    position: absolute;
+    width: 30%;
+    right: 10px;
+    bottom: 10px;
+
+    @include respond-beetwen(md) {
+      bottom: -5px;
+    }
+    @include respond-beetwen(lg) {
+      bottom: -5px;
+    }
+    @include respond-beetwen(xl) {
+      right: 50px;
+      bottom: -5px;
+    }
+  }
+}

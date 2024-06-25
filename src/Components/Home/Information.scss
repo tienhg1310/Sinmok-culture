@@ -1,0 +1,100 @@
+@import "../../Assets/styles/index.scss";
+
+.information__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 30px;
+
+  @include respond-beetwen(xs) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @include respond-beetwen(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-beetwen(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .information-item {
+    background: #ebf1f5;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    .information-img {
+      margin-top: 10px;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      img {
+        color: white;
+        width: 80%;
+        height: auto;
+        transition: 0.3s ease-in-out;
+      }
+    }
+    .information-text {
+      width: 100%;
+      margin-top: 10px;
+      .information-title {
+        text-align: center;
+        margin: 5px 0 10px;
+        font-size: 22px;
+        font-weight: 800;
+        transition: 0.3s ease-in-out;
+
+        @include respond-beetwen(xs) {
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        @include respond-beetwen(sm) {
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        @include respond-beetwen(md) {
+          font-size: 16px;
+          font-weight: 700;
+        }
+      }
+      .information-desc {
+        text-align: center;
+        color: #656565;
+        margin-bottom: 20px;
+        transition: 0.3s ease-in-out;
+
+        @include respond-beetwen(xs) {
+          display: none;
+        }
+
+        @include respond-beetwen(sm) {
+          display: none;
+        }
+
+        @include respond-beetwen(md) {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      background: #1d73d4;
+      .information-img {
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+      .information-text > .information-title,
+      .information-text > .information-desc {
+        color: white !important;
+      }
+    }
+  }
+}

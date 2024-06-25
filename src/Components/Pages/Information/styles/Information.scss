@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.btn-page {
+  display: inline-block;
+  padding: 0;
+  width: 85px;
+  height: 45px;
+  line-height: 43px;
+  text-align: center;
+  border-radius: 0;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0a66ce;
+  border: 1px solid #0a66ce;
+  ma
+  &:visited {
+    border: 1px solid #0a66ce;
+    background-color: #0a66ce;
+  }
+}
+
+.btn{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .btn{
+    justify-content: start !important;
+    margin-left: 50px;
+    
+  }
+}

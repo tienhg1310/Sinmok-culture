@@ -1,92 +1,72 @@
 @import "../../../../Assets/styles/index.scss";
 
-.body_container {
+.section_search {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  background: rgb(238, 238, 238);
+  width: 100%;
+  padding: 20px 30px;
+  margin-bottom: 30px;
+
   @include respond-beetwen(xs) {
-    width: 90%;
+    flex-direction: column;
   }
   @include respond-beetwen(sm) {
-    width: 90%;
+    flex-direction: column;
   }
   @include respond-beetwen(md) {
-    width: 90%;
+    flex-direction: column;
   }
   @include respond-beetwen(lg) {
-    width: 95%;
+    flex-direction: row;
+    gap: 4px;
   }
   @include respond-beetwen(xl) {
-    width: 100%;
+    flex-direction: row;
+    gap: 4px;
   }
-  .section_search {
-    display: flex;
-    justify-content: center;
-    background: rgb(238, 238, 238);
-    width: 100%;
-    padding: 20px 30px;
-    margin-bottom: 30px;
 
-    @include respond-beetwen(xs) {
-      flex-direction: column;
-    }
-    @include respond-beetwen(sm) {
-      flex-direction: column;
-    }
-    @include respond-beetwen(md) {
-      flex-direction: column;
-    }
+  .search_input {
+    position: relative;
+
     @include respond-beetwen(lg) {
-      flex-direction: row;
-      gap: 4px;
+      flex-grow: 1;
     }
     @include respond-beetwen(xl) {
-      flex-direction: row;
-      gap: 4px;
+      flex-grow: 1;
     }
+    input {
+      border: none;
+      width: 100%;
+      padding: 0 20px;
 
-    .search_input {
-      position: relative;
+      font-size: 14px;
 
+      @include respond-beetwen(xs) {
+        line-height: 57px;
+      }
+      @include respond-beetwen(sm) {
+        line-height: 57px;
+      }
+      @include respond-beetwen(md) {
+        line-height: 57px;
+      }
       @include respond-beetwen(lg) {
-        flex-grow: 1;
+        line-height: 53px;
       }
       @include respond-beetwen(xl) {
-        flex-grow: 1;
+        line-height: 53px;
       }
-      input {
-        border: none;
-        width: 100%;
-        padding: 0 20px;
-        
-        font-size: 14px;
+    }
 
-        @include respond-beetwen(xs) {
-          line-height: 57px;
-        }
-        @include respond-beetwen(sm) {
-          line-height: 57px;
-        }
-        @include respond-beetwen(md) {
-          line-height: 57px;
-        }
-        @include respond-beetwen(lg) {
-          line-height: 53px;
-        }
-        @include respond-beetwen(xl) {
-          line-height: 53px;
-        }
-      }
-
-      button {
-        position: absolute;
-        background: $white;
-        border: none;
-        padding-right: 10px;
-        right: 0px;
-        top: 0;
-        bottom: 0;
-      }
+    button {
+      position: absolute;
+      background: $white;
+      border: none;
+      padding-right: 10px;
+      right: 0px;
+      top: 0;
+      bottom: 0;
     }
   }
 }

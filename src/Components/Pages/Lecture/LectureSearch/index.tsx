@@ -7,8 +7,12 @@ import "./index.scss";
 import icon0 from "../../../../Assets/images/icons/select_icn0.png";
 import icon1 from "../../../../Assets/images/icons/select_icn01.png";
 import icon2 from "../../../../Assets/images/icons/select_icn02.png";
-import { useGetLectureList } from "../../../../Modules/hooks/getLectureList";
+import { useGetLectureList } from "../../../../Modules/hooks/useGetLectureList";
 import Panigation from "../../../Common/Panigation/Panigation";
+import { useParams, useSearchParams } from "react-router-dom";
+import LectureInfo from "../../../Lecture/LectureInfo/LectureInfo";
+import DataError from "../../../Common/DataError/DataError";
+import Loading from "../../../Common/Loading/Loading";
 
 const LectureSearch = () => {
   const options1 = [
@@ -44,73 +48,83 @@ const LectureSearch = () => {
   const {
     lectureList,
     loading,
+    error,
     page,
     setPage,
     perPage,
-    setPerPage,
     totalPage,
     totalItem,
-  } = useGetLectureList();
+    handleChangePerPage,
+  } = useGetLectureList(false);
+  const [searchParams] = useSearchParams();
+  const lectureId = searchParams.get("id");
 
-
-  console.log(page, perPage, totalPage, totalItem)
   return (
     <Layout>
-      <div className="body_container">
-        <div className="section_search">
-          <SelectInput
-            dropdownId="1"
-            selectedDropdown={selectedDropdown}
-            setSelectedDropdown={setSelectedDropdown}
-            options={options1}
-            selectedOption={selectedOption1}
-            setSelectedOption={setSelectedOption1}
-            icon={icon1}
-          />
-          <SelectInput
-            dropdownId="2"
-            selectedDropdown={selectedDropdown}
-            setSelectedDropdown={setSelectedDropdown}
-            options={options2}
-            selectedOption={selectedOption2}
-            setSelectedOption={setSelectedOption2}
-            icon={icon2}
-          />
-          <SelectInput
-            dropdownId="3"
-            selectedDropdown={selectedDropdown}
-            setSelectedDropdown={setSelectedDropdown}
-            options={options3}
-            selectedOption={selectedOption3}
-            setSelectedOption={setSelectedOption3}
-            icon={icon0}
-          />
-          <div className="search_input">
-            <input
-              type="text"
-              placeholder="검색어(강좌명/강사명)을 입력하세요."
+      {!lectureId && (
+        <>
+          <div className="section_search">
+            <SelectInput
+              dropdownId="1"
+              selectedDropdown={selectedDropdown}
+              setSelectedDropdown={setSelectedDropdown}
+              options={options1}
+              selectedOption={selectedOption1}
+              setSelectedOption={setSelectedOption1}
+              icon={icon1}
             />
-            <button>
-              <IoIosSearch size={28} />
-            </button>
+            <SelectInput
+              dropdownId="2"
+              selectedDropdown={selectedDropdown}
+              setSelectedDropdown={setSelectedDropdown}
+              options={options2}
+              selectedOption={selectedOption2}
+              setSelectedOption={setSelectedOption2}
+              icon={icon2}
+            />
+            <SelectInput
+              dropdownId="3"
+              selectedDropdown={selectedDropdown}
+              setSelectedDropdown={setSelectedDropdown}
+              options={options3}
+              selectedOption={selectedOption3}
+              setSelectedOption={setSelectedOption3}
+              icon={icon0}
+            />
+            <div className="search_input">
+              <input
+                type="text"
+                placeholder="검색어(강좌명/강사명)을 입력하세요."
+              />
+              <button>
+                <IoIosSearch size={28} />
+              </button>
+            </div>
           </div>
-        </div>
-        <div style={{ width: "100%" }}>
-          {!loading ? (
-            <LectureList lectureList={lectureList} />
+          {!error ? (
+            <div style={{ width: "100%" }}>
+              {!loading ? (
+                <>
+                  <LectureList lectureList={lectureList} />{" "}
+                  <Panigation
+                    totalPage={+totalPage}
+                    page={page}
+                    setPage={setPage}
+                    perPage={perPage}
+                    setPerPage={handleChangePerPage}
+                    totalItem={totalItem}
+                  />
+                </>
+              ) : (
+                <Loading />
+              )}
+            </div>
           ) : (
-            <div>loading</div>
+            <DataError message={error} />
           )}
-        </div>
-        <Panigation
-          totalPage={+totalPage}
-          page={page}
-          setPage={setPage}
-          perPage={perPage}
-          setPerPage={setPerPage}
-          totalItem={totalItem}
-        />
-      </div>
+        </>
+      )}
+      {lectureId && <LectureInfo lectureId={lectureId} />}
     </Layout>
   );
 };

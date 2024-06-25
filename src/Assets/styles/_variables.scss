@@ -75,3 +75,22 @@ $large: 1024px;
 $desktop: 1400px;
 $laptop: 1660px;
 ///////////////////// PAGE ////////////////////////////
+/// animation ///
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes blurIn {
+  from {
+    filter: opacity(0);
+  }
+  to {
+    filter: opacity(1);
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../Assets/styles/index.scss";
+
+.coureCarousel__container {
+  width: 100%;
+  margin: 80px 0 40px 0;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+  .courseCarousel__tittle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .tittle-text {
+      font-size: 32px;
+      font-weight: 800;
+    }
+    .tittle-action {
+      padding: 11.5px;
+      display: flex;
+      align-items: center;
+      border: 1px solid #888888;
+      color: #888888;
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .courseCarousel__main {
+    gap: 20px;
+
+    .courseCarousel-items {
+      display: flex;
+      gap: 10px;
+      transition: transform 0.5s ease;
+    }
+  }
+  .courseCarousel-button {
+    .button-prev,
+    .button-next {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      padding: 10px;
+      font-size: 20px;
+      line-height: 20px;
+      border-radius: 50%;
+      border: 1px solid #aaa;
+      background: white;
+      color: #494949;
+      @include respond-beetwen(xs) {
+        opacity: 0.5;
+        width: 40px;
+        height: 40px;
+        font-size: 17px;
+        line-height: 17px;
+      }
+      @include respond-beetwen(sm) {
+        opacity: 0.5;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+      @include respond-beetwen(md) {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+    .button-prev:disabled,
+    .button-next:disabled {
+      color: #d4d4d4;
+      border-color: #d4d4d4;
+    }
+    .button-prev {
+      top: calc(50% - 35px);
+      left: -20px;
+      z-index: 5;
+      @include respond-beetwen(lg) {
+        left: 0;
+      }
+      @include respond-beetwen(xl) {
+        left: -7.5%;
+      }
+    }
+    .button-next {
+      top: calc(50% - 35px);
+      right: -20px;
+      z-index: 5;
+      @include respond-beetwen(lg) {
+        right: 0
+      }
+      @include respond-beetwen(xl) {
+        right: -7.5%;
+      }
+    }
+  }
+}

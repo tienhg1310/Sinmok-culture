@@ -1,0 +1,204 @@
+@import "../../../../../../Assets//styles/index.scss";
+
+.board_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @include respond-beetwen(xs) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include respond-beetwen(sm) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include respond-beetwen(md) {
+        width: 97%;
+        justify-content: end;
+    }
+
+    @include respond-beetwen(lg) {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .board_content_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @include respond-beetwen(xs) {
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        @include respond-beetwen(sm) {
+            display: none;
+        }
+
+        @include respond-beetwen(md) {
+            display: none;
+        }
+
+        @include respond-beetwen(lg) {
+            display: block;
+            margin-left: 10px;
+        }
+    }
+
+    .board_content_options {
+        display: flex;
+
+        @include respond-beetwen(xs) {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+        }
+
+        @include respond-beetwen(sm) {
+            display: flex;
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center;
+            width: 100% !important;
+        }
+
+        @include respond-beetwen(md) {
+            display: flex;
+        }
+
+        .board_content_select {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 150px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-sizing: border-box;
+
+            .dropdown .dropdown-button p {
+                padding-left: 0 !important;
+            }
+
+            @include respond-beetwen(xs) {
+                width: 95% !important;
+                margin-left: 5px;
+                margin-bottom: 10px;
+
+                .dropdown {
+                    width: 100% !important;
+                }
+
+                .dropdown .dropdown-button {
+                    background-color: #fff;
+                    color: #313131;
+                    border-bottom: none;
+                }
+            }
+
+            @include respond-beetwen(sm) {
+                width: 95% !important;
+                margin-left: 5px;
+                margin-bottom: 10px;
+
+                .dropdown {
+                    width: 100% !important;
+                }
+
+                .dropdown .dropdown-button {
+                    background-color: #fff;
+                    color: #313131;
+                    border-bottom: none;
+                }
+            }
+
+            @include respond-beetwen(md) {
+                width: 150px;
+
+                .dropdown {
+                    width: 100% !important;
+                }
+
+                .dropdown .dropdown-button {
+                    background-color: #fff;
+                    color: #313131;
+                    border-bottom: none;
+                }
+
+            }
+        }
+
+        .board_content_input {
+            width: 353px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-sizing: border-box;
+            margin-left: 5px;
+            padding-left: 5px;
+
+            @include respond-beetwen(xs) {
+                width: 95% !important;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+
+            @include respond-beetwen(sm) {
+                width: 95% !important;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+
+            @include respond-beetwen(md) {
+                width: 310px;
+            }
+
+            @include respond-beetwen(lg) {
+                width: 353px;
+            }
+        }
+
+        .board_content_submit {
+            width: 109px;
+            font-family: "Noto Sans KR";
+            font-weight: 400;
+            font-size: 16px;
+            color: #fff;
+            background-color: #313131;
+            border: 1px solid #313131;
+            margin-left: 5px;
+
+            @include respond-beetwen(xs) {
+                width: 95% !important;
+                height: 50px;
+            }
+
+            @include respond-beetwen(sm) {
+                // margin-right: 5px;
+                width: 95% !important;
+                height: 50px;
+            }
+
+            @include respond-beetwen(md) {
+                margin-right: 2px;
+                width: 109px;
+            }
+
+            @include respond-beetwen(lg) {
+                margin-right: 10px;
+            }
+
+            @include respond-beetwen(xl) {
+                margin-right: 0px;
+            }
+        }
+    }
+}

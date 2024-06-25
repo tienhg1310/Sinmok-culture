@@ -6,6 +6,7 @@ import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 import "./header.scss";
 import MenuDecoGif from "../../../Assets/images/menu_deco.gif";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
 //code here
 const Header: React.FC = () => {
@@ -47,6 +48,10 @@ const Header: React.FC = () => {
               <li>
                 <div>회원가입</div>
               </li>
+              <li className="cart">
+                <HiOutlineShoppingBag size={30} />
+                <p>2</p>
+              </li>
             </ul>
             <div className="etc-btn">
               <img src={sitemapBtn} className="btn-menu" onClick={toggleMenu} alt="sitemap" />
@@ -54,7 +59,7 @@ const Header: React.FC = () => {
           </div>
         </div>
         {/* Modal etc */}
-        <div className={`${isShowMenu && "active"} menu-content`}>
+        <div className={`${isShowMenu && "active"} menu-content`} onClick={toggleMenu}>
           <div className={`wrap-menu`}>
             <MobileMenu toggleMenu={toggleMenu} />
           </div>
