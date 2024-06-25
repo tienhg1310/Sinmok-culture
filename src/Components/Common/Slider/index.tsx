@@ -11,7 +11,7 @@ import {
     Scrollbar,
 } from "swiper/modules";
 import { Swiper } from "swiper/react";
-import { SwiperOptions } from "swiper/types";
+import { SwiperOptions } from "swiper/types/swiper-options";
 
 type Options = {
   config?: SwiperOptions;
