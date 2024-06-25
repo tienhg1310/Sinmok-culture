@@ -18,4 +18,8 @@ export const RoutesString = {
   // board pages
 
 
+  // board pages
+  BoardNotifi: `/board/notifi`,
+  BoardCourse: `/board/course`,
+  BoardExhibition: `/board/exhibition`,
 };

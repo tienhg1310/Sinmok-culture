@@ -1,0 +1,24 @@
+@import "../../../../../Assets//styles/index.scss";
+
+.header_table {
+    padding: 16px 0;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 14px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    color: #444;
+}
+
+.btn-dowload{
+    border: none;
+}
+
+.cell-dowload{
+
+    @include respond-beetwen(md) {
+       overflow: hidden;
+       opacity: 0;
+    }
+}

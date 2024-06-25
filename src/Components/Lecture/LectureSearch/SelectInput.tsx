@@ -6,7 +6,7 @@ type Props = {
   dropdownId: string;
   selectedDropdown: string;
   setSelectedDropdown: (dropdownId: string) => void;
-  options: string[];
+  options?: string[];
   selectedOption: string; // Add index signature
   setSelectedOption: (option: string) => void;
   icon?: string;

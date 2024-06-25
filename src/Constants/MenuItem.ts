@@ -29,11 +29,11 @@ const MenuItem: MenuItemType[] = [
   },
   {
     name: "커뮤니티",
-    path: "board/notice",
+    path: "/board/notifi",
     childrens: [
-      { name: "공지사항", path: "board/notice" },
-      { name: "수강후기", path: "" },
-      { name: "갤러리", path: "" },
+      { name: "공지사항", path: "/board/notifi" },
+      { name: "수강후기", path: "/board/course" },
+      { name: "갤러리", path: "/board/exhibition" },
     ],
   },
   {

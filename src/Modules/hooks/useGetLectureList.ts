@@ -44,7 +44,7 @@ const useGetLectureList = (getAll: boolean) => {
       }
     };
     fetchData();
-  }, [page, perPage]);
+  }, [page, perPage, setTotalPage, setTotalItem]);
   return {
     lectureList,
     loading,

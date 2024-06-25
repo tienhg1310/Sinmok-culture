@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import { Link, useNavigate, useNavigation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import type { MenuItemType } from "../../../Constants/MenuItem";
 import "./SectionNavigation.scss";
 
@@ -18,9 +18,9 @@ const SectionNavigation: FC<Props> = ({ childrens, childrenActive }) => {
         childrens.map((item, index) => (
           <div
             key={index}
-            className={`section_navigation-item ${
-              childrenActive?.path === item.path ? "active" : ""
-            }`}
+            id={`section_navigation-item-${index}`}
+            className={`section_navigation-item ${childrenActive?.path === item.path ? "active" : ""
+              }`}
             onClick={() => navigation(item.path)}
           >
             <div className="section_navigation-text">

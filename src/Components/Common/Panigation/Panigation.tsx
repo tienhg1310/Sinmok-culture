@@ -1,5 +1,6 @@
 import { useCallback, type FC } from "react";
 import "./Panigation.scss";
+import pages from "../../../Routers/pages";
 
 type Props = {
   page: number;
@@ -40,9 +41,8 @@ const Panigation: FC<Props> = ({
         pages.push(
           <button
             key={i}
-            className={`pagination__number ${
-              currentPage === i ? "active" : ""
-            }`}
+            className={`pagination__number ${currentPage === i ? "active" : ""
+              }`}
             onClick={() => handleClick(i)}
           >
             {i}
@@ -79,7 +79,19 @@ const Panigation: FC<Props> = ({
         >
           {"<"}
         </button>
-        {renderPages()}
+        {[...Array(totalPage)].map((_, index) => {
+          const page = index + 1;
+          return (
+            <button
+              key={page}
+              className={`pagination__number ${currentPage === page ? "active" : ""
+                }`}
+              onClick={() => handleClick(page)}
+            >
+              {page}
+            </button>
+          );
+        })}
         <button
           className="pagination__button next"
           disabled={currentPage === totalPage}

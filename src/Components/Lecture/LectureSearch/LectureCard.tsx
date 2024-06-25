@@ -19,7 +19,7 @@ const LectureCard: FC<Props> = ({ lecture }) => {
     <div className="card" onClick={handleLectureDetail}>
       <div className="card-content">
         <div className="card-image">
-          <img src={lecture.image_url} alt="Image" />
+          <img src={lecture.image_url} alt="Thumbnail for lecture" />
         </div>
 
         <div className="card-info-content">
