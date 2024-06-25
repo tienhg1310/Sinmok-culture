@@ -1,15 +1,17 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { TfiClose } from "react-icons/tfi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../Assets/images/logo.png";
-import "./MobileMenu.scss";
 import { MenuItem } from "../../../Constants/MenuItem";
+import "./MobileMenu.scss";
 
 type Props = {
   toggleMenu: () => void;
 };
 
 const MobileMenu: FC<Props> = ({ toggleMenu }) => {
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="close-btn" onClick={toggleMenu}>
@@ -23,10 +25,10 @@ const MobileMenu: FC<Props> = ({ toggleMenu }) => {
         </div>
         <div className="menu-action">
           <div>
-            <button className="btn-signin">로그인</button>
+            <button className="btn-signin" onClick={() =>navigate("/auth/login")}>로그인</button>
           </div>
           <div>
-            <button className="btn-signup">회원가입</button>
+            <button className="btn-signup" onClick={() => navigate("/auth/register")}>회원가입</button>
           </div>
         </div>
         <div className="menu-item">

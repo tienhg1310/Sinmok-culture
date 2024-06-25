@@ -1,6 +1,11 @@
 export const RoutesString = {
   PageNotFound: "/404",
   Home: `/`,
+
+  // authentication page
+  Login: `/auth/login`,
+  Register: `/auth/register`,
+
   // lecture pages
   Lecture: `/lecture/find`,
   LectureSearch: `/lecture/find`,

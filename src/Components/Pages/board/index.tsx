@@ -21,7 +21,7 @@ const Board: React.FC<Props> = (props) => {
     } = useBoard({ ...props });
 
     return (
-        <div className="wrapper">
+        <div className="board_wrapper">
             <SectionHeader
                 title={breadsrcumb?.child?.name || ""}
                 breadscrumbs={breadscrumbs}

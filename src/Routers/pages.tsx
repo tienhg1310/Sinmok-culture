@@ -4,19 +4,23 @@ const PageErr = () => import("../Components/Pages/404/PageErr");
 const Home = () => import("../Components/Pages/Home");
 const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
 const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
-
-const InformationCredit = () => import("../Components/Pages/Information/InformationCredit")
+const InformationCredit = () =>
+  import("../Components/Pages/Information/InformationCredit");
 const InformationQA = () => import("../Components/Pages/Information/Q&A");
-const InformationMap = () => import("../Components/Pages/Information/InformationMap");
+const InformationMap = () =>
+  import("../Components/Pages/Information/InformationMap");
 const Information = () => import("../Components/Pages/Information/Information");
 const LectureRegisterInfo = () =>
   import("../Components/Pages/Lecture/LectureRegisterInfo");
-
 const Board = () => import("../Components/Pages/board/components/BoardNotif");
-const BoardCourse = () => import("../Components/Pages/board/components/BoardCourse");
-const BoardExhibition = () => import("../Components/Pages/board/components/BoardExhibition");
+const BoardCourse = () =>
+  import("../Components/Pages/board/components/BoardCourse");
+const BoardExhibition = () =>
+  import("../Components/Pages/board/components/BoardExhibition");
 const LectureSchedule = () =>
   import("../Components/Pages/Lecture/LectureShedule");
+const LoginPage = () => import("../Components/Pages/Auth/Login");
+const RegisterPage = () => import("../Components/Pages/Auth/Register");
 
 const lazyLoad = (importFunc: any) => {
   const Component = lazy(importFunc);
@@ -26,8 +30,6 @@ const lazyLoad = (importFunc: any) => {
     </Suspense>
   );
 };
-
-
 
 const pages = [
   {
@@ -40,6 +42,12 @@ const pages = [
     path: RoutesString.Home,
     component: lazyLoad(Home),
   },
+  /* authentication page */
+  {
+    path: RoutesString.Login,
+    component: lazyLoad(LoginPage),
+  },
+  { path: RoutesString.Register, component: lazyLoad(RegisterPage) },
   /* lecture pages */
   {
     path: RoutesString.Lecture,
