@@ -48,12 +48,12 @@ const MenuItem: MenuItemType[] = [
   },
   {
     name: "마이페이지",
-    path: "",
+    path: "/mypage/profile",
     childrens: [
-      { name: "회원정보", path: "" },
-      { name: "수강내역", path: "" },
-      { name: "나의수강후기", path: "" },
-      { name: "결제내역", path: "" },
+      { name: "회원정보", path: "/mypage/profile" },
+      { name: "수강내역", path: "/mypage/course" },
+      { name: "나의수강후기", path: "/mypage/payment" },
+      { name: "결제내역", path: "/mypage/course-review" },
     ],
   },
 ];
