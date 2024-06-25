@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../Assets/images/logo.png";
 import sitemapBtn from "../../../Assets/images/sitemap_btn.png";
 import MainMenu from "./MainMenu";
@@ -10,6 +10,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 
 //code here
 const Header: React.FC = () => {
+  const navigate = useNavigate();
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSubMenu, setIsShowSubMenu] = useState(false);
 
@@ -43,10 +44,12 @@ const Header: React.FC = () => {
           <div className="header-action">
             <ul className="etc-action">
               <li>
-                <div className="login">로그인</div>
+                <div className="login" onClick={() => navigate("/auth/login")}>
+                  로그인
+                </div>
               </li>
               <li>
-                <div>회원가입</div>
+                <div onClick={() => navigate("/auth/register")}>회원가입</div>
               </li>
               <li className="cart">
                 <HiOutlineShoppingBag size={30} />
@@ -54,12 +57,20 @@ const Header: React.FC = () => {
               </li>
             </ul>
             <div className="etc-btn">
-              <img src={sitemapBtn} className="btn-menu" onClick={toggleMenu} alt="sitemap" />
+              <img
+                src={sitemapBtn}
+                className="btn-menu"
+                onClick={toggleMenu}
+                alt="sitemap"
+              />
             </div>
           </div>
         </div>
         {/* Modal etc */}
-        <div className={`${isShowMenu && "active"} menu-content`} onClick={toggleMenu}>
+        <div
+          className={`${isShowMenu && "active"} menu-content`}
+          onClick={toggleMenu}
+        >
           <div className={`wrap-menu`}>
             <MobileMenu toggleMenu={toggleMenu} />
           </div>

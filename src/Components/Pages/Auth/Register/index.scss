@@ -1,0 +1,146 @@
+@import "../../../../Assets/styles/index.scss";
+
+.register_title {
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  animation: fadeIn 0.5s;
+  @include respond-beetwen(lg) {
+    font-size: 45px;
+  }
+  @include respond-beetwen(xl) {
+    font-size: 45px;
+  }
+}
+
+.register_container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 140px;
+  max-width: 740px;
+  animation: fadeIn 0.5s;
+  @include respond-beetwen(md) {
+    display: flex;
+  }
+  @include respond-beetwen(lg) {
+    display: flex;
+  }
+  @include respond-beetwen(xl) {
+    display: flex;
+  }
+  .login_wrapper {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    @include respond-beetwen(md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include respond-beetwen(lg) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include respond-beetwen(xl) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .image {
+      height: 113px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      img {
+        height: 75%;
+        width: auto;
+        @include respond-beetwen(md) {
+          height: 100%;
+        }
+        @include respond-beetwen(lg) {
+          height: 100%;
+        }
+        @include respond-beetwen(xl) {
+          height: 100%;
+        }
+      }
+    }
+    .text-box {
+      max-width: 495px;
+      width: 90%;
+      @include respond-beetwen(md) {
+         width: 70%;
+      }
+      @include respond-beetwen(lg) {
+         width: 70%;
+      }
+      @include respond-beetwen(xl) {
+         width: 70%;
+      }
+      .text-title {
+        font-size: 15px;
+        text-align: center;
+        font-weight: 700;
+        color: #333;
+        @include respond-beetwen(md) {
+          text-align: left;
+          font-size: 18px;
+        }
+        @include respond-beetwen(lg) {
+          text-align: left;
+          font-size: 18px;
+        }
+        @include respond-beetwen(xl) {
+          text-align: left;
+          font-size: 18px;
+        }
+      }
+      .text-desc {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #666;
+        font-weight: 500;
+        @include respond-beetwen(md) {
+          text-align: left;
+        }
+        @include respond-beetwen(lg) {
+          text-align: left;
+        }
+        @include respond-beetwen(xl) {
+          text-align: left;
+        }
+      }
+      .action {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        @include respond-beetwen(md) {
+          justify-content: flex-start;
+        }
+        @include respond-beetwen(lg) {
+          justify-content: flex-start;
+        }
+        @include respond-beetwen(xl) {
+          justify-content: flex-start;
+        }
+        button {
+          height: 40px;
+          width: 155px;
+          border-radius: 50px;
+          border: none;
+          background: #0461ca;
+          font-size: 15px;
+          color: #fff;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
