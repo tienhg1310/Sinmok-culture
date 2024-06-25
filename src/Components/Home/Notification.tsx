@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { A11y, Autoplay, Navigation, Pagination } from "swiper";
+import { A11y, Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import iconNoti from "../../Assets/images/icons/actions/icon_notice.jpg";
 import "./Notification.scss";
