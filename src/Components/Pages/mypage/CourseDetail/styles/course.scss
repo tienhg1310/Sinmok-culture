@@ -1,0 +1,151 @@
+@import "../../../../../Assets/styles/index.scss";
+
+.lec_history .semester {
+    width: 100%;
+    height: auto;
+}
+
+.lec_history .semester .calender:last-child {
+    border-bottom: 0;
+}
+
+.lec_history .semester .calender {
+    overflow: hidden;
+    clear: both;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.lec_history .semester .calender .lec_left {
+    width: 35%;
+    float: left;
+    display: inline-block;
+    margin-right: 3%;
+    height: auto;
+    position: relative;
+    padding: 30px;
+    border: 1px solid #ccc;
+
+    @include respond-beetwen(xs) {
+        display: block;
+        width: 100%;
+          margin-bottom: 50px;
+    }
+
+    @include respond-beetwen(sm) {
+        display: block;
+        width: 100%;
+          margin-bottom: 50px;
+    }
+
+    @include respond-beetwen(md) {
+        display: block;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    @include respond-beetwen(lg) {
+        width: 35%;
+        float: left;
+        display: inline-block;
+    }
+
+    @include respond-beetwen(xl) {}
+
+}
+
+.lec_history .semester .calender .lec_left .title_box {
+    height: 80px;
+    text-align: center;
+    background: #0a66ce;
+    margin-bottom: 30px;
+    padding: 14px;
+}
+
+.lec_history .semester .calender .lec_left .title_box strong {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.lec_history .semester .calender .lec_left .title_box p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.lec_history .semester .calender .lec_left .schcal_tbl {
+    position: relative;
+    width: 100%;
+    table-layout: fixed;
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+
+        thead {
+            tr {
+                border-bottom: 1px solid #000 !important;
+            }
+        }
+    }
+}
+
+.lec_history .semester .calender .lec_left .schcal_tbl thead tr {
+      border-bottom: 1px solid #000 !important;
+}
+.lec_history .semester .calender .lec_left .schcal_tbl thead th {
+    font-weight: 600;
+    font-size: 14px;
+    //   border-bottom: 1px solid #000 !important;
+}
+
+.lec_history .semester .calender .lec_left .schcal_tbl tbody td {
+    padding: 13px;
+    text-align: center;
+    font-size: 14px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.lec_history .semester .calender .lec_right {
+    width: 60%;
+    float: right;
+    display: inline-block;
+    height: auto;
+
+    @include respond-beetwen(xs) {
+        display: block;
+        width: 100%;
+    }
+
+    @include respond-beetwen(sm) {
+        display: block;
+        width: 100%;
+    }
+
+    @include respond-beetwen(md) {
+        display: block;
+        width: 100%;
+    }
+
+    @include respond-beetwen(lg) {
+        width: 60%;
+        display: inline-block;
+    }
+
+    @include respond-beetwen(xl) {}
+}
+
+h3 {
+    font-size: 22px;
+    color: #0461ca;
+    font-weight: 400;
+    margin-bottom: 10px;
+}

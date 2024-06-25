@@ -18,6 +18,12 @@ const BoardExhibition = () => import("../Components/Pages/board/components/Board
 const LectureSchedule = () =>
   import("../Components/Pages/Lecture/LectureShedule");
 
+
+//mypage
+const Profile = () => import("../Components/Pages/mypage/Profile");
+const CourseDetail = () => import("../Components/Pages/mypage/CourseDetail");
+const PaymentDetail = () => import("../Components/Pages/mypage/PaymentDetail");
+const MyCourseReview = () => import("../Components/Pages/mypage/MyCourseReview");
 const lazyLoad = (importFunc: any) => {
   const Component = lazy(importFunc);
   return (props: any) => (
@@ -93,6 +99,24 @@ const pages = [
   {
     path: RoutesString.InformationMap,
     component: lazyLoad(InformationMap),
+  },
+
+  //mypage
+  {
+    path: RoutesString.Profile,
+    component: lazyLoad(Profile),
+  },
+  {
+    path: RoutesString.CourseDetail,
+    component: lazyLoad(CourseDetail),
+  },
+  {
+    path: RoutesString.PaymentDetail,
+    component: lazyLoad(PaymentDetail),
+  },
+  {
+    path: RoutesString.MyCourseReview,
+    component: lazyLoad(MyCourseReview),
   },
 ];
 

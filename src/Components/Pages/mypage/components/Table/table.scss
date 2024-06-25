@@ -1,0 +1,35 @@
+@import "../../../../../Assets/styles//index.scss";
+
+.table-header {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0px;
+    border-top: 2px solid #226fba;
+    background-color: 'lightgray !important';
+}
+
+.table_hide {
+
+    // display: none;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.table-cell {
+    @media screen and (max-width: 768px) {
+        font-size: 14px !important;
+        width: 10% !important;
+    }
+}
+
+.header_table {
+    padding: 16px 0;
+    font-weight: 400;
+    line-height: 110%;
+    font-size: 14px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    color: #444;
+}

@@ -8,7 +8,6 @@ export const RoutesString = {
   LectureSchedule: `/lecture/schedule`,
   LectureCustom: `/lecture/custom`,
 
-
   //Information
   InformationCredit: `/information/credit`,
   InformationQA: '/board/qa',
@@ -16,10 +15,13 @@ export const RoutesString = {
   InformationMap: `/information/map`,
 
   // board pages
-
-
-  // board pages
   BoardNotifi: `/board/notifi`,
   BoardCourse: `/board/course`,
   BoardExhibition: `/board/exhibition`,
+
+  //mypage
+  Profile: `/mypage/profile`,
+  CourseDetail: `/mypage/course`,
+  PaymentDetail: `/mypage/payment`,
+  MyCourseReview: `/mypage/course-review`
 };
