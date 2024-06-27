@@ -2,32 +2,25 @@ import { Suspense, lazy } from "react";
 import { RoutesString } from "../Components/Modules/routesString";
 const PageErr = () => import("../Components/Pages/404/PageErr");
 const Home = () => import("../Components/Pages/Home");
-const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
-const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
-const InformationCredit = () =>
-  import("../Components/Pages/Information/InformationCredit");
-const InformationQA = () => import("../Components/Pages/Information/Q&A");
-const InformationMap = () =>
-  import("../Components/Pages/Information/InformationMap");
-const Information = () => import("../Components/Pages/Information/Information");
-const LectureRegisterInfo = () =>
-  import("../Components/Pages/Lecture/LectureRegisterInfo");
-const Board = () => import("../Components/Pages/board/components/BoardNotif");
-const BoardCourse = () =>
-  import("../Components/Pages/board/components/BoardCourse");
-const BoardExhibition = () =>
-  import("../Components/Pages/board/components/BoardExhibition");
-const LectureSchedule = () =>
-  import("../Components/Pages/Lecture/LectureShedule");
 const LoginPage = () => import("../Components/Pages/Auth/Login");
 const RegisterPage = () => import("../Components/Pages/Auth/Register");
-
-
-//mypage
+const LectureSearch = () => import("../Components/Pages/Lecture/LectureSearch");
+const LectureCustom = () => import("../Components/Pages/Lecture/LectureCustom");
+const LectureSchedule = () => import("../Components/Pages/Lecture/LectureShedule");
+const LectureRegisterInfo = () => import("../Components/Pages/Lecture/LectureRegisterInfo");
+const InformationCredit = () => import("../Components/Pages/Information/InformationCredit");
+const InformationQA = () => import("../Components/Pages/Information/Q&A");
+const InformationMap = () => import("../Components/Pages/Information/InformationMap");
+const Information = () => import("../Components/Pages/Information/Information");
+const Board = () => import("../Components/Pages/board/components/BoardNotif");
+const BoardCourse = () => import("../Components/Pages/board/components/BoardCourse");
+const BoardExhibition = () => import("../Components/Pages/board/components/BoardExhibition");
 const Profile = () => import("../Components/Pages/mypage/Profile");
 const CourseDetail = () => import("../Components/Pages/mypage/CourseDetail");
 const PaymentDetail = () => import("../Components/Pages/mypage/PaymentDetail");
 const MyCourseReview = () => import("../Components/Pages/mypage/MyCourseReview");
+const CartPage = () => import("../Components/Pages/Cart");
+
 const lazyLoad = (importFunc: any) => {
   const Component = lazy(importFunc);
   return (props: any) => (
@@ -53,7 +46,16 @@ const pages = [
     path: RoutesString.Login,
     component: lazyLoad(LoginPage),
   },
-  { path: RoutesString.Register, component: lazyLoad(RegisterPage) },
+  {
+    path: RoutesString.Register,
+    component: lazyLoad(RegisterPage),
+  },
+
+  /* cart page */
+  {
+    path: RoutesString.Cart,
+    component: lazyLoad(CartPage),
+  },
   /* lecture pages */
   {
     path: RoutesString.Lecture,

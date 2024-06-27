@@ -10,4 +10,5 @@ export interface ILecture {
   details: string;
   image_url: string;
   reviews: Array<any>;
+  teacher: string;
 }

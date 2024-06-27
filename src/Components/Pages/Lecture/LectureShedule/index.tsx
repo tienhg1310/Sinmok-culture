@@ -40,7 +40,6 @@ const LectureSchedule = () => {
     "대관",
     "기구 필라테스",
   ];
- 
 
   const [selectedDropdown, setSelectedDropdown] = useState("");
   const [selectedOption, setSelectedOption] = useState("");
@@ -61,7 +60,7 @@ const LectureSchedule = () => {
         <div className="categories-lg">
           {categories.map((item, index) => {
             return (
-              <div className="category">
+              <div key={`${item}-${index}`} className="category">
                 <div className="category-image">
                   <img src={icons[Math.floor(Math.random() * 9)]} alt="" />
                 </div>
@@ -70,7 +69,7 @@ const LectureSchedule = () => {
             );
           })}
         </div>
-        <LectureScheduleTable/>
+        <LectureScheduleTable />
       </div>
     </Layout>
   );
