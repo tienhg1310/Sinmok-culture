@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { ILecture } from "../../Constants/interface";
 import lectureService from "../API/Lecture.service";
 

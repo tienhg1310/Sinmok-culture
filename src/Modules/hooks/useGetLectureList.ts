@@ -7,16 +7,8 @@ const useGetLectureList = (getAll: boolean) => {
   const [lectureList, setLectureList] = useState<ILecture[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
-  const {
-    page,
-    setPage,
-    perPage,
-    totalPage,
-    setTotalPage,
-    totalItem,
-    setTotalItem,
-    handleChangePerPage,
-  } = usePanigation();
+  const { page, setPage, perPage, totalPage, setTotalPage, totalItem, setTotalItem, handleChangePerPage } =
+    usePanigation();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -44,7 +36,7 @@ const useGetLectureList = (getAll: boolean) => {
       }
     };
     fetchData();
-  }, [page, perPage, setTotalPage, setTotalItem]);
+  }, [page, perPage, setTotalPage, setTotalItem, getAll]);
   return {
     lectureList,
     loading,

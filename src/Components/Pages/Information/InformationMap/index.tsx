@@ -6,7 +6,7 @@ export default function InformationMap() {
         <Information>
             <div className='container'>
                 <iframe
-                    src="https://kko.to/WSnvJqjXrM"
+                    src="https://kko.to/Dh_WvWekUn"
                     width={"100%"}
                     height={450}
                     style={{ border: 0 }}

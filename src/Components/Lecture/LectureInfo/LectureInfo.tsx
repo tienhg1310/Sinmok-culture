@@ -6,13 +6,25 @@ import LectureInfoRightSide from "./LectureInfoRightSide";
 import LectureLeftSide from "./LectureLeftSide";
 import { useNavigate } from "react-router-dom";
 import { IoBagAddOutline, IoCheckmark } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../Modules/store/store";
+import { addToCart } from "../../../Modules/store/slices/cartSlice";
+
 type Props = {
   lectureId: string;
 };
 
 const LectureInfo: FC<Props> = ({ lectureId }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch<AppDispatch>();
   const { lecture, loading, fetchData, error } = useGetLecture();
+
+  const applyPaymentLecture = () => {
+    if (lecture) {
+      dispatch(addToCart(lecture));
+      navigate(`/lecture/find?payment=${lectureId}`);
+    }
+  };
 
   useEffect(() => {
     if (lectureId) fetchData(lectureId);
@@ -41,7 +53,7 @@ const LectureInfo: FC<Props> = ({ lectureId }) => {
               목록
             </button>
             <div className="payment-button">
-              <button className="button">
+              <button className="button" onClick={applyPaymentLecture}>
                 <span>신청하기</span> <IoCheckmark size={20} className="icon" />
               </button>
               <button className="button black">
