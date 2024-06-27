@@ -5,6 +5,9 @@ export const RoutesString = {
   // authentication page
   Login: `/auth/login`,
   Register: `/auth/register`,
+  
+  // cart page
+  Cart: `/cart`,
 
   // lecture pages
   Lecture: `/lecture/find`,

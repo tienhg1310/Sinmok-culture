@@ -13,6 +13,7 @@ import { useParams, useSearchParams } from "react-router-dom";
 import LectureInfo from "../../../Lecture/LectureInfo/LectureInfo";
 import DataError from "../../../Common/DataError/DataError";
 import Loading from "../../../Common/Loading/Loading";
+import LecturePayment from "../../../Lecture/LecturePayment/LecturePayment";
 
 const LectureSearch = () => {
   const options1 = [
@@ -45,23 +46,15 @@ const LectureSearch = () => {
   const [selectedOption1, setSelectedOption1] = useState(options1[0]);
   const [selectedOption2, setSelectedOption2] = useState(options2[0]);
   const [selectedOption3, setSelectedOption3] = useState(options3[0]);
-  const {
-    lectureList,
-    loading,
-    error,
-    page,
-    setPage,
-    perPage,
-    totalPage,
-    totalItem,
-    handleChangePerPage,
-  } = useGetLectureList(false);
+  const { lectureList, loading, error, page, setPage, perPage, totalPage, totalItem, handleChangePerPage } =
+    useGetLectureList(false);
   const [searchParams] = useSearchParams();
   const lectureId = searchParams.get("id");
+  const lecturePayment = searchParams.get("payment");
 
   return (
     <Layout>
-      {!lectureId && (
+      {!lectureId && !lecturePayment && (
         <>
           <div className="section_search">
             <SelectInput
@@ -92,10 +85,7 @@ const LectureSearch = () => {
               icon={icon0}
             />
             <div className="search_input">
-              <input
-                type="text"
-                placeholder="검색어(강좌명/강사명)을 입력하세요."
-              />
+              <input type="text" placeholder="검색어(강좌명/강사명)을 입력하세요." />
               <button>
                 <IoIosSearch size={28} />
               </button>
@@ -125,6 +115,7 @@ const LectureSearch = () => {
         </>
       )}
       {lectureId && <LectureInfo lectureId={lectureId} />}
+      {lecturePayment && <LecturePayment lectureId={lecturePayment} />}
     </Layout>
   );
 };

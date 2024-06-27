@@ -4,6 +4,8 @@ import Footer from "../Components/Common/Footer";
 import Header from "../Components/Common/Header/Header";
 import { RoutesString } from "../Components/Modules/routesString";
 import pages from "./pages";
+import { Provider } from "react-redux";
+import { store } from "../Modules/store/store";
 
 const RenderHeader = (isHeader: boolean) => {
   if (!isHeader) {
@@ -39,22 +41,23 @@ function Router() {
     }
   }, [pathname]);
 
-
   return (
     <>
-      {RenderHeader(isHistoryCheck)}
-      <Routes>
-        {pages.map((item) => {
-          return (
-            <Route
-              key={item.path}
-              path={item.path}
-              element={<item.component />}
-            />
-          );
-        })}
-      </Routes>
-      {RenderFooter(isHistoryCheck)}
+      <Provider store={store}>
+        {RenderHeader(isHistoryCheck)}
+        <Routes>
+          {pages.map((item) => {
+            return (
+              <Route
+                key={item.path}
+                path={item.path}
+                element={<item.component />}
+              />
+            );
+          })}
+        </Routes>
+        {RenderFooter(isHistoryCheck)}
+      </Provider>
     </>
   );
 }

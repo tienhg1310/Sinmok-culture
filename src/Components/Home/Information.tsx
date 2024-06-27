@@ -8,7 +8,7 @@ const Information = (props: Props) => {
   return (
     <div className="information__container">
       {new Array(4).fill(0).map((_, index) => (
-        <div className="information-item">
+        <div key={index} className="information-item">
           <div className="information-img">
             <img src={icnM1} alt="" />
           </div>

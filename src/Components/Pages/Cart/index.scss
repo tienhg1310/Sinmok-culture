@@ -1,0 +1,154 @@
+@import "../../../Assets/styles/index.scss";
+
+.cart_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .cart-title {
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: 700;
+    animation: fadeIn 0.5s;
+    @include respond-beetwen(lg) {
+      font-size: 45px;
+    }
+    @include respond-beetwen(xl) {
+      font-size: 45px;
+    }
+  }
+  .cart-container {
+    width: 100%;
+    padding: 20px;
+    margin-top: 70px;
+    max-width: 1240px;
+    animation: fadeIn 0.5s;
+    display: flex;
+    flex-direction: column;
+    @include respond-beetwen(md) {
+    }
+    @include respond-beetwen(lg) {
+    }
+    @include respond-beetwen(xl) {
+    }
+    .container-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .container-desc {
+      position: relative;
+      margin-bottom: 10px;
+      p::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        margin: 5px 5px 5px 0;
+        background-color: #656565;
+        border-radius: 50%;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+    .container-table {
+      border-top: 3px solid #226fba;
+      overflow-x: auto;
+      table {
+        width: 100%;
+        min-width: 691px;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        thead {
+          border-bottom: 1px solid #ddd;
+          th {
+            text-align: center;
+
+            padding: 27px 0;
+            background-color: #f2f2f2;
+            font-weight: 400;
+            color: #444;
+            font-size: 14px;
+          }
+        }
+        tbody {
+          tr {
+            border-bottom: 1px solid #ddd;
+            td {
+              padding: 20px 5px;
+              button {
+                border: none;
+                font-weight: 600;
+              }
+              .btn1 {
+                background: #e88811;
+                padding: 10px 20px;
+                color: white;
+                font-size: 13px;
+                margin: 0 30px;
+              }
+              .btn2 {
+                background: #0a66ce;
+                padding: 10px 20px;
+                color: white;
+                margin: 0 50px;
+              }
+            }
+            .lecture-info {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              img {
+                height: 100px;
+                width: auto;
+              }
+              .lecture-text {
+                padding-left: 20px;
+                h3 {
+                  margin-bottom: 5px;
+                }
+                p {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
+          .td-center {
+            text-align: center;
+          }
+        }
+        tfoot {
+          tr {
+            background-color: #f2f2f2;
+            td {
+              width: 100%;
+              padding: 20px;
+              button {
+                margin: 0 2.5px;
+                padding: 10px 15px;
+                background: white;
+                border: 1px solid black;
+              }
+            }
+          }
+        }
+      }
+      .day {
+        background-color: #eee;
+        font-weight: bold;
+        text-align: center;
+      }
+    }
+    .button-view-more {
+      margin-top: 50px;
+      align-self: center;
+      button {
+        margin: 0 2.5px;
+        padding: 6.5px 25px;
+        background: white;
+        border: 1px solid black;
+      }
+    }
+  }
+}
