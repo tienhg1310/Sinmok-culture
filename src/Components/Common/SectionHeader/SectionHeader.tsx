@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import BreadScrumbs from "../BreadScrumbs/BreadScrumbs";
-import "./SectionHeader.scss";
+// import "./SectionHeader.scss";
 
 type Props = {
   breadscrumbs: string[] | undefined[];

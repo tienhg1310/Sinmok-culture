@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function TableCourse() {
     return (
@@ -22,198 +23,198 @@ function TableCourse() {
                     <td className="off"> </td>
                     <td id="1970-01-01">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span className="">1</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-02">
                         <div className="d_num">
-                            <a href="#">
+                            <Link to="#">
                                 <span className="">2</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-03">
                         <div className="d_num">
-                            <a href="#" className="sat" >
+                            <Link to="#" className="sat" >
                                 <span className="">3</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td id="1970-01-04">
                         <div className="d_num">
-                            <a href="#" className="sun" >
+                            <Link to="#" className="sun" >
                                 <span className="">4</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-05">
                         <div className="d_num">
-                            <a href="#" >
-                                <span className="">5</span></a></div></td><td id="1970-01-06">
+                            <Link to="#" >
+                                <span className="">5</span></Link></div></td><td id="1970-01-06">
                         <div className="d_num">
-                            <a href="#">
+                            <Link to="#">
                                 <span >6</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-07">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >7</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-08">
-                        <div className="d_num"><a href="#">
+                        <div className="d_num"><Link to="#">
                             <span >8</span>
-                        </a>
+                        </Link>
                         </div>
                     </td>
-                    <td id="1970-01-09"><div className="d_num"><a href="#">
+                    <td id="1970-01-09"><div className="d_num"><Link to="#">
                         <span >9</span>
-                    </a>
+                    </Link>
                     </div>
                     </td>
                     <td id="1970-01-10">
                         <div className="d_num">
-                            <a href="#" className="sat">
+                            <Link to="#" className="sat">
                                 <span >10</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td id="1970-01-11">
                         <div className="d_num">
-                            <a href="#" className="sun" >
+                            <Link to="#" className="sun" >
                                 <span >11</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-12"><div className="d_num">
-                        <a href="#" >
+                        <Link to="#" >
                             <span >12</span>
-                        </a>
+                        </Link>
                     </div>
                     </td>
-                    <td id="1970-01-13"><div className="d_num"><a href="#">
-                        <span >13</span></a>
+                    <td id="1970-01-13"><div className="d_num"><Link to="#">
+                        <span >13</span></Link>
                     </div>
                     </td>
-                    <td id="1970-01-14"><div className="d_num"><a href="#" >
+                    <td id="1970-01-14"><div className="d_num"><Link to="#" >
                         <span >14</span>
-                    </a>
+                    </Link>
                     </div>
                     </td>
-                    <td id="1970-01-15"><div className="d_num"><a href="#" >
-                        <span >15</span></a></div></td><td id="1970-01-16">
-                        <div className="d_num"><a href="#" >
+                    <td id="1970-01-15"><div className="d_num"><Link to="#" >
+                        <span >15</span></Link></div></td><td id="1970-01-16">
+                        <div className="d_num"><Link to="#" >
                             <span >16</span>
-                        </a>
+                        </Link>
                         </div>
                     </td>
-                    <td id="1970-01-17"><div className="d_num"><a href="#" className="sat">
+                    <td id="1970-01-17"><div className="d_num"><Link to="#" className="sat">
                         <span >17</span>
-                    </a>
+                    </Link>
                     </div>
                     </td>
                 </tr>
                 <tr>
                     <td id="1970-01-18">
-                        <div className="d_num"><a href="#" className="sun" >
+                        <div className="d_num"><Link to="#" className="sun" >
                             <span >18</span>
-                        </a>
+                        </Link>
                         </div>
                     </td>
                     <td id="1970-01-19">
                         <div className="d_num">
-                            <a href="#">
+                            <Link to="#">
                                 <span >19</span>
-                            </a>
-                        </div></td><td id="1970-01-20"><div className="d_num"><a href="#">
+                            </Link>
+                        </div></td><td id="1970-01-20"><div className="d_num"><Link to="#">
                             <span >20</span>
-                        </a>
+                        </Link>
                         </div>
                     </td>
-                    <td id="1970-01-21"><div className="d_num"><a href="#" >
+                    <td id="1970-01-21"><div className="d_num"><Link to="#" >
                         <span >21</span>
-                    </a>
+                    </Link>
                     </div>
                     </td>
                     <td id="1970-01-22">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >22</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-23">
                         <div className="d_num">
-                            <a href="#">
+                            <Link to="#">
                                 <span >23</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-24">
                         <div className="d_num">
-                            <a href="#" className="sat">
+                            <Link to="#" className="sat">
                                 <span >24</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td id="1970-01-25">
                         <div className="d_num">
-                            <a href="#" className="sun">
+                            <Link to="#" className="sun">
                                 <span >25</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-26">
                         <div className="d_num">
-                            <a href="#">
+                            <Link to="#">
                                 <span >26</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-27">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >27</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-28">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >28</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-29">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >29</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-30">
                         <div className="d_num">
-                            <a href="#" >
+                            <Link to="#" >
                                 <span >30</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                     <td id="1970-01-31">
                         <div className="d_num">
-                            <a href="#" className="sat" >
+                            <Link to="#" className="sat" >
                                 <span >31</span>
-                            </a>
+                            </Link>
                         </div>
                     </td>
                 </tr>

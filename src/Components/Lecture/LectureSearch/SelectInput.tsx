@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { IoMdArrowDropup } from "react-icons/io";
-import "./SelectInput.scss";
+// import "./SelectInput.scss";
 
 type Props = {
   dropdownId: string;

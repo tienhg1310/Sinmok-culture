@@ -1,6 +1,5 @@
 import { useCallback, type FC } from "react";
-import "./Panigation.scss";
-import pages from "../../../Routers/pages";
+// import "./Panigation.scss";
 
 type Props = {
   page: number;
