@@ -1,16 +1,16 @@
-import { useDispatch, useSelector } from "react-redux";
-import "./index.scss";
-import { AppDispatch, RootState } from "../../../Modules/store/store";
-import { useNavigate } from "react-router-dom";
-import { getCart, removeAllFromCart, removeSelectedFromCart } from "../../../Modules/store/slices/cartSlice";
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { ILecture } from "../../../Constants/interface";
+import { getCart, removeAllFromCart, removeSelectedFromCart } from "../../../Modules/store/slices/cartSlice";
+import { AppDispatch, RootState } from "../../../Modules/store/store";
+import "./index.scss";
 
 type Props = {};
 
 const CartPage = (props: Props) => {
   const navigate = useNavigate();
-  const { cart, status } = useSelector((state: RootState) => state.cart);
+  const { cart } = useSelector((state: RootState) => state.cart);
   const dispatch = useDispatch<AppDispatch>();
   const [isCheckAll, setIsCheckAll] = useState<boolean>(false);
   const [selectedItems, setSelectedItems] = useState<ILecture[]>([]);
@@ -47,7 +47,7 @@ const CartPage = (props: Props) => {
 
   useEffect(() => {
     dispatch(getCart());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="cart_wrapper">

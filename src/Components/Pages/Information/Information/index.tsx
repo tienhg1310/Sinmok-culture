@@ -1,6 +1,7 @@
 import React from 'react'
 import Informations from "../index";
 import "../Information/info.scss";
+import { Link } from 'react-router-dom';
 export default function Information() {
     return (
         <Informations>
@@ -15,8 +16,8 @@ export default function Information() {
                 </div>
                 <div className="txt1">
                     <p>신목신협 문화센터에서는<br />분야별 수준 높은 교육문화 컨텐츠와 열정적인 전문 강사님을 모십니다.</p>
-                    <a className="btn_1 button_down black" href="/kr/download/applyForm.hwp">지원서 다운로드<span className="ico_ir1 bnt_icn3" /></a>
-                    <a className="btn_1 button_small blue" href="#" id="apply">강사지원하기<span className="ico_ir1 bnt_icn2" /></a>
+                    <Link className="btn_1 button_down black" to="/kr/download/applyForm.hwp">지원서 다운로드<span className="ico_ir1 Linknt_icn3" /></Link>
+                    <Link className="btn_1 button_small blue" to="#" id="apply">강사지원하기<span className="ico_ir1 bnt_icn2" /></Link>
                     <p className="text_1">※ 지원을 원하시는 분은  지원서를 다운받으셔서 작성 바랍니다.</p>
                 </div>
             </div>

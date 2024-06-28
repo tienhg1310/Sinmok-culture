@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSubMenu, setIsShowSubMenu] = useState(false);
-  const { cart, status } = useSelector((state: RootState) => state.cart);
+  const { cart } = useSelector((state: RootState) => state.cart);
 
   const toggleMenu = () => {
     isShowMenu ? setIsShowMenu(false) : setIsShowMenu(true);
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     dispatch(getCart());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>

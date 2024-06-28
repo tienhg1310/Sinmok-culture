@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Angree() {
     return (
@@ -17,7 +18,7 @@ function Angree() {
                     </span>
                     <p>수신 동의하시면 다양한 서비스를 제공 받으실 수 있습니다.</p>
                 </div>
-                <a href="#"><span className="tag mg" id="ReceiveSave">저장</span></a>
+                <Link to="#"><span className="tag mg" id="ReceiveSave">저장</span></Link>
             </form>
         </div>
     )

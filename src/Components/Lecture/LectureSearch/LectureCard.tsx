@@ -1,11 +1,11 @@
 import { type FC } from "react";
 import { IoBagAddOutline, IoCheckmark } from "react-icons/io5";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { ILecture } from "../../../Constants/interface";
-import "./LectureCard.scss";
 import { addToCart } from "../../../Modules/store/slices/cartSlice";
-import { AppDispatch, RootState } from "../../../Modules/store/store";
+import { AppDispatch } from "../../../Modules/store/store";
+import "./LectureCard.scss";
 
 type Props = {
   lecture: ILecture;

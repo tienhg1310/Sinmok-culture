@@ -1,21 +1,15 @@
-import React, { useCallback } from 'react'
-
-import '../styles/Exhibition.scss';
+import { useCallback } from 'react';
 import Panigation from '../../../../../Common/Panigation/Panigation';
 import useBoardExhibition from '../../../hooks/useBoardExhibition';
+import '../styles/Exhibition.scss';
 
 export default function ListExhibition() {
 
     const {
         exhibitionData,
-        page,
-        perPage,
         setPage,
         setPerPage,
-        setTotalItem,
-        setTotalPage,
         totalItem,
-        totalPage
     } = useBoardExhibition();
 
     const renderListExhibition = useCallback(() => {
@@ -23,7 +17,7 @@ export default function ListExhibition() {
             return (
                 <div className='exhibition-item' key={item.id}>
                     <div className='exhibition-img'>
-                        <img src={item.img} />
+                        <img src={item.img} alt='exhibition-img'/>
                     </div>
                     <div className='exhibition-content'>
                         <strong
@@ -45,7 +39,7 @@ export default function ListExhibition() {
                 </div>
             )
         })
-    }, []);
+    }, [exhibitionData]);
 
     return (
         <>
