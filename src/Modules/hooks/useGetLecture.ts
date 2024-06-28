@@ -1,6 +1,5 @@
 import { useState } from "react";
 import type { ILecture } from "../../Constants/interface";
-import lectureService from "../API/Lecture.service";
 import dbFake from "../../db.json";
 
 const useGetLecture = () => {
@@ -32,3 +31,4 @@ const useGetLecture = () => {
 };
 
 export { useGetLecture };
+
