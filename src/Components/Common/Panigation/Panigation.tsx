@@ -114,7 +114,6 @@ const Panigation: FC<Props> = ({
             name=""
             id=""
             value={perPage}
-            defaultValue={perPage}
             onChange={(e) => setPerPage(Number(e.target.value))}
           >
             {[4, 8, 16, 32].map((item) => (
