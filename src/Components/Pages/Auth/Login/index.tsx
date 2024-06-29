@@ -1,14 +1,14 @@
+import { useEffect } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { CiLock, CiUser } from "react-icons/ci";
+import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import loginIcn1 from "../../../../Assets/images/auth/log_info_icon01.png";
 import loginIcn2 from "../../../../Assets/images/auth/log_info_icon02.png";
+import { login } from "../../../../Modules/store/slices/authSlice";
+import { AppDispatch, RootState } from "../../../../Modules/store/store";
 import Layout from "../Layout";
 import "./index.scss";
-import { SubmitHandler, useForm } from "react-hook-form";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../../../Modules/store/store";
-import { login } from "../../../../Modules/store/slices/authSlice";
-import { Navigate, useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 type Inputs = {
   username: string;
@@ -19,12 +19,7 @@ const LoginPage = () => {
   const { isAuthenticated } = useSelector((state: RootState) => state.auth);
   const navigate = useNavigate();
 
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm<Inputs>();
+  const { register, handleSubmit } = useForm<Inputs>();
   const dispatch = useDispatch<AppDispatch>();
 
   const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => {
@@ -33,9 +28,9 @@ const LoginPage = () => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/")
+      navigate("/");
     }
-  }, [isAuthenticated]);
+  }, [isAuthenticated, navigate]);
   return (
     <Layout>
       <div className="login_title">
