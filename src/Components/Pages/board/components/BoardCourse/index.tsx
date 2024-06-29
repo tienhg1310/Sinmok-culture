@@ -19,9 +19,7 @@ export default function BoardCourse() {
                         navigation={true}
                         spaceBetween={50}
                         slidesPerView={1}
-                        onSlideChange={() => console.log("slide change")}
                         draggable={{ clickable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
                         autoplay={{ delay: 2000, disableOnInteraction: false }}
                         loop={true}
                     >

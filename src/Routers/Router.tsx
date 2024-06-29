@@ -6,6 +6,7 @@ import { RoutesString } from "../Components/Modules/routesString";
 import pages from "./pages";
 import { Provider } from "react-redux";
 import { store } from "../Modules/store/store";
+import AuthWrapper from "../Modules/authWrapper/AuthWrapper";
 
 const RenderHeader = (isHeader: boolean) => {
   if (!isHeader) {
@@ -51,7 +52,7 @@ function Router() {
               <Route
                 key={item.path}
                 path={item.path}
-                element={<item.component />}
+                element={<AuthWrapper element={<item.component />} auth={item.auth || false} />}
               />
             );
           })}
