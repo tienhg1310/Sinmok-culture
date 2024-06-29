@@ -1,6 +1,5 @@
-import React from "react";
-import Layout from "../Layout";
 import LectureCustomText from "../../../Lecture/LectureCustom/LectureCustomText";
+import Layout from "../Layout";
 
 const LectureCustom = () => {
   return (

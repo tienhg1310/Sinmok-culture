@@ -77,6 +77,7 @@ const pages = [
   {
     path: RoutesString.LectureCustom,
     component: lazyLoad(LectureCustom),
+    auth: true,
   },
 
   //board
@@ -115,18 +116,22 @@ const pages = [
   {
     path: RoutesString.Profile,
     component: lazyLoad(Profile),
+    auth: true,
   },
   {
     path: RoutesString.CourseDetail,
     component: lazyLoad(CourseDetail),
+    auth: true
   },
   {
     path: RoutesString.PaymentDetail,
     component: lazyLoad(PaymentDetail),
+    auth: true
   },
   {
     path: RoutesString.MyCourseReview,
     component: lazyLoad(MyCourseReview),
+    auth: true
   },
 ];
 

@@ -1,6 +1,7 @@
 export type MenuItemType = {
   name: string;
   path: string;
+  auth?: boolean;
   childrens?: MenuItemType[];
 };
 
