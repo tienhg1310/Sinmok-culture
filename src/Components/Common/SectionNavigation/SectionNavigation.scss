@@ -47,6 +47,12 @@
         font-size: 15px;
         font-weight: 400;
         transition: ease-in-out 0.2s;
+        @include respond-beetwen(lg) {
+          font-size: 18px;
+        }
+        @include respond-beetwen(xl) {
+          font-size: 18px;
+        }
       }
 
       &:hover {
