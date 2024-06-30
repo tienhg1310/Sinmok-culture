@@ -1,10 +1,10 @@
-import React, { useMemo } from 'react'
-import Board from '../..'
-import Table from '../Table'
-import '../BoardNotif/boardNotifi.scss'
-import Panigation from '../../../../Common/Panigation/Panigation';
+import { useMemo } from 'react';
+import Board from '../..';
 import IconDowLoad from "../../../../../Assets/images/downfile.png";
+import Panigation from '../../../../Common/Panigation/Panigation';
+import '../BoardNotif/boardNotifi.scss';
 import Search from '../Search';
+import Table from '../Table';
 export default function BoardNotifi() {
     const columnData = [
         {

@@ -35,7 +35,7 @@
       height: 229px;
       border-left: 1px solid #e0dfdf;
       animation: fadeIn 0.3s ease-out forwards;
-
+      z-index: 1;
       & > li {
         width: 100%;
         padding: 10px 10px;
