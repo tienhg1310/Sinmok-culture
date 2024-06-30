@@ -21,31 +21,31 @@ const Action = (props: Props) => {
         <div className="action-image">
           <img src={actionIcn2} alt="" />
         </div>
-        <p className="action-title">강좌검색</p>
+        <p className="action-title">강좌스케쥴</p>
       </div>
       <div className="action-item">
         <div className="action-image">
           <img src={actionIcn3} alt="" />
         </div>
-        <p className="action-title">강좌검색</p>
+        <p className="action-title">브로슈어</p>
       </div>
       <div className="action-item">
         <div className="action-image">
           <img src={actionIcn4} alt="" />
         </div>
-        <p className="action-title">강좌검색</p>
+        <p className="action-title">예약하기</p>
       </div>
       <div className="action-item">
         <div className="action-image">
           <img src={actionIcn5} alt="" />
         </div>
-        <p className="action-title">강좌검색</p>
+        <p className="action-title">강좌후기</p>
       </div>
       <div className="action-item">
         <div className="action-image">
           <img src={actionIcn6} alt="" />
         </div>
-        <p className="action-title">강좌검색</p>
+        <p className="action-title">강사지원</p>
       </div>
     </div>
   );
