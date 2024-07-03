@@ -608,7 +608,7 @@
 
     .board_course_container {
         height: 350px;
-        top: 400px;
+        top: 350px  !important;
 
         .board_wrapper {
             .swiper-button-next {
@@ -657,7 +657,7 @@
     }
 
     .board_search_container {
-        margin-top: 380px;
+        margin-top: 380px ;
     }
 
     .board_course_list {
@@ -754,7 +754,7 @@
 
     .board_course_container {
         height: 450px;
-        top: 320px;
+        top: 320px  !important;
 
         .board_wrapper {
             .swiper-button-next {
@@ -839,5 +839,13 @@
     .board_course_description {
         font-size: 13px;
         margin-top: 15px;
+    }
+}
+
+
+@include respond-beetwen(xl) {
+    .board_course_container {
+        height: 450px;
+        top: 450px  !important;
     }
 }
