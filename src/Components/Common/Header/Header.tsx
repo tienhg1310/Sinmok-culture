@@ -5,11 +5,11 @@ import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../Assets/images/logo.png";
 import MenuDecoGif from "../../../Assets/images/menu_deco.gif";
 import sitemapBtn from "../../../Assets/images/sitemap_btn.png";
+import { getCart } from "../../../Modules/store/slices/cartSlice";
 import { AppDispatch, RootState } from "../../../Modules/store/store";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 import "./header.scss";
-import { getCart } from "../../../Modules/store/slices/cartSlice";
 
 //code here
 const Header: React.FC = () => {
@@ -17,7 +17,8 @@ const Header: React.FC = () => {
   const dispatch = useDispatch<AppDispatch>();
   const [isShowMenu, setIsShowMenu] = useState(false);
   const [isShowSubMenu, setIsShowSubMenu] = useState(false);
-  const { cart, status } = useSelector((state: RootState) => state.cart);
+  const { cart } = useSelector((state: RootState) => state.cart);
+  const { isAuthenticated } = useSelector((state: RootState) => state.auth);
 
   const toggleMenu = () => {
     isShowMenu ? setIsShowMenu(false) : setIsShowMenu(true);
@@ -32,7 +33,7 @@ const Header: React.FC = () => {
 
   useEffect(() => {
     dispatch(getCart());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
@@ -56,10 +57,12 @@ const Header: React.FC = () => {
               <li>
                 <div onClick={() => navigate("/auth/register")}>회원가입</div>
               </li>
-              <li className="cart" onClick={() => navigate("/cart")}>
-                <HiOutlineShoppingBag size={30} />
-                <p>{cart.length}</p>
-              </li>
+              {isAuthenticated && (
+                <li className="cart" onClick={() => navigate("/cart")}>
+                  <HiOutlineShoppingBag size={30} />
+                  <p>{cart.length}</p>
+                </li>
+              )}
             </ul>
             <div className="etc-btn">
               <img src={sitemapBtn} className="btn-menu" onClick={toggleMenu} alt="sitemap" />

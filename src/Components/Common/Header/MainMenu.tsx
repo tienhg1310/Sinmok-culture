@@ -1,7 +1,7 @@
-import { useState, type FC } from "react";
+import { type FC } from "react";
 import { Link } from "react-router-dom";
-import "./MainMenu.scss";
 import { MenuItem } from "../../../Constants/MenuItem";
+import "./MainMenu.scss";
 
 type Props = {};
 

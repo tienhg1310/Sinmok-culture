@@ -1,7 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { ILecture } from "../../../Constants/interface";
-import { useSelector } from "react-redux";
-import { RootState } from "../store";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 interface IState {

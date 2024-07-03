@@ -1,6 +1,5 @@
 import { useCallback, type FC } from "react";
-import "./Panigation.scss";
-import pages from "../../../Routers/pages";
+// import "./Panigation.scss";
 
 type Props = {
   page: number;
@@ -19,11 +18,11 @@ const Panigation: FC<Props> = ({
   setPerPage,
   totalItem,
 }) => {
-  const handleClick = (page: number) => {
+  const handleClick = useCallback((page: number) => {
     if (page >= 1 && page <= totalPage) {
       setCurrentPage(page);
     }
-  };
+  }, [totalPage, setCurrentPage]);
 
   const renderPages = useCallback(() => {
     const pages = [];
@@ -60,7 +59,7 @@ const Panigation: FC<Props> = ({
       );
     }
     return pages;
-  }, [currentPage, totalPage, perPage]);
+  }, [currentPage, totalPage, handleClick]);
 
   return (
     <div className="pagination">
@@ -79,7 +78,8 @@ const Panigation: FC<Props> = ({
         >
           {"<"}
         </button>
-        {[...Array(totalPage)].map((_, index) => {
+        {renderPages()}
+        {/* {[...Array(totalPage)].map((_, index) => {
           const page = index + 1;
           return (
             <button
@@ -91,7 +91,7 @@ const Panigation: FC<Props> = ({
               {page}
             </button>
           );
-        })}
+        })} */}
         <button
           className="pagination__button next"
           disabled={currentPage === totalPage}
@@ -114,7 +114,6 @@ const Panigation: FC<Props> = ({
             name=""
             id=""
             value={perPage}
-            defaultValue={perPage}
             onChange={(e) => setPerPage(Number(e.target.value))}
           >
             {[4, 8, 16, 32].map((item) => (

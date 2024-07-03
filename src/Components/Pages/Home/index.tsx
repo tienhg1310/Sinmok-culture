@@ -6,7 +6,7 @@ import CourseCarousel from "../../Home/CourseCarousel";
 import Action from "../../Home/Action";
 import Notification from "../../Home/Notification";
 import Information from "../../Home/Information";
-
+import { memo } from "react";
 function Home() {
   const images = [mainVisual];
   const { lectureList } = useGetLectureList(true);
@@ -24,4 +24,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default memo(Home);

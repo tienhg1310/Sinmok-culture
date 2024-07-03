@@ -48,7 +48,7 @@ const Notification = (props: Props) => {
           autoplay={
             !isPause
               ? {
-                delay: 5000,
+                delay: 2000,
                 pauseOnMouseEnter: true,
               }
               : false

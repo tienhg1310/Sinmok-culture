@@ -1,6 +1,6 @@
 import React from 'react'
 import SelectInput from '../../../../Lecture/LectureSearch/SelectInput'
-import "../Search/Search.scss"
+import "./Search.scss"
 type props = {
     setSelectedDropdown?: string | any;
     setSelectedOption?: any;

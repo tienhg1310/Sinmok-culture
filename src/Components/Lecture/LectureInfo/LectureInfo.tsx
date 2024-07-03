@@ -17,7 +17,7 @@ type Props = {
 const LectureInfo: FC<Props> = ({ lectureId }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch<AppDispatch>();
-  const { lecture, loading, fetchData, error } = useGetLecture();
+  const { lecture, fetchData, error } = useGetLecture();
 
   const applyPaymentLecture = () => {
     if (lecture) {
@@ -28,7 +28,7 @@ const LectureInfo: FC<Props> = ({ lectureId }) => {
 
   useEffect(() => {
     if (lectureId) fetchData(lectureId);
-  }, []);
+  }, [fetchData, lectureId]);
 
   return (
     <>

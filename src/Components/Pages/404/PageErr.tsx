@@ -6,7 +6,7 @@ function PageErr() {
   return (
     <div className="err-page">
       <div className="err-image">
-        <img src={errorIcon} />
+        <img src={errorIcon} alt="err-page"/>
       </div>
       <h2>404</h2>
       <p>

@@ -1,6 +1,5 @@
 import { FC } from "react";
 import LectureCard from "./LectureCard";
-import "./LectureList.scss";
 import { ILecture } from "../../../Constants/interface";
 
 type Props = {

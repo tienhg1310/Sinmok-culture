@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
-import lectureService from "../API/Lecture.service";
-import { usePanigation } from "./usePanigation";
 import type { ILecture } from "../../Constants/interface";
-import fakeDB from "../../db.json"
+import fakeDB from "../../db.json";
+import { usePanigation } from "./usePanigation";
 
 const useGetLectureList = (getAll: boolean) => {
   const [lectureList, setLectureList] = useState<ILecture[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>("");
-  const { page, setPage, perPage,setPerPage, totalPage, setTotalPage, totalItem, setTotalItem, handleChangePerPage } =
+  const { page, setPage, perPage, totalPage, setTotalPage, totalItem, setTotalItem, handleChangePerPage } =
     usePanigation();
 
   useEffect(() => {
@@ -57,3 +56,4 @@ const useGetLectureList = (getAll: boolean) => {
 };
 
 export { useGetLectureList };
+
