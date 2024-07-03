@@ -3,6 +3,7 @@
     {
       "id": "1",
       "title": "+8주 (월) 1:5 기구필라테스…(11:30~12:20)",
+      "description": "Description",
       "registration_status": "온라인 접수마감",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -17,6 +18,7 @@
     {
       "id": "2",
       "title": "+8주 (화) 근력UP 야쉬탕가 빈야사 (19:00~20:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -31,6 +33,7 @@
     {
       "id": "3",
       "title": "+8주 (수) 힐링요가…(20:00~20:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -45,6 +48,7 @@
     {
       "id": "4",
       "title": "+8주 (목) 기초 필라테스…(10:00~10:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -59,6 +63,7 @@
     {
       "id": "5",
       "title": "+8주 (금) 스피닝…(18:00~18:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -73,6 +78,7 @@
     {
       "id": "6",
       "title": "+8주 (월) 근력운동…(06:00~06:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -87,6 +93,7 @@
     {
       "id": "7",
       "title": "+8주 (화) 힐링 요가…(20:00~20:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -101,6 +108,7 @@
     {
       "id": "8",
       "title": "+8주 (목) 필라테스…(07:00~07:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -115,6 +123,7 @@
     {
       "id": "9",
       "title": "+8주 (금) 기구 필라테스…(12:00~12:50)",
+      "description": "Description",
       "registration_status": "온라인 접수마감",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -129,6 +138,7 @@
     {
       "id": "10",
       "title": "+8주 (수) 요가…(18:00~18:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -143,6 +153,7 @@
     {
       "id": "11",
       "title": "+8주 (목) 플로우 필라테스…(19:00~19:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -157,6 +168,7 @@
     {
       "id": "12",
       "title": "+8주 (월) 고강도 인터벌 트레이닝…(17:00~17:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -171,6 +183,7 @@
     {
       "id": "13",
       "title": "+8주 (화) 아쉬탕가 요가…(18:00~18:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -185,6 +198,7 @@
     {
       "id": "14",
       "title": "+8주 (목) 근력운동…(20:00~20:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -199,6 +213,7 @@
     {
       "id": "15",
       "title": "+8주 (금) 기구 필라테스…(07:00~07:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -213,6 +228,7 @@
     {
       "id": "16",
       "title": "+8주 (월) 필라테스…(12:00~12:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -227,6 +243,7 @@
     {
       "id": "17",
       "title": "+8주 (수) 근력운동…(19:00~19:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -241,6 +258,7 @@
     {
       "id": "18",
       "title": "+8주 (금) 아침 요가…(06:00~06:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -255,6 +273,7 @@
     {
       "id": "19",
       "title": "+8주 (목) 기초 요가…(08:00~08:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
@@ -269,6 +288,7 @@
     {
       "id": "20",
       "title": "+8주 (월) 기초 필라테스…(09:00~09:50)",
+      "description": "Description",
       "registration_status": "접수중",
       "category": "성인강좌",
       "semester": "여름학기",
