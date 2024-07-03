@@ -131,7 +131,7 @@ export default function ListBoardCourse() {
 
     return (
         dataBoardCourse.map((item: any) => (
-            <div className='list_board_container'>
+            <div key={item.id} className='list_board_container'>
                 <div className='img_board_course'>
                     <img className='img_course' src={item?.img} alt={`img-${item?.id}`} />
                 </div>

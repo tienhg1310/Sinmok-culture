@@ -99,6 +99,9 @@
     .arrow {
       float: right;
       transition: ease-in-out 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .arrow.down {
       transform: rotate(-180deg);

@@ -1,6 +1,6 @@
 import React from 'react'
 import Board from '../..'
-import Slider from '../../../../Common/Slider'
+import Slider from '../../../../Common/Slider';
 import '../BoardCourse/BoardCourse.scss';
 import IconCheck from '../../../../../Assets/images/icons/IconCheck';
 import Search from '../Search';
@@ -9,6 +9,9 @@ import ListBoardCourse from './components/ListBoardCourse';
 import Panigation from '../../../../Common/Panigation/Panigation';
 
 export default function BoardCourse() {
+    const options = ["전체"]
+    const [selectedDropdown, setSelectedDropdown] = React.useState("")
+    const [selectedOption, setSelectedOption] = React.useState(options[0])
 
     return (
         <Board >
@@ -20,7 +23,7 @@ export default function BoardCourse() {
                         spaceBetween={50}
                         slidesPerView={1}
                         draggable={{ clickable: true }}
-                        autoplay={{ delay: 2000, disableOnInteraction: false }}
+                        autoplay={{ delay: 4000, disableOnInteraction: false }}
                         loop={true}
                     >
                         {SliderBoardCourse()}
@@ -39,11 +42,11 @@ export default function BoardCourse() {
             <div className="board_search_container">
                 <Search
                     title='전체 12건'
-                    options={["전체"]}
-                    selectedOption={"전체"}
-                    setSelectedOption={() => { }}
-                    selectedDropdown={"전체"}
-                    setSelectedDropdown={() => { }}
+                    options={options}
+                    selectedOption={selectedOption}
+                    setSelectedOption={setSelectedOption}
+                    selectedDropdown={selectedDropdown}
+                    setSelectedDropdown={setSelectedDropdown}
                 />
             </div>
             <div className='board_course_list'>

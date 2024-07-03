@@ -1,6 +1,5 @@
 import { FC } from "react";
-import { IoMdArrowDropup } from "react-icons/io";
-// import "./SelectInput.scss";
+import { RiArrowDownSLine } from "react-icons/ri";
 
 type Props = {
   dropdownId: string;
@@ -22,6 +21,7 @@ const SelectInput: FC<Props> = ({
   icon,
 }) => {
   const toggleDropdown = () => {
+    console.log(dropdownId, selectedDropdown)
     selectedDropdown === dropdownId && setSelectedDropdown("");
     selectedDropdown !== dropdownId && setSelectedDropdown(dropdownId);
   };
@@ -39,7 +39,7 @@ const SelectInput: FC<Props> = ({
         <span
           className={`arrow ${selectedDropdown === dropdownId ? "up" : "down"}`}
         >
-          <IoMdArrowDropup size={20} />
+          <RiArrowDownSLine size={20} />
         </span>
       </button>
       {selectedDropdown === dropdownId && (
