@@ -166,6 +166,9 @@
 .board_wrapper {
     max-width: 1240px;
     margin: 0 auto;
+    .swiper{
+        width: 100%;
+    }
 }
 
 .board_search_container {
