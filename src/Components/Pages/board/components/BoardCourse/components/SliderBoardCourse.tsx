@@ -1,13 +1,4 @@
 import React from "react";
-import Buff from "../../../../../../Assets/images/buff.jpg";
-import fit from "../../../../../../Assets/images/fit.png";
-import food from "../../../../../../Assets/images/food.jpg";
-import ves from "../../../../../../Assets/images/ves.jpg";
-import snack from "../../../../../../Assets/images/snack.jpg";
-import yoga from "../../../../../../Assets/images/yoga.jpg";
-import man from "../../../../../../Assets/images/man.jpg";
-import gym from "../../../../../../Assets/images/gym.png";
-import flo from "../../../../../../Assets/images/flo.png";
 import SelectIcon from "../../../../../../Assets/images/select_icn04.png";
 import { SwiperSlide } from "swiper/react";
 import IconRate from "../../../../../../Assets/images/icons/IconRate";

@@ -20,7 +20,7 @@ const CourseDetail = () => import("../Components/Pages/mypage/CourseDetail");
 const PaymentDetail = () => import("../Components/Pages/mypage/PaymentDetail");
 const MyCourseReview = () => import("../Components/Pages/mypage/MyCourseReview");
 const CartPage = () => import("../Components/Pages/Cart");
-
+const BoardDetails = () => import("../Components/Pages/board/components/BoardDetail");
 const lazyLoad = (importFunc: any) => {
   const Component = lazy(importFunc);
   return (props: any) => (
@@ -92,6 +92,10 @@ const pages = [
   {
     path: RoutesString.BoardExhibition,
     component: lazyLoad(BoardExhibition),
+  },
+  {
+    path: RoutesString.BoarDetails,
+    component: lazyLoad(BoardDetails),
   },
 
   //Information
