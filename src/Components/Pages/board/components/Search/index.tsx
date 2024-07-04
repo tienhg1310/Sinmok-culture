@@ -36,11 +36,13 @@ export default function Search(props: props) {
                         setSelectedOption={setSelectedOption}
                     />
                 </div>
-                <input className="board_content_input" />
+                <input className="board_content_input" type='text' />
                 <button className='board_content_submit'>
                     검색
                 </button>
             </div>
+
+
         </div>
     )
 }
