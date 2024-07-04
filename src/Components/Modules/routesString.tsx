@@ -5,7 +5,7 @@ export const RoutesString = {
   // authentication page
   Login: `/auth/login`,
   Register: `/auth/register`,
-  
+
   // cart page
   Cart: `/cart`,
 
@@ -26,6 +26,7 @@ export const RoutesString = {
   BoardNotifi: `/board/notifi`,
   BoardCourse: `/board/course`,
   BoardExhibition: `/board/exhibition`,
+  BoarDetails: `/board/detail`,
 
   //mypage
   Profile: `/mypage/profile`,
