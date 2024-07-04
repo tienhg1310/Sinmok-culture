@@ -37,7 +37,7 @@ const SelectInput: FC<Props> = ({
         <img src={icon} alt="" className="dropdown-image" />
         <p>{selectedOption || "모두 선택"}</p>
         <span
-          className={`arrow ${selectedDropdown === dropdownId ? "up" : "down"}`}
+          className={`arrow ${selectedDropdown === dropdownId ? "down" : "up"}`}
         >
           <RiArrowDownSLine size={20} />
         </span>
