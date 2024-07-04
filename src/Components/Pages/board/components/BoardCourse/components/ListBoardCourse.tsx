@@ -133,7 +133,7 @@ export default function ListBoardCourse() {
         dataBoardCourse.map((item: any) => (
             <div key={item.id} className='list_board_container'>
                 <div className='img_board_course'>
-                    <img className='img_course' src={item?.img} alt={`img-${item?.id}`} />
+                    {item?.img && <img className='img_course' src={item?.img} alt={`img-${item?.id}`} />}
                 </div>
                 <div className={`${item?.id === 5 ? 'board_course_1' : 'board_course_content'}`}>
                     <span className='board_course_tilte'>{item?.tilte}</span>
