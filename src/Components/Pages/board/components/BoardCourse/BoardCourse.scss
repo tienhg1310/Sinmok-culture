@@ -674,7 +674,7 @@
 
     .board_course_list {
         .list_board_container {
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             align-items: start;
             justify-content: center;
