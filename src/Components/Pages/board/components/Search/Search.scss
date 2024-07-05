@@ -19,7 +19,7 @@
     }
 
     @include respond-beetwen(md) {
-        width: 97%;
+        width: 100%;
         justify-content: end;
     }
 
@@ -105,12 +105,17 @@
             }
 
             @include respond-beetwen(xs) {
-                width: 95% !important;
+                width: 100%;
                 margin-left: 5px;
                 margin-bottom: 10px;
 
                 .dropdown {
                     width: 100% !important;
+                    &-button {
+                        p {
+                            padding-right: 80%;
+                        }
+                    }
                 }
 
                 .dropdown .dropdown-button {
@@ -121,12 +126,17 @@
             }
 
             @include respond-beetwen(sm) {
-                width: 95% !important;
+                width: 100%;
                 margin-left: 5px;
                 margin-bottom: 10px;
 
                 .dropdown {
                     width: 100% !important;
+                    &-button {
+                        p {
+                            padding-right: 80%;
+                        }
+                    }
                 }
 
                 .dropdown .dropdown-button {
@@ -141,6 +151,11 @@
 
                 .dropdown {
                     width: 100% !important;
+                    &-button {
+                        p {
+                            padding-right: 70px;
+                        }
+                    }
                 }
 
                 .dropdown .dropdown-button {
@@ -172,13 +187,13 @@
             }
 
             @include respond-beetwen(xs) {
-                width: 95% !important;
+                width: 100%;
                 height: 50px;
                 margin-bottom: 10px;
             }
 
             @include respond-beetwen(sm) {
-                width: 95% !important;
+                width: 100%;
                 height: 50px;
                 margin-bottom: 10px;
             }
@@ -204,27 +219,18 @@
             margin-left: 5px;
 
             @include respond-beetwen(xs) {
-                width: 95% !important;
+                width: 100%;
                 height: 50px;
             }
 
             @include respond-beetwen(sm) {
                 // margin-right: 5px;
-                width: 95% !important;
+                width: 100%;
                 height: 50px;
             }
 
             @include respond-beetwen(md) {
-                margin-right: 2px;
                 width: 109px;
-            }
-
-            @include respond-beetwen(lg) {
-                margin-right: 10px;
-            }
-
-            @include respond-beetwen(xl) {
-                margin-right: 0px;
             }
         }
     }
