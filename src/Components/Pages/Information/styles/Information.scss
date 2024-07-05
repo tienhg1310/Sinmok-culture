@@ -20,25 +20,24 @@
   color: #fff;
   background-color: #0a66ce;
   border: 1px solid #0a66ce;
-  ma
-  &:visited {
+  ma &:visited {
     border: 1px solid #0a66ce;
     background-color: #0a66ce;
   }
 }
 
-.btn{
+.btn {
   margin-top: 20px;
-  width: 100%;
+  width: 99%;
   display: flex;
-  justify-content: end;
+  justify-content: start;
   margin-bottom: 100px;
-}
 
-@media screen and (max-width: 1200px) {
-  .btn{
-    justify-content: start !important;
-    margin-left: 50px;
-    
+  @include respond-beetwen(lg) {
+    justify-content: end;
+  }
+  @include respond-beetwen(xl) {
+    justify-content: end;
+    width: 100%;
   }
 }
