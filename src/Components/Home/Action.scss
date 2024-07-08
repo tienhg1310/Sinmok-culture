@@ -5,6 +5,7 @@
   display: grid;
   margin-bottom: 80px;
   grid-template-columns: repeat(3, 1fr);
+  animation: fadeIn 1s ease-in-out;
   @include respond-beetwen(lg) {
     grid-template-columns: repeat(6, 1fr);
   }
