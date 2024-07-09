@@ -3,9 +3,6 @@
 .board_course_container {
     width: 100%;
     background: #f3f3f3;
-    position: absolute;
-    top: 450px;
-    left: 0;
 
     .board_wrapper {
         max-width: 1240px;
@@ -173,8 +170,8 @@
 }
 
 .board_search_container {
-    margin-top: 550px;
-
+    margin: 50px auto;
+    max-width: 1240px;
     .board-detail {
         &-head {
             padding: 35px 40px;
@@ -349,12 +346,12 @@
 
 .board_course_list {
     border-top: 2px solid #0a66ce;
-
+    max-width: 1240px;
+    margin: 0 auto;
     .list_board_container {
         display: grid;
         border-bottom: 1px solid #ddd;
         padding: 30px 0;
-        // justify-content: space-between;
         grid-template-columns: 1fr 5fr 1fr;
         gap: 100px;
         .img_board_course {
@@ -430,7 +427,6 @@
 @include respond-beetwen(xs) {
     .board_course_container {
         height: 310px;
-        top: 350px;
         .board_wrapper {
             .swiper-button-next {
                 background-color: transparent;
@@ -516,11 +512,8 @@
         }
     }
 
-    .board_search_container {
-        margin-top: 360px;
-    }
-
     .board_course_list {
+        width: 90%;
         .list_board_container {
             display: flex;
             flex-direction: column;
@@ -581,7 +574,6 @@
 @include respond-beetwen(sm) {
     .board_course_container {
         height: 300px;
-        top: 380px;
 
         .board_wrapper {
             .swipper_container {
@@ -668,13 +660,10 @@
         }
     }
 
-    .board_search_container {
-        margin-top: 320px;
-    }
-
     .board_course_list {
+        width: 90% !important;
         .list_board_container {
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             align-items: start;
             justify-content: center;
@@ -733,7 +722,6 @@
 @include respond-beetwen(md) {
     .board_course_container {
         height: 350px;
-        top: 350px !important;
 
         .board_wrapper {
             .swipper_container {
@@ -833,11 +821,8 @@
         }
     }
 
-    .board_search_container {
-        margin-top: 380px;
-    }
-
     .board_course_list {
+        width: 90% !important;
         .list_board_container {
             display: grid;
             border-bottom: 1px solid #ddd;
@@ -876,7 +861,6 @@
 @include respond-beetwen(lg) {
     .board_course_container {
         height: 450px;
-        top: 320px !important;
 
         .board_wrapper {
             .swiper-button-next {
@@ -976,11 +960,8 @@
         }
     }
 
-    .board_search_container {
-        margin-top: 500px;
-    }
-
     .board_course_list {
+        width: 98%;
         .list_board_container {
             .img_board_course {
                 width: 284px;

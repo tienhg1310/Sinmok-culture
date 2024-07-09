@@ -1,5 +1,11 @@
 @import "../../../../Assets/styles/index.scss";
 
+.info-wrapper-res {
+    width: 100%;
+    @media screen and (max-width: 599px) {
+        padding: 0 15px;
+    }
+}
 .info {
     position: relative;
     margin: 0 auto;
@@ -18,7 +24,6 @@
         background-image: none;
         background: #f1efef;
         padding: 40px;
-
     }
 
     @include respond-beetwen(sm) {
@@ -28,20 +33,18 @@
         background-image: none;
         background: #f1efef;
         padding: 40px;
-
     }
 
     @include respond-beetwen(md) {
-      position: relative;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    width: 100%;
-    height: auto;
-    padding: 70px;
-    margin-bottom: 70px;
-    background: url(../../../../Assets/images/info_0303_img01.png) #f1efef right no-repeat;
-    background-size: contain;
-
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        width: 100%;
+        height: auto;
+        padding: 70px;
+        margin-bottom: 70px;
+        background: url(../../../../Assets/images/info_0303_img01.png) #f1efef right no-repeat;
+        background-size: contain;
     }
 }
 
@@ -84,9 +87,7 @@
     }
 }
 
-
 .txt1 {
-
     p {
         font-size: 22px;
         line-height: 1.5;
@@ -207,15 +208,10 @@
 }
 
 .text_1 {
-
     width: auto !important;
     font-size: 15px !important;
     color: #333 !important;
     margin-top: 15px !important;
-}
-
-.bnt_icn3 {
-    background-position: -70px 0px;
 }
 
 .ico_ir1 {
@@ -225,7 +221,9 @@
     height: 35px;
     vertical-align: middle;
 }
-
+.bnt_icn3 {
+    background-position: -70px 0px;
+}
 .bnt_icn2 {
     background-position: -34px -3px;
     margin-left: 9px;

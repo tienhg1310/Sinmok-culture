@@ -1,12 +1,13 @@
 @import "../../../../../../Assets//styles/index.scss";
 
-
 .exhibition-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     padding-top: 50px;
     padding-bottom: 100px;
+    margin: 0 auto;
+    max-width: 1240px;
     @include respond-beetwen(xs) {
         grid-template-columns: 1fr;
     }
@@ -67,13 +68,13 @@
         @include respond-beetwen(md) {
             padding-top: 10px;
             padding-left: 20px;
-            .exhibition-title{
+            .exhibition-title {
                 display: none;
             }
-            .exhibition-title-res{
+            .exhibition-title-res {
                 display: block;
             }
-            .exhibition-description{
+            .exhibition-description {
                 padding-top: 5px;
             }
         }
@@ -81,10 +82,10 @@
         @include respond-beetwen(lg) {
             padding-top: 25px;
             padding-left: 0;
-            .exhibition-title{
+            .exhibition-title {
                 display: block;
             }
-            .exhibition-title-res{
+            .exhibition-title-res {
                 display: none;
             }
         }
@@ -108,12 +109,12 @@
             color: #707070;
         }
     }
-
-
 }
 
-.exhibition-container{
+.exhibition-container {
     margin-top: 60px;
     border-top: solid 2px #222;
     border-bottom: solid 1px #ddd;
+    max-width: 1240px;
+    margin: 60px auto;
 }
