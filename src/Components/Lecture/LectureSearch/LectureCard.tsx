@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { ILecture } from "../../../Constants/interface";
 import { addToCart } from "../../../Modules/store/slices/cartSlice";
 import { AppDispatch } from "../../../Modules/store/store";
+import noImage from "../../../Assets/images/noimg.jpg"
 import "./LectureCard.scss";
 
 type Props = {
@@ -31,7 +32,7 @@ const LectureCard: FC<Props> = ({ lecture }) => {
     <div className="card">
       <div className="card-content">
         <div className="card-image">
-          <img src={lecture.image_url} alt="Thumbnail for lecture" />
+          <img src={noImage} alt="Thumbnail for lecture" />
         </div>
 
         <div className="card-info-content">

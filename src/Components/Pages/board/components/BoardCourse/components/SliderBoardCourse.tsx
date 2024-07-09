@@ -1,9 +1,8 @@
-import React from "react";
-import SelectIcon from "../../../../../../Assets/images/select_icn04.png";
+import { useNavigate } from "react-router-dom";
 import { SwiperSlide } from "swiper/react";
 import IconRate from "../../../../../../Assets/images/icons/IconRate";
+import SelectIcon from "../../../../../../Assets/images/select_icn04.png";
 import fakeDb from "../../../../../../db.json";
-import { useNavigate } from "react-router-dom";
 
 export default function SliderBoardCourse() {
     const slides = fakeDb.Lectures;

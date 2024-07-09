@@ -1,5 +1,6 @@
 import { Suspense, lazy } from "react";
 import { RoutesString } from "../Components/Modules/routesString";
+import Loading from "../Components/Common/Loading/Loading";
 const PageErr = () => import("../Components/Pages/404/PageErr");
 const Home = () => import("../Components/Pages/Home");
 const LoginPage = () => import("../Components/Pages/Auth/Login");
@@ -24,7 +25,7 @@ const BoardDetails = () => import("../Components/Pages/board/components/BoardDet
 const lazyLoad = (importFunc: any) => {
   const Component = lazy(importFunc);
   return (props: any) => (
-    <Suspense>
+    <Suspense fallback={<Loading/>}>
       <Component {...props} />
     </Suspense>
   );
