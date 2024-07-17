@@ -8,6 +8,7 @@ import useQA from './hooks/useQA'
 import Panigation from '../../../Common/Panigation/Panigation'
 import { useSearchParams } from 'react-router-dom'
 import FormQA from './components/form-qa'
+import QAInfo from './components/QAInfo'
 
 const HomeQA = ({
     columnDefs
@@ -53,23 +54,22 @@ const QA = () => {
 
     const [searchParams] = useSearchParams();
     const [hasId, setHasId] = useState(false);
+    const id: any = searchParams.get('id');
+    const isLocked = searchParams.get('lock');
 
     useEffect(() => {
-        const id = searchParams.get('id');
-        const isLocked = searchParams.get('lock');
-        if (id && isLocked) {
-            setHasId(true);
-        } else {
-            setHasId(false);
-        }
+        setHasId(!!id)
     }, [searchParams]);
 
     return (
         <Information>
-            {
-                hasId ? <FormQA /> : <HomeQA columnDefs={columnDefs} />
-            }
-
+            {hasId && isLocked ? (
+                <FormQA />
+            ) : hasId ? (
+                <QAInfo qaId={id} />
+            ) : (
+                <HomeQA columnDefs={columnDefs} />
+            )}
         </Information>
     )
 }
