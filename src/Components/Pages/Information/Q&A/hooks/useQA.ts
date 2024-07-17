@@ -28,9 +28,7 @@ const useQA = () => {
                 ...styleColumns,
                 renderCell: (params: any) => {
                     const { row } = params || {};
-                    return (
-                        row?.isLocked === true ? RenderLocked({ row }) : row?.name
-                    )
+                    return RenderLocked({ row })
                 },
             },
 

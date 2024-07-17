@@ -1,6 +1,5 @@
 @import "../../../../Assets/styles/index.scss";
 
-
 .header_table {
     padding: 16px 0;
     font-weight: 400;
@@ -10,4 +9,73 @@
     border-bottom: 1px solid #999;
     text-align: center;
     color: #444;
+}
+
+.form-signin {
+    width: 100%;
+    &-heading {
+        font-size: 25px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    input[type="password"] {
+        line-height: 38px;
+        margin: 0;
+        border: 1px solid #ccc;
+        color: #666;
+        vertical-align: middle;
+        min-width: 40px;
+        width: auto;
+        height: 38px;
+        padding: 4px 5px;
+    }
+
+    .row {
+        display: flex;
+        gap: 5px;
+        .btn {
+            position: relative;
+            display: inline-block;
+            width: auto;
+            background: 0;
+            text-align: center;
+            vertical-align: middle;
+            padding: 0;
+            width: 85px;
+            height: 45px;
+            line-height: 43px;
+            cursor: pointer;
+        }
+        .btn-default,
+        .btn-default:link,
+        .btn-default:visited {
+            border: 1px solid #656565;
+            background-color: #383838;
+            color: #fff;
+        }
+        button {
+            border-radius: 0;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    @include respond-beetwen(xs) {
+        width: 95%;
+    }
+
+    @include respond-beetwen(sm) {
+        width: 95%;
+    }
+
+    @include respond-beetwen(md) {
+        width: 95%;
+    }
 }

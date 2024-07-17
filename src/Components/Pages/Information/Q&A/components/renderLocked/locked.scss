@@ -1,10 +1,22 @@
-.btn-dowload{
+.btn-dowload {
     border: none;
     display: flex;
     justify-content: center;
     background: transparent;
-
-    span{
+    cusor: pointer;
+    span {
         padding-left: 5px;
+    }
+    &:hover {
+        color: #337ab7;
+        border-bottom: 1px solid #337ab7;
+    }
+}
+
+.btn-dowload-link {
+    color: black;
+    &:hover {
+        color: #337ab7;
+        border-bottom: 1px solid #337ab7;
     }
 }
