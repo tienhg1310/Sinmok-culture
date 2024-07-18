@@ -1,0 +1,15 @@
+.question_info {
+  width: 100%;
+  background-color: #ebedf1;
+  padding: 35px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #0a66ce;
+  border-bottom: 1px solid #c1c2c5;
+  margin-bottom: 30px;
+  .question_title {
+    padding: 10px 0px;
+    font-size: 20px;
+  }
+}

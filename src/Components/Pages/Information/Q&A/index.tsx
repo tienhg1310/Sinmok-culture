@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Information from '..'
 import Search from './components/search'
 import Table from './components/table'
@@ -6,13 +6,15 @@ import qaData from './data/qaData'
 import "../styles/InformationQA.scss"
 import useQA from './hooks/useQA'
 import Panigation from '../../../Common/Panigation/Panigation'
-export default function QA() {
-    const {
-        columnDefs
-    } = useQA();
+import { useSearchParams } from 'react-router-dom'
+import FormQA from './components/form-qa'
+import QAInfo from './components/QAInfo'
 
+const HomeQA = ({
+    columnDefs
+}: any) => {
     return (
-        <Information>
+        <>
             <Search
                 options={["전체"]}
                 title="전체 84건"
@@ -42,7 +44,34 @@ export default function QA() {
                     쓰기
                 </button>
             </div>
+        </>
+    )
+}
+const QA = () => {
+    const {
+        columnDefs
+    } = useQA();
 
+    const [searchParams] = useSearchParams();
+    const [hasId, setHasId] = useState(false);
+    const id: any = searchParams.get('id');
+    const isLocked = searchParams.get('lock');
+
+    useEffect(() => {
+        setHasId(!!id)
+    }, [searchParams]);
+
+    return (
+        <Information>
+            {hasId && isLocked ? (
+                <FormQA />
+            ) : hasId ? (
+                <QAInfo qaId={id} />
+            ) : (
+                <HomeQA columnDefs={columnDefs} />
+            )}
         </Information>
     )
 }
+
+export default QA
