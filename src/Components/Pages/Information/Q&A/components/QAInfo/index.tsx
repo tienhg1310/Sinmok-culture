@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import qaData from '../../data/qaData'
 import './QAInfo.scss'
 import { useNavigate } from 'react-router-dom'
@@ -11,14 +11,14 @@ const QAInfo = ({ qaId }: Props) => {
     const navigate = useNavigate()
     const [qaDataState, setQaDataState] = useState<any>({})
 
-    const findData = () => {
+    const findData = useCallback(() => {
         const findedData = qaData.find((item) => item.id === Number(qaId))
         setQaDataState(findedData)
-    }
+    }, [qaId])
 
     useEffect(() => {
         findData()
-    }, [ findData])
+    }, [findData])
 
     return (
         <div style={{ width: '100%' }}>
