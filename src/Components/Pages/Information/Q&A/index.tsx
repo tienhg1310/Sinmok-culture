@@ -59,7 +59,7 @@ const QA = () => {
 
     useEffect(() => {
         setHasId(!!id)
-    }, [searchParams]);
+    }, [searchParams, id]);
 
     return (
         <Information>

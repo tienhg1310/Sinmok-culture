@@ -18,7 +18,7 @@ const QAInfo = ({ qaId }: Props) => {
 
     useEffect(() => {
         findData()
-    }, [])
+    }, [ findData])
 
     return (
         <div style={{ width: '100%' }}>
